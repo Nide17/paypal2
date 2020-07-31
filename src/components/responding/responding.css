@@ -1,0 +1,119 @@
+.statement {
+    background: #fceed7;
+}
+
+.statement {
+    padding: 40px 0;
+}
+.theme-background-color-white {
+    background-color: #fff;
+}
+.theme-background-color-white {
+    background-color: #fff;
+}
+.text-xs-center {
+    text-align: center!important;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.row {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
+@media only screen and (max-width: 414px) and (min-width: 320px) {
+.statement .pypl-heading {
+    line-height: 28px;
+}
+}
+
+.statement .pypl-heading {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    font-weight: 700;
+    color: #2c2e2f;
+}
+.theme-background-color-white .pypl-heading {
+    color: #4a4a4a;
+}
+.theme-background-color-white .pypl-heading {
+    color: #4a4a4a;
+}
+.h2.pypl-heading, h2, h2.pypl-heading {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+
+.statement .statement__paragraph {
+    font-size: 1.24rem;
+}
+.statement__paragraph {
+    padding-top: 20px;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+.pp-sans-big-light {
+    font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+    font-weight: 400;
+}
+.pp-sans-big-light {
+    font-family: PayPalSansBig-Light;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+
+.editorial_link {
+    color: #00a8ea;
+}
+
+a {
+    color: #0070ba;
+}
+a {
+    background-color: transparent;
+    text-decoration: none;
+    font-family: PayPalSansSmall-Regular,Helvetica Neue,Arial,sans-serif;
+    font-weight: 700;
+}
+a {
+    color: #0070ba;
+}
+a {
+    background-color: transparent;
+    text-decoration: none;
+    font-family: PayPalSansSmall-Regular;
+    font-weight: 700;
+}
+a {
+    background-color: transparent;
+}

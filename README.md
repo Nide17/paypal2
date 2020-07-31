@@ -66,3 +66,22 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+logo
+https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg
+
+
+
+
+return (
+
+            <div className='bg-video-container'>
+                <video width="100%" height="100%" controls>
+                    <source src="https://www.paypalobjects.com/marketing/web/us/en/home/PP_EE_LP_Header_Output_US_%20750x1400.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+</video>
+
+                <div className="video-margin"></div>
+
+            </div>
+        )
