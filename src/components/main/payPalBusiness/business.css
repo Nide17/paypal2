@@ -1,0 +1,85 @@
+/* small */
+@media(max-width: 767px) {
+    .text-white::before {
+        content: "Looking for PayPal for Business?"
+    }
+
+}
+
+/* Bigger */
+@media(min-width: 768px) {
+
+    .text-white::before {
+        content: "Looking for PayPal for Business? Whether you're local or global, we're here to support you"
+    }
+
+    .btn-round {
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1023px;
+    }
+
+    .notification-ribbon .container {
+        max-width: 1380px;
+    }
+    .notification-ribbon a {
+        float: left;
+        padding: 0px 40px;
+    }
+    .notification-ribbon h4 {
+        padding: 0px 40px;
+    }
+}
+
+@media screen and (max-width: 1119px) and (min-width: 768px) {
+    .notification-ribbon a {
+        float: none;
+        text-align: center;
+    }
+
+    .notification-ribbon h4 {
+        font-size: 12px;
+        word-spacing: normal;
+    }
+}
+
+.notification-ribbon {
+    margin: 0;
+    background-color: #0d3685;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.btn-round {
+    margin: auto;
+    position: relative;
+    display: flex;
+    background: #0070ba;
+    background-color: transparent;
+    color: #0070ba;
+    border: 1px solid #0070ba;
+    font-size: 8px;
+}
+
+.notification-ribbon .btn-round {
+    background-color: #fff;
+    border-color: #fff;
+    color: #0d3685;
+    border-radius: 25px;
+    font-weight: 700;
+    vertical-align: middle;
+
+}
+
+.notification-ribbon a:hover.btn-round {
+    text-decoration: none;
+}
+
+.notification-ribbon h4 {
+    font-size: 21px;
+    line-height: 1.6;
+    vertical-align: middle;
+}
+

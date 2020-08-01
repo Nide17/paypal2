@@ -1,0 +1,23 @@
+@media screen and (max-width: 1366px) and (min-width: 769px) {
+    .bg-video-container {
+        height: 150px;
+        margin-top: -25px;
+    }
+}
+
+.bg-video-container {
+    background-color: #0097e0;
+    margin-bottom: -7px;
+    position: relative;
+    height: 300px;
+}
+
+.bg-video-container .bg-video {
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+}
+
+video {
+    width: 100%;
+}

@@ -1,0 +1,17 @@
+* {
+    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
+}
+
+.main-content {
+    @media (min-width: 1152px) {
+        .pp-header~* {
+            position: relative;
+            top: 0;
+            transition: all .3s ease-out;
+        }
+    }
+}

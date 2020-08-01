@@ -1,0 +1,78 @@
+@media only screen and (max-width: 767px) {
+    .yoga-section {
+        padding: 40px 13px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .yoga-section .container .row {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 7px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .yoga-section-image {
+        margin-bottom: 30px;
+    }
+}
+
+.yoga-section {
+    background-repeat: no-repeat;
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.yoga-section .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.yoga-section-container {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text-xs-center {
+    text-align: center !important;
+}
+
+.yoga-section .yoga-section-head {
+    font-weight: 900;
+    color: #4a4a4a;
+}
+
+.h2.yoga-section-head {
+    position: relative;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-family: "PayPalSansBig-Light", "Helvetica Neue", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 200;
+}
+
+.yoga-section-paragraph {
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.yoga-section-paragraph .yoga-section-link {
+    font-size: 16px;
+    color: #00a8ea;
+}
+a:hover.yoga-section-link {
+    color: #00a8ea;
+}
+.yoga-section-image {
+    max-width: 90%;
+    max-height: 350px;
+}
+
+img {
+    border-style: none;
+}

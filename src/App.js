@@ -1,19 +1,20 @@
 import React from 'react';
-import NavBarComponent from './components/nav/NavBarComponent'
+// import NavBarComponent from './components/header/NavBarComponent'
 // import VideoComponent from './components/video/VideoComponent'
 import { BrowserRouter } from 'react-router-dom';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import Main from './components/main/Main';
+import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
 
-
-// import './style.css'
+import './App.css';
 
 const App = () => {
   return (
     <BrowserRouter>
 
       <div className="App">
-        <NavBarComponent />
+        {/* <NavBarComponent /> */}
+        <Header/>
         {/* <VideoComponent/> */}
         <Main />
         <Footer />
