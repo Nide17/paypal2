@@ -7,6 +7,61 @@
 }
 }
 
+@media (max-width: 1151px) {
+    nav#main-menu {
+        display: none;
+    }
+
+    a#signup-button {
+        display: none;
+    }
+    .pypl-logo-wrapper {
+        width: auto;
+        display: inline-block;
+        /* display: none; */
+        position: relative;
+        top: 3px;
+    }
+    .header {
+        border-bottom: none;
+    }
+
+    }
+
+    
+
+    @media (max-width: 1151px) {
+    .pypl-logo {
+        width: 26px;
+        height: 30px;
+        background-size: cover;
+        background-position: left;
+        background-clip: content-box;
+        background-origin: content-box;
+    }
+
+    .pypl-logo--white {
+        background-image: url(https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg);
+    }
+
+    .pypl-logo {
+        width: 136px;
+        height: 43px;
+        display: inline-block;
+        padding: 0;
+        background: transparent url(https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg) center center no-repeat;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-position: 0 50%;
+        background-size: contain;
+        overflow: hidden;
+        text-indent: -999em;
+    }
+
+    
+}
+
+    
 header {
     font-size: 14px;
     font-size: .875rem;
@@ -77,7 +132,6 @@ header .container {
     padding-left: 37px;
 }
 
-
 .pypl-btn {
     display: block;
     position: relative;
@@ -100,70 +154,6 @@ header .container {
     box-sizing: border-box;
 }
 
-.pypl-btn {
-    display: block;
-    position: relative;
-    max-width: 320px;
-    padding: 13px 24px;
-    margin-bottom: 0;
-    background: #0070ba;
-    font-size: 15px;
-    font-size: .9375rem;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-    line-height: 22px;
-    -webkit-font-smoothing: antialiased;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 25px;
-    border: none;
-    box-sizing: border-box;
-}
-
-[type=button],
-[type=reset],
-[type=submit],
-button {
-    -webkit-appearance: button;
-}
-
-button,
-select {
-    text-transform: none;
-}
-
-button,
-input {
-    overflow: visible;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
-}
-
-
-@media (max-width: 1151px) {
-    .pypl-logo {
-        width: 26px;
-        height: 30px;
-        background-size: cover;
-        background-position: left;
-        background-clip: content-box;
-        background-origin: content-box;
-    }
-}
-
-
-
 .pypl-logo--white {
     background-image: url(https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg);
 }
@@ -182,62 +172,10 @@ textarea {
     text-indent: -999em;
 }
 
-.pypl-logo--white {
-    background-image: url(https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg);
-}
-
-.pypl-logo {
-    width: 136px;
-    height: 43px;
-    display: inline-block;
-    padding: 0;
-    background: transparent url(https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg) center center no-repeat;
-    background-clip: border-box;
-    background-origin: padding-box;
-    background-position: 0 50%;
-    background-size: contain;
-    overflow: hidden;
-    text-indent: -999em;
-}
-
-a {
-    color: #0070ba;
-}
-
-a {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
-
-a {
-    color: #0070ba;
-}
-
-a {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
-
-a {
-    background-color: transparent;
-}
-
-
 header ol,
 header ul {
     list-style-type: none;
     padding-left: 0;
-}
-
-
-
-ol,
-ul {
-    padding-left: 20px;
 }
 
 ol,
@@ -250,27 +188,6 @@ ul {
     padding-left: 0;
     margin: 0 0 1rem;
 }
-
-ol,
-ul {
-    padding-left: 20px;
-}
-
-ol,
-ul {
-    padding-left: 0;
-    margin: 0 0 1rem;
-}
-
-
-
-header ol,
-header ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-
 
 .main-menu__sublist {
     margin-top: 20px;
@@ -279,41 +196,6 @@ header ul {
     width: 86%;
 }
 
-ol,
-ul {
-    padding-left: 20px;
-}
-
-ol,
-ul {
-    padding-left: 20px;
-}
-
-ol,
-ul {
-    padding-left: 0;
-    margin: 0 0 1rem;
-}
-
-ol,
-ul {
-    padding-left: 20px;
-}
-
-ol,
-ul {
-    padding-left: 0;
-    margin: 0 0 1rem;
-}
-
-*,
-::after,
-::before {
-    box-sizing: inherit;
-}
-
-
-
 header a.closer-mobile button,
 header a.main-link,
 header a.main-link:focus,
@@ -343,7 +225,6 @@ header .main-link:hover {
     position: relative;
 }
 
-
 a {
     color: #0070ba;
 }
@@ -369,8 +250,6 @@ a {
 a {
     background-color: transparent;
 }
-
-
 
 
 header a.closer-mobile button,
@@ -383,13 +262,7 @@ header a.main-link:hover {
     font-weight: 700;
 }
 
-.main-menu a,
-.main-menu a:active,
-.main-menu a:focus,
-.main-menu a:hover,
-.main-menu a:visited {
-    color: #fff;
-}
+
 
 header .closer-mobile button,
 header .main-link,
@@ -400,33 +273,6 @@ header .main-link:hover {
     line-height: 2.7;
     letter-spacing: 1px;
     position: relative;
-}
-
-
-a {
-    color: #0070ba;
-}
-
-a {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
-
-a {
-    color: #0070ba;
-}
-
-a {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
-
-a {
-    background-color: transparent;
 }
 
 
@@ -441,13 +287,7 @@ header a.main-link:hover {
     font-weight: 700;
 }
 
-.main-menu a,
-.main-menu a:active,
-.main-menu a:focus,
-.main-menu a:hover,
-.main-menu a:visited {
-    color: #fff;
-}
+
 
 header .closer-mobile button,
 header .main-link,
@@ -458,33 +298,6 @@ header .main-link:hover {
     line-height: 2.7;
     letter-spacing: 1px;
     position: relative;
-}
-
-
-a {
-    color: #0070ba;
-}
-
-a {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
-
-a {
-    color: #0070ba;
-}
-
-a {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
-
-a {
-    background-color: transparent;
 }
 
 header a.closer-mobile button,
@@ -497,13 +310,7 @@ header a.main-link:hover {
     font-weight: 700;
 }
 
-.main-menu a,
-.main-menu a:active,
-.main-menu a:focus,
-.main-menu a:hover,
-.main-menu a:visited {
-    color: #fff;
-}
+
 
 header .closer-mobile button,
 header .main-link,
@@ -517,256 +324,28 @@ header .main-link:hover {
 }
 
 
-a {
-    color: #0070ba;
-}
-
-a {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
-
-a {
-    color: #0070ba;
-}
-
-a {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
-
-a {
-    background-color: transparent;
-}
-
-.main-menu a,
-.main-menu a:active,
-.main-menu a:focus,
-.main-menu a:hover,
-.main-menu a:visited {
-    color: #fff;
-}
 
 
 
 
-.pypl-btn {
-    display: block;
-    position: relative;
-    max-width: 320px;
-    padding: 13px 24px;
-    margin-bottom: 0;
-    background: #0070ba;
-    font-size: 15px;
-    font-size: .9375rem;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-    line-height: 22px;
-    -webkit-font-smoothing: antialiased;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 25px;
-    border: none;
-    box-sizing: border-box;
-}
 
-.pypl-btn {
-    display: block;
-    position: relative;
-    max-width: 320px;
-    padding: 13px 24px;
-    margin-bottom: 0;
-    background: #0070ba;
-    font-size: 15px;
-    font-size: .9375rem;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-    line-height: 22px;
-    -webkit-font-smoothing: antialiased;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 25px;
-    border: none;
-    box-sizing: border-box;
-}
 
-a {
-    color: #0070ba;
-}
 
-a {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
 
-a {
-    color: #0070ba;
-}
 
-a {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
 
-a {
-    background-color: transparent;
-}
 
-.pypl-btn {
-    display: block;
-    position: relative;
-    max-width: 320px;
-    padding: 13px 24px;
-    margin-bottom: 0;
-    background: #0070ba;
-    font-size: 15px;
-    font-size: .9375rem;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-    line-height: 22px;
-    -webkit-font-smoothing: antialiased;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 25px;
-    border: none;
-    box-sizing: border-box;
-}
 
-.pypl-btn {
-    display: block;
-    position: relative;
-    max-width: 320px;
-    padding: 13px 24px;
-    margin-bottom: 0;
-    background: #0070ba;
-    font-size: 15px;
-    font-size: .9375rem;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-    line-height: 22px;
-    -webkit-font-smoothing: antialiased;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 25px;
-    border: none;
-    box-sizing: border-box;
-}
 
-a {
-    color: #0070ba;
-}
-
-a {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
-
-a {
-    color: #0070ba;
-}
-
-a {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
-
-a {
-    background-color: transparent;
-}
 
 .header-buttons .pypl-btn.pypl-btn--small:last-of-type {
     display: inline-block;
 }
 
-.pypl-btn {
-    display: block;
-    position: relative;
-    max-width: 320px;
-    padding: 13px 24px;
-    margin-bottom: 0;
-    background: #0070ba;
-    font-size: 15px;
-    font-size: .9375rem;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-    line-height: 22px;
-    -webkit-font-smoothing: antialiased;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 25px;
-    border: none;
-    box-sizing: border-box;
-}
 
-.pypl-btn {
-    display: block;
-    position: relative;
-    max-width: 320px;
-    padding: 13px 24px;
-    margin-bottom: 0;
-    background: #0070ba;
-    font-size: 15px;
-    font-size: .9375rem;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-    line-height: 22px;
-    -webkit-font-smoothing: antialiased;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 25px;
-    border: none;
-    box-sizing: border-box;
-}
 
-a {
-    color: #0070ba;
-}
 
-a {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
 
-a {
-    color: #0070ba;
-}
-
-a {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
-
-a {
-    background-color: transparent;
-}
 
 
 @media (min-width: 1152px) {

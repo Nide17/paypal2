@@ -53,3 +53,11 @@ heroku open
 
 
 To customize an app's processes, commit a Procfile and deploy. Include web: bin/boot to launch the default web process, or you may replace the default web process.
+
+
+1. heroku login
+2. npm run build
+3. serve -s build
+4. heroku create deploy2paypal --buildpack mars/create-react-app
+5. git push heroku master
+6. heroku open
