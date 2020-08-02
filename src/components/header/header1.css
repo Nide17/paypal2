@@ -34,8 +34,18 @@ header {
     .header-container {
         max-width: 1192px;
     }
+    
 }
 
+@media(max-width: 1151px) {
+    header {
+        border-bottom: none;
+    }
+    .main-menu .list-1 a {
+        display: none;
+    }
+
+}
 
 @media (min-width: 752px) {
     .header-section .header-container {
@@ -47,8 +57,13 @@ header {
     }
 }
 
-
-
+@media (min-width: 1024px) {
+.header-section .header-container {
+    max-width: 1151px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+}
 
 /* ************** */
 /* MENU BUTTON */
@@ -73,10 +88,9 @@ header {
     touch-action: none;
     padding-left: 37px;
     background-color: transparent;
-    color: #fff;
+    color: #eaeced;
     border: 0;
     box-shadow: 0 0 0 1px #fff, 0 0 0 1px #fff;
-    padding: 12px 18px;
     font-size: .75rem;
     line-height: 12px;
 }
@@ -102,31 +116,19 @@ header {
 /* ************** */
 /* LOGO */
 
-@media (min-width: 1152px) {
-    .logo-container {
-        width: 0;
-        float: left;
-        top: -6px;
-    }
-}
-
-
 .logo-container {
     width: auto;
     display: inline-block;
     position: relative;
     top: 3px;
-    color: #fff;
 }
 
 .logo-text {
-    background-image: url(https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg);
-    color: #fff;
     width: 136px;
     height: 43px;
     display: inline-block;
-    padding: 0;
-    background: transparent url(https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg) center center no-repeat;
+    /* padding-top: 18px; */
+    background: transparent url(https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg) center center no-repeat;
     background-clip: border-box;
     background-origin: padding-box;
     background-position: 0 50%;
@@ -134,11 +136,50 @@ header {
     overflow: hidden;
     text-indent: -999em;
 }
-@media (max-width: 1151px) {
+
+@media (max-width: 1152px) {
+    .logo-container {
+        width: 0;
+        float: center;
+        top: -6px;
+    }
+
+.logo-text {
+    width: 26px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+    background-origin: content-box;
+}
+
+.header-section {
+    text-align: center;
+}
+
+.logo-text {
+    width: 36px;
+    height: 43px;
+    background-position: 0 50%;
+    background-size: cover;
+}
+}
+
+.logo-url {
+    background-image: url(https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg);
+}
+
+
+
+
+
+
+
+/* @media (max-width: 1151px) {
     .logo-container a {
         display: none;
     }
-}
+} */
 
 /* ************** */
 /* NAVIGATION */
@@ -199,21 +240,20 @@ ul {
     position: relative;
 }
 
-.signup-login>div {
+.signup-login > div {
     display: flex;
-    flex: 0 1 auto;
+    /* flex: 0 1 auto; */
     position: absolute;
     top: 0;
     right: 0;
-    width: max-content;
+    /* width: max-content; */
 }
 
 /* ************** */
 /* LOGIN */
-
+/* button-login */
 .signup-login .signlogbtns {
     display: inline-block;
-    margin: 0 9px;
     flex: 0 0 auto;
     padding: 12px 18px;
     font-size: .73rem;

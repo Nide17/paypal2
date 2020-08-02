@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-// import './nav.css'
+import './nav.css'
 
 class NavBarComponent extends Component {
   constructor(props) {
@@ -24,79 +24,78 @@ class NavBarComponent extends Component {
 
     return (
 
-          <div>
+      <div className="navbar-wrapper">
 
-            <Navbar dark expand="md" className="header-container" color="#2b83bd" light style={{ backgroundColor: '#2b83bd' }}>
+        <Navbar dark expand="md" className="header-container" light>
 
-              <div className="container">
-                <div className="navbutton-wrapper">
-                  <NavbarToggler onClick={this.toggleNav} className="menu-button navbutton my-btn---outline-white my-btn--small"> Menu
+          <div className="container">
+            <div className="navbutton-wrapper">
+              <NavbarToggler onClick={this.toggleNav} className="menu-button navbutton my-btn---outline-white my-btn--small"> Menu
             </NavbarToggler>
-                </div>
+            </div>
 
-                <NavbarBrand className="mr-auto" href="/"><img src='https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg' height="42px" alt='PayPal' />
-                </NavbarBrand>
+            <NavbarBrand className="mr-auto" href="/">
+              <img src='https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg' height="32px" alt='PayPal' />
+            </NavbarBrand>
 
-                <Collapse isOpen={this.state.isNavOpen} navbar>
-                  <Nav navbar className="ml-auto">
+            <Collapse isOpen={this.state.isNavOpen} navbar>
+              <Nav navbar className="ml-auto">
 
-                    <UncontrolledDropdown nav inNavbar>
-                      <DropdownToggle nav caret>
-                        PERSONAL
+                <UncontrolledDropdown nav inNavbar>
+                  <DropdownToggle nav caret>
+                    PERSONAL
               </DropdownToggle>
-                      <DropdownMenu right>
-                        <DropdownItem>
-                          Option 1
+                  <DropdownMenu right>
+                    <DropdownItem>
+                      Option 1
                 </DropdownItem>
-                        <DropdownItem>
-                          Option 2
+                    <DropdownItem>
+                      Option 2
                 </DropdownItem>
-                        <DropdownItem divider />
-                        <DropdownItem>
-                          Reset
+                    <DropdownItem divider />
+                    <DropdownItem>
+                      Reset
                 </DropdownItem>
-                      </DropdownMenu>
-                    </UncontrolledDropdown>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
 
-                    <UncontrolledDropdown nav inNavbar>
-                      <DropdownToggle nav caret>
-                        BUSINESS
+                <UncontrolledDropdown nav inNavbar>
+                  <DropdownToggle nav caret>
+                    BUSINESS
               </DropdownToggle>
-                      <DropdownMenu right>
-                        <DropdownItem>
-                          Option 1
+                  <DropdownMenu right>
+                    <DropdownItem>
+                      Option 1
                 </DropdownItem>
-                        <DropdownItem>
-                          Option 2
+                    <DropdownItem>
+                      Option 2
                 </DropdownItem>
-                        <DropdownItem divider />
-                        <DropdownItem>
-                          Reset
+                    <DropdownItem divider />
+                    <DropdownItem>
+                      Reset
                 </DropdownItem>
-                      </DropdownMenu>
-                    </UncontrolledDropdown>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
 
-                    <NavItem>
-                      <NavLink className="nav-link" to='/'><span className=""></span>DEVELOPER</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink className="nav-link" to='/'><span className=""></span>HELP</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink className="nav-link" to='/'><span className=""></span>Login</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink className="nav-link" to='/'><span className=""></span>Sign up</NavLink>
-                    </NavItem>
-                  </Nav>
+                <NavItem>
+                  <NavLink className="nav-link" to='/'><span className=""></span>DEVELOPER</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink className="nav-link" to='/'><span className=""></span>HELP</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink className="nav-link" to='/'><span className=""></span>Login</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink className="nav-link" to='/'><span className=""></span>Sign up</NavLink>
+                </NavItem>
+              </Nav>
 
-                </Collapse>
-              </div>
-
-            </Navbar>
-
+            </Collapse>
           </div>
-   
+
+        </Navbar>
+      </div>
     )
   }
 }

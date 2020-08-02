@@ -1,6 +1,6 @@
 @media (max-width: 1151px) {
     .footer {
-        text-align: center;
+        text-align: left;
     }
     .footer ul li {
         display: inline-block;
@@ -30,12 +30,12 @@
     margin-right: -12px;
 }
 
-.footer .col-md-12 {
+.footer .col-12 {
     position: relative;
     min-height: 1px;
     padding-left: 12px;
     padding-right: 12px;
-    text-align: center;
+    
 }
 
 .footer .footer-main {

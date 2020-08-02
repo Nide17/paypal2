@@ -9,12 +9,10 @@ function Nav() {
 
                 <a className="navbar-brand text-uppercase" href="/">Navbar</a>
 
-
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2"
                     aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent2">
 

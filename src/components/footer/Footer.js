@@ -30,7 +30,7 @@ function Footer() {
 
                     <div className="col-12 col-xl-8">
 
-                        <ul className="footer-main">
+                        <ul className="footer-main text-left">
                             <li>
                                 <a href="/">Help</a>
                             </li>
@@ -68,7 +68,7 @@ function Footer() {
 
                     <div className="col-12 col-xl-8">
 
-                        <ul className="footer-secondary footer-corplinks">
+                        <ul className="footer-secondary footer-corplinks text-left">
                             <li>
                                 <a href="/" target="_blank" rel="noopener noreferrer">About</a>
                             </li>

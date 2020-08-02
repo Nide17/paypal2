@@ -3,18 +3,20 @@ import './header1.css'
 
 const Header = () => {
     return (
+        
         <header className="header-section">
-            <div>
-                <div className="container header-container">
+            <div className="container">
+                <div className="row header-container">
 
-                    <div className="contain-btn">
+                    <div className="col-2 contain-btn">
                         <button id="menu-button" className="btn-menu" type="button">
                             Menu
                         </button>
                     </div>
 
+                    <div className="col-8">
                     <div className="logo-container">
-                        <a href="/" className="logo-text">
+                        <a href="/" className="logo-text logo-url">
                             PayPal
                         </a>
                     </div>
@@ -39,8 +41,9 @@ const Header = () => {
                             </li>
                         </ul>
                     </nav>
+                    </div>
 
-                    <div className="signup-login">
+                    <div className="col-2 signup-login">
                         <div>
                             <a href="/" className="signlogbtns" role="button">Log In</a>
 
