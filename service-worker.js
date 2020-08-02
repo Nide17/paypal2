@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/paypal2/precache-manifest.380cecbc9196c53192c95f0297cb8a57.js"
+  "/paypal2/precache-manifest.a7138d12cb2c7b6731dbcb45c1691784.js"
 );
 
 self.addEventListener('message', (event) => {
