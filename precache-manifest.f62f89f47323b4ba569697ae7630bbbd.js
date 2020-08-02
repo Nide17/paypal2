@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d853a7257388106e59ddbc2254b0ae6f",
+    "revision": "ff1ccb73e45a777fec6fa862f9a050a4",
     "url": "/paypal2/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/paypal2/static/css/2.fd7f0f65.chunk.css"
   },
   {
-    "revision": "b3dd4d26bf01ae4a072a",
-    "url": "/paypal2/static/css/main.772807a3.chunk.css"
+    "revision": "c6fd735d051b9a48254f",
+    "url": "/paypal2/static/css/main.4a06ddd4.chunk.css"
   },
   {
     "revision": "5a016d5766ba6b8956cf",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/paypal2/static/js/2.bd454f59.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b3dd4d26bf01ae4a072a",
-    "url": "/paypal2/static/js/main.cc85d09d.chunk.js"
+    "revision": "c6fd735d051b9a48254f",
+    "url": "/paypal2/static/js/main.e3abc050.chunk.js"
   },
   {
     "revision": "cbf54eeae37ed6447c2f",
