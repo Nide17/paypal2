@@ -22,7 +22,8 @@ function Yoga() {
                         </p>
 
                     </div>
-                    <div className="col-md-6 text-xs-center col-xs-12"><img className="yoga-section-image" src="/assets/images/Purple_Yoga.png" alt="Send money in seconds" />
+                    {/* <div className="col-md-6 text-xs-center col-xs-12"><img className="yoga-section-image" src="/assets/images/Purple_Yoga.png" alt="Send money in seconds" /> */}
+                    <div className="col-md-6 text-xs-center col-xs-12"><img className="yoga-section-image" src="https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/Purple_Yoga.png" alt="Send money in seconds" />
 
                     </div>
 

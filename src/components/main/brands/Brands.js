@@ -17,27 +17,28 @@ function Brands() {
                 <div className="row brand-container">
 
                     <div className="col-xs-6 col-md-4 col-xl-2 brand-logo">
-                        <img src="/assets/images/LOGOS_120x50_US_HULU.png" alt="Hulu" className="brand-image" />
+                        {/* <img src="/assets/images/LOGOS_120x50_US_HULU.png" alt="Hulu" className="brand-image" /> */}
+                        <img src="https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/LOGOS_120x50_US_HULU.png" alt="Hulu" className="brand-image" />
                     </div>
 
                     <div className="col-xs-6 col-md-4 col-xl-2">
-                        <img src="/assets/images/LOGOS_120x50_SPOTIFY.png" alt="Spotify" className="brand-image" />
+                        <img src="https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/LOGOS_120x50_SPOTIFY.png" alt="Spotify" className="brand-image" />
                     </div>
 
                     <div className="col-xs-6 col-md-4 col-xl-2">
-                        <img src="/assets/images/LOGOS_120x50_US_GRUBHUB.png" alt="Grubhub" className="brand-image" />
+                        <img src="https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/LOGOS_120x50_US_GRUBHUB.png" alt="Grubhub" className="brand-image" />
                     </div>
 
                     <div className="col-xs-6 col-md-4 col-xl-2">
-                        <img src="/assets/images/LOGOS_120x50_US_ULTA.png" alt="ULTA" className="brand-image" />
+                        <img src="https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/LOGOS_120x50_US_ULTA.png" alt="ULTA" className="brand-image" />
                     </div>
 
                     <div className="col-xs-6 col-md-4 col-xl-2">
-                        <img src="/assets/images/LOGOS_120x50_US_POTTERYBARN.png" alt="Potteryban" className="brand-image" />
+                        <img src="https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/LOGOS_120x50_US_POTTERYBARN.png" alt="Potteryban" className="brand-image" />
                     </div>
 
                     <div className="col-xs-6 col-md-4 col-xl-2">
-                        <img src="/assets/images/LOGOS_120x50_US_GROUPON.png" alt="Groupon" className="brand-image" />
+                        <img src="https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/LOGOS_120x50_US_GROUPON.png" alt="Groupon" className="brand-image" />
                     </div>
 
                     {/* <div className="text-xs-center brand-logo brand-logo-0 col-xs-6 col-md-4">

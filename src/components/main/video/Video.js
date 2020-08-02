@@ -6,7 +6,8 @@ function Video() {
         
             <div className="bg-video-container">
                 <video id="bg-video" className="bg-video" width="100%" autoplay="" muted="" playsinline="">
-                    <source src="/assets/images/PP_EE_LP_Header_Output_US_desktop.mp4" type="video/mp4" />
+                    {/* <source src="/assets/images/PP_EE_LP_Header_Output_US_desktop.mp4" type="video/mp4" /> */}
+                    <source src="https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/v5/PP_EE_LP_Header_Output_US_desktop.mp4" type="video/mp4" />
                     <track kind="captions" />
                 </video>
             </div>

@@ -9,7 +9,8 @@ function Honey() {
 
                         <div className="col-md-6 text-xs-center honey-container col-xs-12">
                         
-                            <img className="honey-image" src="/assets/images/COINY_Hill.png" alt="Honey-coin" />
+                            {/* <img className="honey-image" src="/assets/images/COINY_Hill.png" alt="Honey-coin" /> */}
+                            <img className="honey-image" src="https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/COINY_Hill.png" alt="Honey-coin" />
                         </div>
 
                         <div className="col-xs-12 col-md-6 honey-container honey-text text-md-left">

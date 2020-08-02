@@ -28,7 +28,8 @@ function Pay() {
 
                     <div className="col-md-6 text-xs-center pay-container col-xs-12">
 
-                        <img className="pay-image" src="/assets/images/PP_EE_QR_Code_US-(White).gif" alt="Groceries" />
+                        {/* <img className="pay-image" src="/assets/images/PP_EE_QR_Code_US-(White).gif" alt="Groceries" /> */}
+                        <img className="pay-image" src="https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/PP_EE_QR_Code_US-(White).gif" alt="Groceries" />
 
                     </div>
                 </div>
