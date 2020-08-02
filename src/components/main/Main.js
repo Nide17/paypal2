@@ -1,5 +1,5 @@
 import React from 'react'
-// import PayPalBusiness from './payPalBusiness/PayPalBusiness';
+
 import Corona from './corona/Corona';
 import Helping from './helping/Helping';
 import Yoga from './yoga/Yoga';
@@ -20,7 +20,6 @@ function Main() {
         <div className="main-content">
             <VideoAbove/>
             <Video />
-            {/* <PayPalBusiness /> */}
             <Business />
             <Corona />
             <Helping />

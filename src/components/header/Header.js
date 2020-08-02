@@ -4,8 +4,7 @@ import './header.css'
 const Header = () => {
     return (
 
-        <div>
-            <header className="pp-header pp-header--enhanced pp-header--active-link--1" data-building-block="organism">
+            <header className="pp-header pp-header--enhanced pp-header--active-link--1 header">
 
                 <div>
 
@@ -32,7 +31,7 @@ const Header = () => {
                                         Personal
             </a>
 
-                                    <div className="submenu-wrapper" id="submenu-Personal" aria-labelledby="header-Personal" role="region">
+                                    {/* <div className="submenu-wrapper" id="submenu-Personal" aria-labelledby="header-Personal" role="region">
 
                                         <div className="container">
                                             <div className="pp-header__subnav">
@@ -72,13 +71,13 @@ const Header = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </li>
 
                                 <li>
                                     <a className="pypl-header__subnav-control main-link" href="/" aria-controls="submenu-Business" aria-expanded="false" data-pa-click="HeaderMainMenu-Link-Business" pa-marked="1">Business</a>
 
-                                    <div className="submenu-wrapper" id="submenu-Business" aria-labelledby="header-Business" role="region">
+                                    {/* <div className="submenu-wrapper" id="submenu-Business" aria-labelledby="header-Business" role="region">
                                         <div className="container">
                                             <div className="pp-header__subnav">
                                                 <div className="submenu-cols submenu-cols--grouped submenu-cols--3">
@@ -136,7 +135,7 @@ const Header = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </li>
                                 <li>
                                     <a href="/" className="main-link" data-pa-click="HeaderMainMenu-Link-Developer" pa-marked="1">Developer</a>
@@ -156,6 +155,7 @@ const Header = () => {
                         <div id="header-buttons" className="header-buttons">
                             <div>
                                 <a id="ul-btn" href="/" className="pypl-btn mpp-btn pypl-btn--outline-white pypl-btn--small" data-pa-click="HeaderMainMenu0-Cta-Log In" role="button" pa-marked="1">Log In</a>
+
                                 <a id="signup-button" href="/" className="pypl-btn mpp-btn pypl-btn--white pypl-btn--small" data-pa-click="HeaderMainMenu1-Cta-Sign Up" role="button" pa-marked="1">Sign Up</a>
                             </div>
                         </div>
@@ -163,7 +163,6 @@ const Header = () => {
                 </div>
 
             </header>
-        </div>
     );
 }
 

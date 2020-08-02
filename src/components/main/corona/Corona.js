@@ -5,6 +5,7 @@ import './corona.css';
 
 function Corona() {
     return (
+
         <div id="covid-banner">
             <div className="row-fluid">
 
