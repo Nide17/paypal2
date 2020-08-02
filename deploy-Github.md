@@ -10,7 +10,7 @@ and run npm run deploy to generate a production build and deploy it to GitHub Pa
 install it as devDependency
 
 2. add as first line in package.json
-"homepage": "http://yuribenjamin.github.io/my-app"
+"homepage": "http://Nide17.github.io/paypal2"
 
 3. 
 
