@@ -76,6 +76,7 @@ header {
 .contain-btn {
     width: 0;
     float: left;
+    padding-right: 20px;
 }
 
 /* ************** */
@@ -121,6 +122,8 @@ header {
     display: inline-block;
     position: relative;
     top: 3px;
+    vertical-align: middle;
+    padding: 0 9px;
 }
 
 .logo-text {
@@ -196,6 +199,7 @@ header {
     position: absolute;
     margin: auto;
     text-align: left;
+    padding: 0 5px;
 }
 
 
@@ -238,6 +242,7 @@ ul {
 .signup-login {
     float: right;
     position: relative;
+    padding-left: 20px;
 }
 
 .signup-login > div {
