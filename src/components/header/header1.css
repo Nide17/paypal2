@@ -1,0 +1,267 @@
+/* ************** */
+/* CONTAINER */
+header {
+    display: block;
+    border-bottom: 0.1px ridge rgb(127, 197, 230);
+}
+
+@media (min-width: 1152px) {
+    .header-section {
+        overflow: hidden;
+        height: 72px;
+        overflow: visible;
+    }
+}
+
+.header-section {
+    font-size: .875rem;
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    padding-top: 22px;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+
+/* ************** */
+/* HEADER CONTAINER */
+@media (min-width: 1152px) {
+    .header-section .header-container {
+        max-width: 1192px;
+    }
+
+    .header-container {
+        max-width: 1192px;
+    }
+}
+
+
+@media (min-width: 752px) {
+    .header-section .header-container {
+        max-width: 1023px;
+    }
+
+    .header-container {
+        max-width: 1023px;
+    }
+}
+
+
+
+
+/* ************** */
+/* MENU BUTTON */
+@media (min-width: 1152px) {
+    .contain-btn {
+        display: none;
+    }
+}
+
+.contain-btn {
+    width: 0;
+    float: left;
+}
+
+/* ************** */
+/* BUTTON ITSELF */
+
+.contain-btn button.btn-menu {
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    touch-action: none;
+    padding-left: 37px;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 1px #fff;
+    padding: 12px 18px;
+    font-size: .75rem;
+    line-height: 12px;
+}
+
+.btn-menu {
+    display: block;
+    position: relative;
+    max-width: 320px;
+    padding: 13px 24px;
+    margin-bottom: 0;
+    background: #0070ba;
+    font-size: .9375rem;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* ************** */
+/* LOGO */
+
+@media (min-width: 1152px) {
+    .logo-container {
+        width: 0;
+        float: left;
+        top: -6px;
+    }
+}
+
+
+.logo-container {
+    width: auto;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    color: #fff;
+}
+
+.logo-text {
+    background-image: url(https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg);
+    color: #fff;
+    width: 136px;
+    height: 43px;
+    display: inline-block;
+    padding: 0;
+    background: transparent url(https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg) center center no-repeat;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position: 0 50%;
+    background-size: contain;
+    overflow: hidden;
+    text-indent: -999em;
+}
+@media (max-width: 1151px) {
+    .logo-container a {
+        display: none;
+    }
+}
+
+/* ************** */
+/* NAVIGATION */
+
+@media (min-width: 1152px) {
+    .main-menu {
+        position: static;
+        display: inline-block;
+        
+    }
+}
+
+.main-menu {
+    position: absolute;
+    margin: auto;
+    text-align: left;
+}
+
+
+/* LIST 1 */
+.header-section>ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.main-menu li a {
+    color: #fff;
+    margin: 0 20px;
+}
+
+ol,
+ul {
+    padding-left: 20px;
+    margin: 0 0 1rem;
+}
+
+/* LIST 2 */
+@media (min-width: 1152px) {
+    .list-2 {
+        display: none;
+    }
+}
+
+.list-2 {
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    padding-top: 30px;
+    width: 86%;
+}
+
+
+
+/* ************** */
+/* SIGN UP LOGIN */
+
+.signup-login {
+    float: right;
+    position: relative;
+}
+
+.signup-login>div {
+    display: flex;
+    flex: 0 1 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: max-content;
+}
+
+/* ************** */
+/* LOGIN */
+
+.signup-login .signlogbtns {
+    display: inline-block;
+    margin: 0 9px;
+    flex: 0 0 auto;
+    padding: 12px 18px;
+    font-size: .73rem;
+    line-height: 12px;
+    position: relative;
+    max-width: 320px;
+    background: #0070ba;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    border: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 1px #fff;
+    display: block;
+}
+
+
+
+/* ************** */
+/* SIGNUP */
+.signup-login .signlogbtns:last-of-type {
+    display: none;
+}
+
+@media (min-width: 1152px) {
+    .signup-login .signlogbtns:last-of-type {
+        display: inline-block;
+    }
+}
+
+.signup-login .signlogbtns {
+    min-width: 84px;
+    display: inline-block;
+    margin-left: 9px;
+    flex: 0 0 auto;
+}
+
+.signlogbtns.signup-btn {
+    background-color: #fff;
+    color: #2c2e2f;
+}
+
+
+@media(max-width: 1024) {
+    .main-menu > ul{
+        text-align: center;
+    }
+}

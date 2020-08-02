@@ -1,11 +1,47 @@
 @media (min-width: 1152px) {
-.pp-header {
-    overflow: hidden;
-    height: 72px;
-    transition: height .3s ease-out;
-    overflow: visible;
+    .pp-header {
+        overflow: hidden;
+        height: 72px;
+        transition: height .3s ease-out;
+        overflow: visible;
+    }
+
+    .menu-button-wrapper {
+        width: 0;
+        float: left;
+        display: none;
+    }
+
+    .logo-container {
+        width: auto;
+        display: inline-block;
+        position: relative;
+        top: 3px;
+    }
+
 }
+
+@media (min-width: 1152px) {
+    .logo-container {
+        width: 0;
+        float: left;
+        top: -6px;
+    }
 }
+
+.logo-container {
+    width: auto;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+.pp-header *,
+.pp-header ::after,
+.pp-header ::before {
+    box-sizing: inherit;
+}
+
 
 @media (max-width: 1151px) {
     nav#main-menu {
@@ -15,22 +51,26 @@
     a#signup-button {
         display: none;
     }
-    .pypl-logo-wrapper {
+
+    .logo-container {
         width: auto;
         display: inline-block;
         /* display: none; */
         position: relative;
         top: 3px;
     }
+
     .header {
         border-bottom: none;
     }
 
+    .menu-button-wrapper {
+        display: inline-block;
     }
 
-    
+}
 
-    @media (max-width: 1151px) {
+@media (max-width: 1151px) {
     .pypl-logo {
         width: 26px;
         height: 30px;
@@ -58,10 +98,9 @@
         text-indent: -999em;
     }
 
-    
+
 }
 
-    
 header {
     font-size: 14px;
     font-size: .875rem;
@@ -92,14 +131,12 @@ header .container {
     padding-right: 24px;
 }
 
-
 .menu-button-wrapper {
     width: 0;
     float: left;
 }
 
-
-.pypl-logo-wrapper {
+.logo-container {
     width: auto;
     /* display: inline-block; */
     display: none;
@@ -127,9 +164,22 @@ header .container {
     display: inline-block;
     position: absolute;
     overflow: hidden;
-    -ms-touch-action: none;
     touch-action: none;
     padding-left: 37px;
+}
+
+.pypl-btn.pypl-btn--small {
+    padding: 12px 18px;
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 12px;
+}
+
+.pypl-btn.pypl-btn--outline-white {
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 1px #fff;
 }
 
 .pypl-btn {
@@ -196,16 +246,6 @@ ul {
     width: 86%;
 }
 
-header a.closer-mobile button,
-header a.main-link,
-header a.main-link:focus,
-header a.main-link:hover {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
-
 .main-menu a,
 .main-menu a:active,
 .main-menu a:focus,
@@ -214,27 +254,6 @@ header a.main-link:hover {
     color: #fff;
 }
 
-header .closer-mobile button,
-header .main-link,
-header .main-link:focus,
-header .main-link:hover {
-    color: #fff;
-    text-transform: uppercase;
-    line-height: 2.7;
-    letter-spacing: 1px;
-    position: relative;
-}
-
-a {
-    color: #0070ba;
-}
-
-a {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
 
 a {
     color: #0070ba;
@@ -251,7 +270,6 @@ a {
     background-color: transparent;
 }
 
-
 header a.closer-mobile button,
 header a.main-link,
 header a.main-link:focus,
@@ -261,8 +279,6 @@ header a.main-link:hover {
     font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
     font-weight: 700;
 }
-
-
 
 header .closer-mobile button,
 header .main-link,
@@ -274,67 +290,6 @@ header .main-link:hover {
     letter-spacing: 1px;
     position: relative;
 }
-
-
-
-header a.closer-mobile button,
-header a.main-link,
-header a.main-link:focus,
-header a.main-link:hover {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
-
-
-
-header .closer-mobile button,
-header .main-link,
-header .main-link:focus,
-header .main-link:hover {
-    color: #fff;
-    text-transform: uppercase;
-    line-height: 2.7;
-    letter-spacing: 1px;
-    position: relative;
-}
-
-header a.closer-mobile button,
-header a.main-link,
-header a.main-link:focus,
-header a.main-link:hover {
-    background-color: transparent;
-    text-decoration: none;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
-
-
-
-header .closer-mobile button,
-header .main-link,
-header .main-link:focus,
-header .main-link:hover {
-    color: #fff;
-    text-transform: uppercase;
-    line-height: 2.7;
-    letter-spacing: 1px;
-    position: relative;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -342,17 +297,11 @@ header .main-link:hover {
     display: inline-block;
 }
 
-
-
-
-
-
-
 @media (min-width: 1152px) {
-.main-menu {
-    position: static;
-    display: inline-block;
-}
+    .main-menu {
+        position: static;
+        display: inline-block;
+    }
 }
 
 .main-menu {
@@ -365,19 +314,27 @@ header .main-link:hover {
 
 
 
-ol, ul {
+ol,
+ul {
     /* padding-left: 0; */
     margin: 0 0 1rem;
 }
 
-.pp-header a.closer-mobile button, .pp-header a.main-link, .pp-header a.main-link:focus, .pp-header a.main-link:hover {
+.pp-header a.closer-mobile button,
+.pp-header a.main-link,
+.pp-header a.main-link:focus,
+.pp-header a.main-link:hover {
     background-color: transparent;
     text-decoration: none;
-    font-family: PayPalSansSmall-Regular,Helvetica Neue,Arial,sans-serif;
+    font-family: PayPalSansSmall-Regular, Helvetica Neue, Arial, sans-serif;
     font-weight: 700;
 }
+
 /*  */
-.pp-header .closer-mobile button, .pp-header .main-link, .pp-header .main-link:focus, .pp-header .main-link:hover {
+.pp-header .closer-mobile button,
+.pp-header .main-link,
+.pp-header .main-link:focus,
+.pp-header .main-link:hover {
     color: #fff;
     text-transform: uppercase;
     line-height: 2.7;
@@ -386,34 +343,39 @@ ol, ul {
 }
 
 @media (min-width: 1152px) {
-.closer-mobile button, .main-link, .main-link:focus, .main-link:hover {
-    padding: 25px;
-    margin: 0 1px;
-    /* letter-spacing: 1px; */
-}
+
+    .closer-mobile button,
+    .main-link,
+    .main-link:focus,
+    .main-link:hover {
+        padding: 25px;
+        margin: 0 1px;
+        /* letter-spacing: 1px; */
+    }
 }
 
 
 
 @media (min-width: 1152px) {
-.submenu-wrapper {
-    position: absolute;
-    left: 0;
-    top: 72px;
-}
-.submenu-wrapper {
-    display: none;
-    width: 100%;
-}
+    .submenu-wrapper {
+        position: absolute;
+        left: 0;
+        top: 72px;
+    }
+
+    .submenu-wrapper {
+        display: none;
+        width: 100%;
+    }
 }
 
 
 @media (min-width: 1152px) {
-.pp-header__subnav {
-    position: relative;
-    padding-left: 0;
-    padding-right: 0;
-}
+    .pp-header__subnav {
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .pp-header__subnav {
@@ -424,22 +386,22 @@ ol, ul {
 
 @media (min-width: 1152px) {
     .pp-header__subnav .submenu-cols {
-    display: flex;
-    padding-top: 10px;
-    justify-content: space-around;
-    align-content: stretch;
-}
+        display: flex;
+        padding-top: 10px;
+        justify-content: space-around;
+        align-content: stretch;
+    }
 }
 
 
 @media (min-width: 1152px) {
-.pp-header__subnav .submenu-col {
-    /* -ms-flex-positive: 1; */
-    flex-grow: 1;
-    width: 25%;
-    max-width: 25%;
-    margin: 0 0 1rem;
-}
+    .pp-header__subnav .submenu-col {
+        /* -ms-flex-positive: 1; */
+        flex-grow: 1;
+        width: 25%;
+        max-width: 25%;
+        margin: 0 0 1rem;
+    }
 }
 
 .pp-header__subnav .submenu-col {
@@ -448,15 +410,16 @@ ol, ul {
 
 
 @media (min-width: 1152px) {
-.pp-header__subnav li {
-    height: 72px;
-}
+    .pp-header__subnav li {
+        height: 72px;
+    }
 }
 
 .pp-header__subnav li {
     display: list-item;
     width: 100%;
 }
+
 /* @media (min-width: 1152px)
 .main-menu li {
     display: inline-block;
@@ -464,41 +427,40 @@ ol, ul {
 
 
 @media (min-width: 1152px) {
-.pp-header__subnav a {
-    padding: 5% 1em 0 0;
-    font-family: PayPalSansSmall-Regular,Helvetica Neue,Arial,sans-serif;
-    font-weight: 400;
-    font-weight: 300;
-    -webkit-font-smoothing: auto;
-    -moz-osx-font-smoothing: auto;
-}
+    .pp-header__subnav a {
+        padding: 5% 1em 0 0;
+        font-family: PayPalSansSmall-Regular, Helvetica Neue, Arial, sans-serif;
+        font-weight: 400;
+        font-weight: 300;
+        -webkit-font-smoothing: auto;
+        -moz-osx-font-smoothing: auto;
+    }
 }
 
 .pp-header__subnav a {
     color: #fff;
     display: block;
     font-size: 15px;
-    font-family: PayPalSansSmall-Regular,Helvetica Neue,Arial,sans-serif;
+    font-family: PayPalSansSmall-Regular, Helvetica Neue, Arial, sans-serif;
     font-weight: 400;
     padding: 10px 0 10px 10px;
 }
 
-.pp-header ol, .pp-header ul {
+.pp-header ol,
+.pp-header ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-
-
 @media (min-width: 1152px) {
-.main-menu__sublist {
-    display: none;
-}
+    .main-menu__sublist {
+        display: none;
+    }
 }
 
 .main-menu__sublist {
     margin-top: 20px;
-    border-top: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
     padding-top: 30px;
     width: 86%;
 }
@@ -511,13 +473,13 @@ ol, ul {
     .main-menu li {
         display: inline-block;
     }
-    }
+}
 
 @media screen and (orientation: landscape) {
-.sublist-cta-wrapper {
-    position: relative;
-    top: 3em;
-}
+    .sublist-cta-wrapper {
+        position: relative;
+        top: 3em;
+    }
 }
 
 .sublist-cta-wrapper {
@@ -528,14 +490,10 @@ ol, ul {
     z-index: -1;
 }
 
-.main-menu a, .main-menu a:active, .main-menu a:focus, .main-menu a:hover, .main-menu a:visited {
-    color: #fff;
-}
-
 .header-buttons>div {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex: 0 1 auto;
+    -ms-flex: 0 1;
     flex: 0 1 auto;
     position: absolute;
     top: 0;
@@ -544,18 +502,21 @@ ol, ul {
     width: max-content;
 }
 
-.pypl-btn.pypl-btn--outline-white {
-    background-color: transparent;
+.main-menu a,
+.main-menu a:active,
+.main-menu a:focus,
+.main-menu a:hover,
+.main-menu a:visited {
     color: #fff;
-    border: 0;
-    box-shadow: 0 0 0 1px #fff, 0 0 0 1px #fff;
 }
+
+
 
 @media (min-width: 1152px) {
 
     .header-buttons .pypl-btn.pypl-btn--small:last-of-type {
-    display: inline-block;
-}
+        display: inline-block;
+    }
 }
 
 .header-buttons .pypl-btn.pypl-btn--small {
@@ -566,19 +527,14 @@ ol, ul {
     flex: 0 0 auto;
 }
 
-.pypl-btn.pypl-btn--small {
-    padding: 12px 18px;
-    font-size: 12px;
-    font-size: .75rem;
-    line-height: 12px;
-}
-
 .pypl-btn.pypl-btn--white {
     background-color: #fff;
     color: #2c2e2f;
 }
 
-.pp-header *, .pp-header ::after, .pp-header ::before {
+.pp-header *,
+.pp-header ::after,
+.pp-header ::before {
     box-sizing: inherit;
 }
 
@@ -591,7 +547,7 @@ ol, ul {
     background: #0070ba;
     font-size: 15px;
     font-size: .9375rem;
-    font-family: PayPalSansSmall-Regular,Helvetica Neue,Arial,sans-serif;
+    font-family: PayPalSansSmall-Regular, Helvetica Neue, Arial, sans-serif;
     font-weight: 700;
     line-height: 22px;
     -webkit-font-smoothing: antialiased;
