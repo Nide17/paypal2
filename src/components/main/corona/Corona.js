@@ -24,12 +24,12 @@ function Corona() {
 
                                         <span className="col-3 mr-0">
                                             <button>
-                                                <i class="fa fa-bank fa-fw"></i>
+                                                <i className="fa fa-bank fa-fw"></i>
                                             </button>
                                         </span>
 
                                         <span className="col-8 ml-2 text-left">Apply for a Paycheck Protection Program Loan &nbsp;
-                        <i class="fa fa-angle-right"></i>
+                        <i className="fa fa-angle-right"></i>
                                         </span>
                                     </div>
                                 </div>
@@ -47,12 +47,12 @@ function Corona() {
 
                                         <span className="col-3 mr-0">
                                             <button>
-                                                <i class="fa fa-building fa-fw"></i>
+                                                <i className="fa fa-building fa-fw"></i>
                                             </button>
                                         </span>
 
                                         <span className="col-8 ml-2 text-left">Get support for your small business &nbsp;
-                        <i class="fa fa-angle-right"></i>
+                        <i className="fa fa-angle-right"></i>
                                         </span>
                                     </div>
 
@@ -73,12 +73,12 @@ function Corona() {
 
                                         <span className="col-3 mr-0">
                                             <button>
-                                                <i class="fa fa-support fa-fw"></i>
+                                                <i className="fa fa-support fa-fw"></i>
                                             </button>
                                         </span>
 
                                         <span className="col-8 ml-2 text-left">Find the help you need in our Help Center &nbsp;
-                        <i class="fa fa-angle-right"></i>
+                        <i className="fa fa-angle-right"></i>
                                         </span>
                                     </div>
 
@@ -98,12 +98,12 @@ function Corona() {
 
                                         <span className="col-3 mr-0">
                                             <button>
-                                                <i class="fa fa-book fa-fw"></i>
+                                                <i className="fa fa-book fa-fw"></i>
                                             </button>
                                         </span>
 
                                         <span className="col-8 ml-2 text-left">Learn about our ongoing efforts in the Newsroom &nbsp;
-                        <i class="fa fa-angle-right"></i>
+                        <i className="fa fa-angle-right"></i>
                                         </span>
                                     </div>
 

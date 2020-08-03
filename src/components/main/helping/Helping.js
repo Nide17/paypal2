@@ -11,9 +11,9 @@ function Helping() {
 
                     <div className="col-xs-12 col-md-6 thumbnail-container text-md-left text-xs-center">
 
-                        <h2 class="thumbnail-head">Helping you come together</h2>
+                        <h2 className="thumbnail-head">Helping you come together</h2>
 
-                        <p class="thumbnail-paragraph"> We’re all finding ways to come together. Now watch how we’ve been there to help, from securely paying your online Pilates instructor, to getting take out touch free.
+                        <p className="thumbnail-paragraph"> We’re all finding ways to come together. Now watch how we’ve been there to help, from securely paying your online Pilates instructor, to getting take out touch free.
 </p>
                     </div>
 
@@ -22,7 +22,7 @@ function Helping() {
                         <div className="video-image">
                             <div>
                                 <button className="video-image-media-btn play-button" type="button">
-                                    <span class="fa fa-play-circle-o">
+                                    <span className="fa fa-play-circle-o">
                                     </span>
                                     <span className="media-btn-content"></span>
                                 </button>

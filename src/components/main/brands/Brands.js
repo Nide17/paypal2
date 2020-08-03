@@ -1,11 +1,30 @@
-import React from 'react'
+import React, { Component } from 'react'
+import brandsImages from './brandsData'
 import './brands.css'
+import RenderBrand from './RenderBrand';
 
-function Brands() {
+class Brands extends Component {
+
+    constructor() {
+        super();
+        this.state = {
+            images: brandsImages
+        }
+    }
+
+    render() {
+
+        const allBrands = this.state.images.map((brand) => {
+            return (
+                <div className="col-xs-6 col-md-4 col-xl-2 brand-logo" key={brand.id}>
+                <RenderBrand brand={brand} />
+                </div>
+            )
+        })
+
     return (
 
         <section className="brand-section logo-section ">
-
             <div className="container">
 
                 <div className="row brand-header">
@@ -15,37 +34,13 @@ function Brands() {
                 <hr />
 
                 <div className="row brand-container">
-
-                    <div className="col-xs-6 col-md-4 col-xl-2 brand-logo">
-                        <img src="/assets/images/LOGOS_120x50_US_HULU.png" alt="Hulu" className="brand-image" />
-                        {/* <img src="/assets/images/LOGOS_120x50_US_HULU.png" alt="Hulu" className="brand-image" /> */}
-                    </div>
-
-                    <div className="col-xs-6 col-md-4 col-xl-2">
-                        <img src="/assets/images/LOGOS_120x50_SPOTIFY.png" alt="Spotify" className="brand-image" />
-                    </div>
-
-                    <div className="col-xs-6 col-md-4 col-xl-2">
-                        <img src="/assets/images/LOGOS_120x50_US_GRUBHUB.png" alt="Grubhub" className="brand-image" />
-                    </div>
-
-                    <div className="col-xs-6 col-md-4 col-xl-2">
-                        <img src="/assets/images/LOGOS_120x50_US_ULTA.png" alt="ULTA" className="brand-image" />
-                    </div>
-
-                    <div className="col-xs-6 col-md-4 col-xl-2">
-                        <img src="/assets/images/LOGOS_120x50_US_POTTERYBARN.png" alt="Potteryban" className="brand-image" />
-                    </div>
-
-                    <div className="col-xs-6 col-md-4 col-xl-2">
-                        <img src="/assets/images/LOGOS_120x50_US_GROUPON.png" alt="Groupon" className="brand-image" />
-                    </div>
-
+                {allBrands}
                 </div>
             </div>
 
         </section>
     )
+}
 }
 
 export default Brands
