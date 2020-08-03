@@ -15,8 +15,7 @@ const Nav = () => {
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent2">
-
-
+                
                     <ul className="navbar-nav mr-auto">
 
 

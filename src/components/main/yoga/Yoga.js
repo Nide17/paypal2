@@ -1,5 +1,4 @@
 import React from 'react'
-import './yoga.css'
 
 const Yoga = () => {
     return (

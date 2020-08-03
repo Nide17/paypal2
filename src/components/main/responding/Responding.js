@@ -1,5 +1,4 @@
 import React from 'react'
-import './responding.css'
 
 const Responding = () => {
     return (

@@ -1,5 +1,4 @@
 import React from 'react'
-import './business.css'
 
 const Business = () => {
     return (

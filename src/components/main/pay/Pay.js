@@ -1,5 +1,4 @@
 import React from 'react'
-import './pay.css'
 
 const Pay = () => {
     return (

@@ -1,5 +1,4 @@
 import React from 'react'
-import './spend.css'
 
 const Spend = () => {
     return (

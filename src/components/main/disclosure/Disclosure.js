@@ -1,9 +1,8 @@
 import React from 'react'
-import './disclosure.css'
 
 const Disclosure = () => {
-    return (
 
+    return (
         <section className="disclosure">
 
             <div className="container">

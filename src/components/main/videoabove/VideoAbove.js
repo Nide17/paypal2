@@ -1,5 +1,4 @@
 import React from 'react'
-import './videoabove.css'
 
 const VideoAbove = () => {
     return (
@@ -10,7 +9,7 @@ const VideoAbove = () => {
                 <div className="row">
 
                     <div className="info-hero-container col-xs-12 col-lg-8 center-block text-xs-center">
-                        <h1 className="info-hero-head">
+                        <h1 className="info-hero-head" style={{fontSize: '.6em', margin: '.9em 0'}}>
                             <b>With ways to shop, pay and chip-in, we're here for you.</b>
                         </h1>
                         <a href="/" target="_self" className="btn-hero" role="button">
