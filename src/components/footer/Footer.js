@@ -1,142 +1,117 @@
-import React from 'react'
-// import './footer.css'
-import './footer1.css'
+import React, { Component } from 'react'
+import './footer1.css';
 
-function Footer() {
-    return (
-        <footer className="footer">
+class Footer extends Component {
 
-            <div className="container">
+    constructor() {
+        super()
+        this.state = {
+            corplinks: [
+                'About', 'Newsroom', 'Jobs', 'Investor Relations', 'Social Innovation', 'Public', 'Policy', 'Sitemap', 'Enterprise', 'Partners'
+            ],
 
-                <div className="row row-flag">
-                    <div className="col-12 col-xl-4">
+            footerMainLinks: [
+                'Help', 'Contact', 'Fees', 'Security', 'Apps', 'Shop'
+            ]
+        }
+    }
 
-                        <ul className="footer-main">
+    render() {
+        console.log(this.state.corplinks);
+        const allCorpLinks = this.state.corplinks.map((corpLink) => {
+            return (
+                <li>
+                    <a href="/">{corpLink}</a>
+                </li>
+            )
+        })
 
-                            <li className="country-selector">
-                                <a
-                                    href="/"
-                                    title="See all countries/regions"
-                                    className="country lazy-load-flag US">
+        const footerMainAll = this.state.footerMainLinks.map((footerMain) => {
+            return (
+                <li>
+                    <a href="/">{footerMain}</a>
+                </li>
+            )
+        })
 
-                                    <img src="./us-flag.png" alt="us-flag" />
+        return (
+            <footer className="footer">
 
-                                </a>
+                <div className="container">
 
-                            </li>
+                    <div className="row row-flag">
+                        <div className="col-12 col-xl-4">
 
-                        </ul>
+                            <ul className="footer-main">
+
+                                <li className="country-selector">
+                                    <a
+                                        href="/"
+                                        title="See all countries/regions"
+                                        className="country lazy-load-flag US">
+
+                                        <img src="./us-flag.png" alt="us-flag" />
+
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div className="col-12 col-xl-8">
+
+                            <ul className="footer-main text-left">
+                                {footerMainAll}
+                            </ul>
+                        </div>
                     </div>
 
-                    <div className="col-12 col-xl-8">
+                    <div className="row">
+                        <div className="col-12">
 
-                        <ul className="footer-main text-left">
-                            <li>
-                                <a href="/">Help</a>
-                            </li>
-                            <li>
-                                <a href="/">Contact</a>
-                            </li>
-                            <li>
-                                <a href="/">Fees</a>
-                            </li>
-                            <li>
-                                <a href="/">Security</a>
-                            </li>
-                            <li>
-                                <a href="/">Apps</a>
-                            </li>
-                            <li>
-                                <a href="/">Shop</a>
-                            </li>
+                            <hr className="hidden-lg-down" />
 
-                        </ul>
+                        </div>
                     </div>
+
+                    <div className="row">
+
+                        <div className="col-12 col-xl-8">
+
+                            <ul className="footer-secondary footer-corplinks text-left">
+                                {allCorpLinks}
+                            </ul>
+
+                        </div>
+
+                        <div className="col-12 col-xl-4">
+                            <ul className="footer-tertiary copyright-section">
+                                <li className="footer-copyright">© 1999–2020 </li>
+
+                                <li>
+                                    <a href="/">Privacy</a>
+                                </li>
+
+                                <li>
+                                    <a href="/">Legal</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-12">
+                            <p className="footer-notes"></p>
+                        </div>
+                    </div>
+
                 </div>
 
-
-                <div className="row">
-                    <div className="col-12">
-
-                        <hr className="hidden-lg-down" />
-
-                    </div>
-                </div>
-
-
-                <div className="row">
-
-                    <div className="col-12 col-xl-8">
-
-                        <ul className="footer-secondary footer-corplinks text-left">
-                            <li>
-                                <a href="/" target="_blank" rel="noopener noreferrer">About</a>
-                            </li>
-
-                            <li>
-                                <a href="/" target="_blank" rel="noopener noreferrer">Newsroom</a>
-                            </li>
-
-                            <li>
-                                <a href="/" target="_blank" rel="noopener noreferrer">Jobs</a>
-                            </li>
-
-                            <li>
-                                <a href="/">Investor Relations</a>
-                            </li>
-
-                            <li>
-                                <a href="/">Social Innovation</a>
-                            </li>
-
-                            <li>
-                                <a href="/">Public Policy</a>
-                            </li>
-
-                            <li>
-                                <a href="/">Sitemap</a>
-                            </li>
-
-                            <li>
-                                <a href="/">Enterprise</a>
-                            </li>
-
-                            <li>
-                                <a href="/">Partners</a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                    <div className="col-12 col-xl-4">
-                        <ul className="footer-tertiary copyright-section">
-                            <li className="footer-copyright">© 1999–2020 </li>
-
-                            <li>
-                                <a href="/">Privacy</a>
-                            </li>
-
-                            <li>
-                                <a href="/">Legal</a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-                </div>
-
-
-                <div className="row">
-                    <div className="col-12">
-                        <p className="footer-notes"></p>
-                    </div>
-                </div>
-
-            </div>
-
-        </footer>
-    );
+            </footer>
+        );
+    }
 }
-
 export default Footer

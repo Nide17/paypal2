@@ -1,7 +1,7 @@
 import React from 'react'
 import './disclosure.css'
 
-function Disclosure() {
+const Disclosure = () => {
     return (
 
         <section className="disclosure">

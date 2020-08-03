@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import brandsImages from './brandsData'
 import './brands.css'
-import RenderBrand from './RenderBrand';
 
 class Brands extends Component {
 
@@ -13,11 +12,10 @@ class Brands extends Component {
     }
 
     render() {
-
         const allBrands = this.state.images.map((brand) => {
             return (
                 <div className="col-xs-6 col-md-4 col-xl-2 brand-logo" key={brand.id}>
-                <RenderBrand brand={brand} />
+                <img src={brand.src} alt={brand.alt} className="brand-image" />
                 </div>
             )
         })

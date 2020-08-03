@@ -15,10 +15,10 @@ import Video from './video/Video';
 import VideoAbove from './videoabove/VideoAbove';
 import Business from './payPalBusiness/Business';
 
-function Main() {
+const Main = () => {
     return (
         <div className="main-content">
-            <VideoAbove/>
+            <VideoAbove />
             <Video />
             <Business />
             <Corona />

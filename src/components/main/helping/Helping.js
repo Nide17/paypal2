@@ -1,11 +1,10 @@
 import React from 'react'
 import './helping.css'
 
-function Helping() {
+const Helping = () => {
     return (
 
         <section className="video-thumbnail">
-
             <div className="container">
                 <div className="row row-helping">
 

@@ -4,11 +4,11 @@ import './video.css'
 class Video extends Component {
 
     constructor() {
-        super();
+        super()
 
         this.state = {
             headerVideo: ''
-        };   
+        }
     }
 
     componentDidMount() {

@@ -1,7 +1,7 @@
 import React from 'react'
 import './business.css'
 
-function Business() {
+const Business = () => {
     return (
 
         <section className="notification-ribbon">

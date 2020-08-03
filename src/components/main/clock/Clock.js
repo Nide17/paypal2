@@ -1,7 +1,7 @@
 import React from 'react'
 import './clock.css'
 
-function Clock() {
+const Clock = () => {
     return (
 
         <div className="clock">
