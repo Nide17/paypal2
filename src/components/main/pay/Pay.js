@@ -2,7 +2,7 @@ import React from 'react'
 
 const Pay = () => {
     return (
-        <section className="pay-section">
+        <section className="pay-section reverse-render">
 
             <div className="container">
                 <div className="row">
@@ -10,6 +10,7 @@ const Pay = () => {
 
                         <h2 className="pay-head">
                             <span className="new-badge">New</span>
+                            <br />
                             <br />
                             Pay touch-free
                         </h2>

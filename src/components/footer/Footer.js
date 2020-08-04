@@ -68,9 +68,7 @@ class Footer extends Component {
 
                     <div className="row">
                         <div className="col-12">
-
                             <hr className="hidden-lg-down" />
-
                         </div>
                     </div>
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import brandsImages from './brandsData'
-import './brands.css'
 
 class Brands extends Component {
 

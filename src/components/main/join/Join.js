@@ -1,5 +1,4 @@
 import React from 'react'
-import './join.css'
 
 const Join = () => {
     return (

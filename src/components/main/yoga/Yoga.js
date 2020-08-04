@@ -2,7 +2,7 @@ import React from 'react'
 
 const Yoga = () => {
     return (
-        <section className="theme-background-color-white reverse-render yoga-section">
+        <section className="reverse-render yoga-section">
 
             <div className="container">
 
@@ -19,7 +19,7 @@ const Yoga = () => {
                         </p>
                     </div>
 
-                    <div className="col-md-6 text-xs-center col-xs-12"><img className="yoga-section-image" src="/assets/images/Purple_Yoga.png" alt="Send money in seconds" />
+                    <div className="col-xs-12 col-md-6 text-xs-center"><img className="yoga-section-image" src="/assets/images/Purple_Yoga.png" alt="Send money in seconds" />
                     </div>
 
                 </div>

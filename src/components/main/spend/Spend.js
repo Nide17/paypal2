@@ -2,7 +2,6 @@ import React from 'react'
 
 const Spend = () => {
     return (
-        <div>
             <section className="spend-section">
 
                 <div className="container">
@@ -26,7 +25,6 @@ const Spend = () => {
                 </div>
 
             </section>
-        </div>
     )
 }
 

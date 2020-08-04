@@ -1,5 +1,4 @@
 import React from 'react'
-import './honey.css'
 
 const Honey = () => {
     return (
@@ -16,6 +15,7 @@ const Honey = () => {
                             <h2 className="honey-head">
 
                             <span className="new-badge">New</span>
+                                <br />
                                 <br />
                                 Save more when you shop online with Honey</h2>
 
