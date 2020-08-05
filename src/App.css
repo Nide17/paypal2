@@ -7,6 +7,7 @@ body {
 /* ------ */
 /* MIX */
 /* ------ */
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -75,11 +76,12 @@ li {
     display: inline;
 }
 
-ol,
+/* ol,
 ul {
     padding-left: 20px;
     margin: 0 0 1rem;
-}
+} */
+
 
 
 /* NAV IS DOWN AT THE END */
@@ -88,6 +90,9 @@ ul {
 /* VIDEOABOVE */
 .custom-infohero {
     background-repeat: repeat;
+}
+.header-section+div>section.info-hero{
+    padding-top: 72px;
 }
 
 .info-hero {
@@ -113,13 +118,13 @@ ul {
     z-index: 1;
 }
 
+h1.info-hero-head {
+        font-size: 1.57142857rem;
+        line-height: 2.25rem;
+        font-family: "PayPalSansBig-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 300;
+    }
 
-.btn-hero {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-}
 
 .btn-hero:hover,
 .btn-hero:link,
@@ -132,10 +137,12 @@ ul {
 
 .btn-hero {
     display: block;
-    margin: 30px auto 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
     float: none;
     position: relative;
-    max-width: 310px;
+    max-width: 320px;
     padding: 13px 24px;
     background: #0070ba;
     font-size: 15px;
@@ -185,21 +192,22 @@ video {
 .notification-ribbon {
     margin: 0;
     background-color: #0d3685;
-    padding: 40px 0;
+    padding: 30px 0;
     text-align: center;
 }
+
 
 .notification-ribbon h4 {
     color: #fff;
     font-size: 21px;
     line-height: 1.875rem;
     vertical-align: middle;
-    float: right;
-    margin-right: 0;
+    /* float: right;
+    margin-right: 0; */
 }
 
 .btn-round {
-    margin: auto;
+    margin: 18px 0;
     position: relative;
     display: flex;
     background: #0070ba;
@@ -239,21 +247,6 @@ video {
 
 .containerCentered {
     padding: 2% 9%;
-}
-
-.containerCentered h4 {
-    font-size: 1.5rem;
-    line-height: 1.2rem;
-    font-weight: 700;
-    color: #434647;
-    padding-bottom: 15px;
-}
-
-.containerCentered p {
-    font-size: 1.02rem;
-    line-height: 1.2rem;
-    color: #434647;
-    padding-bottom: 20px;
 }
 
 .links .link a {
@@ -732,17 +725,17 @@ a.responding-link:hover {
 
 .join.custom-join .join-head {
     font-size: 2.14285714rem;
-    line-height: 40px;
+    line-height: 2.5rem;
     color: #fff;
     font-family: "PayPalSansSmall-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .join-btn {
     display: block;
     position: relative;
-    max-width: 300px;
-    padding: 12px 20px;
+    max-width: 320px;
+    padding: 13px 24px;
     margin-bottom: 0;
     font-size: 14px;
     font-size: .9375rem;
@@ -778,23 +771,18 @@ a.responding-link:hover {
 }
 
 .join-head {
-    padding-bottom: 18px;
+    padding-bottom: 1.5rem;
     line-height: 25px;
 }
 
-.join-head b {
-    font-weight: bold;
-    font-size: 1.8rem;
-    font-family: "PayPalSansBig-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    line-height: 30px;
-}
+
 
 
 /* ----------- */
 /* CLOCK */
 
 .clock {
-    height: 20vh;
+    height: 19.5vh;
     color: black;
     background-color: #00A8EA;
     display: flex;
@@ -952,17 +940,12 @@ a.lazy-load-flag {
 
 /* ************** */
 /* HEADER */
-header {
-    display: block;
-    border-bottom: 0.1px ridge rgb(127, 197, 230);
-}
-
 .header-section {
     font-size: .875rem;
-    text-align: left;
+    text-align: center;
     position: absolute;
     width: 100%;
-    padding-top: 22px;
+    padding-top: 18px;
     z-index: 2;
     box-sizing: border-box;
 }
@@ -977,6 +960,7 @@ header {
         overflow: hidden;
         height: 72px;
         overflow: visible;
+        border-bottom: .3px ridge #88b5f8;
     }
 }
 
@@ -1011,10 +995,6 @@ header {
 }
 
 @media(max-width: 1151px) {
-    header {
-        border-bottom: none;
-    }
-
     .main-menu .list-1 a {
         display: none;
     }
@@ -1050,7 +1030,7 @@ header {
 .contain-btn {
     width: 0;
     float: left;
-    padding-right: 20px;
+    /* padding-right: 20px; */
 }
 
 /* ************** */
@@ -1061,7 +1041,7 @@ header {
     position: absolute;
     overflow: hidden;
     touch-action: none;
-    padding-left: 37px;
+    padding-left: 35px;
     background-color: transparent;
     color: #eaeced;
     border: 0;
@@ -1074,7 +1054,7 @@ header {
     display: block;
     position: relative;
     max-width: 320px;
-    padding: 13px 24px;
+    padding: 12px 18px;
     margin-bottom: 0;
     background: #0070ba;
     font-size: .9375rem;
@@ -1104,7 +1084,7 @@ header {
     width: 136px;
     height: 43px;
     display: inline-block;
-    /* padding-top: 18px; */
+    padding: 0;
     background: transparent url(https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg) center center no-repeat;
     background-clip: border-box;
     background-origin: padding-box;
@@ -1114,37 +1094,21 @@ header {
     text-indent: -999em;
 }
 
-@media (max-width: 1152px) {
-    .logo-container {
-        width: 0;
-        float: center;
-        top: -6px;
-    }
-
-    .logo-text {
-        width: 26px;
-        height: 30px;
-        background-size: cover;
-        background-position: center;
-        background-clip: content-box;
-        background-origin: content-box;
-    }
-
-    .header-section {
-        text-align: center;
-    }
-
-    .logo-text {
-        width: 36px;
-        height: 43px;
-        background-position: 0 50%;
-        background-size: cover;
-    }
-}
 
 .logo-url {
     background-image: url(https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg);
 }
+
+@media (max-width: 1151px) {
+    .logo-text {
+        width: 26px;
+        height: 30px;
+        background-size: cover;
+        background-position: left;
+        background-clip: content-box;
+        background-origin: content-box;
+    }
+    }
 
 /* ************** */
 /* NAVIGATION */
@@ -1152,16 +1116,16 @@ header {
     .main-menu {
         position: static;
         display: inline-block;
-
     }
 }
 
-.main-menu {
+/* .main-menu {
     position: absolute;
-    margin: auto;
+    left: 0;
+    top: 0;
     text-align: left;
-    padding: 0 5px;
-}
+    display: none;
+} */
 
 
 /* LIST 1 */
@@ -1175,10 +1139,32 @@ header {
     margin: 0 20px;
 }
 
+.header-section a.main-link, .header-section a.main-link:focus, .header-section a.main-link:hover {
+    background-color: transparent;
+    text-decoration: none;
+    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+}
+
+.main-menu a, .main-menu a:active, .main-menu a:focus, .main-menu a:hover, .main-menu a:visited {
+    color: #fff;
+}
+
+.header-section .main-link, .header-section .main-link:focus, .header-section .main-link:hover {
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 2.7;
+    letter-spacing: 1px;
+    position: relative;
+}
+
 /* LIST 2 */
 @media (min-width: 1152px) {
     .list-2 {
         display: none;
+    }
+    .logo-container {
+        float: left;
     }
 }
 
@@ -1193,18 +1179,19 @@ header {
 /* SIGN UP LOGIN */
 
 .signup-login {
+    width: 0;
     float: right;
-    position: relative;
-    padding-left: 20px;
+    position: static;
+    text-align: right;
 }
 
 .signup-login>div {
     display: flex;
-    /* flex: 0 1 auto; */
+    flex: 0 1 auto;
     position: absolute;
-    top: 0;
-    right: 0;
-    /* width: max-content; */
+    top: 18px;
+    right: 5%;
+    width: max-content;
 }
 
 /* ************** */
@@ -1214,7 +1201,7 @@ header {
     display: inline-block;
     flex: 0 0 auto;
     padding: 12px 18px;
-    font-size: .73rem;
+    font-size: .75rem;
     line-height: 12px;
     position: relative;
     max-width: 320px;
@@ -1229,6 +1216,7 @@ header {
     background-color: transparent;
     box-shadow: 0 0 0 1px #fff, 0 0 0 1px #fff;
     display: block;
+    margin-bottom: 0;
 }
 
 /* ************** */
@@ -1262,8 +1250,14 @@ header {
     }
 }
 
+.main-menu ul {
+    padding-right: 0;
+}
 
-
+.header-section ol, .header-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
 
 /* RESPONSIVENESS */
 
@@ -1317,12 +1311,11 @@ header {
 }
 
 @media (min-width: 752px) {
-
     .info-hero h1 {
-        font-size: 3.75rem;
+        font-size: 3.5rem;
         line-height: 4.5rem;
         font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-        font-weight: 400;
+        font-weight: 300;
     }
 }
 
@@ -1343,7 +1336,6 @@ header {
 }
 
 @media (min-width: 752px) {
-
     .info-hero-container {
         font-size: 3.75rem;
         line-height: 4.5rem;
@@ -1364,6 +1356,9 @@ header {
     .text-white::before {
         content: "Looking for PayPal for Business? Whether you're local or global, we're here to support you"
     }
+    .join-paragragraph::before {
+        content: "Join the global community of PayPal users who are sending, spending and receiving money securely every day"
+    }
 
     .btn-round {
         padding: 0;
@@ -1377,7 +1372,7 @@ header {
         max-width: 1380px;
     }
 
-    .notification-ribbon a {
+    /* .notification-ribbon a {
         float: left;
         vertical-align: middle;
     }
@@ -1385,13 +1380,12 @@ header {
     .notification-ribbon h4 {
         float: right;
         vertical-align: middle;
-    }
+    } */
 }
 
 @media screen and (max-width: 1119px) and (min-width: 768px) {
     .notification-ribbon a {
         float: none;
-        text-align: center;
     }
 
     .notification-ribbon h4 {
@@ -1444,6 +1438,14 @@ header {
         font-size: .9rem;
         line-height: 1.5;
         padding-bottom: 20px;
+    }
+    .logo-container {
+        width: auto;
+        display: inline-block;
+        position: relative;
+        top: 3px;
+        vertical-align: middle;
+        padding: 0 9px;
     }
 }
 
@@ -1525,6 +1527,13 @@ header {
     .honey-image {
         margin-bottom: 30px;
     }
+    .disclosure {
+        font-size: .92rem;
+        font-weight: 900;
+        font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+
+    }
 }
 
 @media screen and (max-width: 751px) and (min-width: 320px) {
@@ -1533,6 +1542,16 @@ header {
         font-size: 1.21428571rem;
         position: initial;
         padding: 18px 13px 18px 13px;
+    }
+    .footer ul {
+        text-align: center;
+    }
+    .notification-ribbon h4 {
+        font-size: 1.3;
+        line-height: 1.6;
+        font-weight: 400;
+        text-align: center;
+        float: none;
     }
 }
 
@@ -1594,6 +1613,23 @@ header {
         content: "Looking for PayPal for Business?"
     }
 
+    .join-paragragraph::before {
+        content: "Join the global community of 325 million PayPal users"
+    }
+    .containerCentered h4 {
+        font-size: 1.3rem;
+        line-height: 1.6;
+        font-weight: 700;
+        color: #434647;
+        padding-bottom: 15px;
+    }
+    .containerCentered p {
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+        color: #434647;
+        padding-bottom: 20px;
+        font-weight: 900;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1634,4 +1670,5 @@ header {
         font-size: 1.57142857rem;
         border-radius: 10px;
     }
+    
 }

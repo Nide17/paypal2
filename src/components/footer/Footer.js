@@ -85,11 +85,9 @@ class Footer extends Component {
                         <div className="col-12 col-xl-4">
                             <ul className="footer-tertiary copyright-section">
                                 <li className="footer-copyright">© 1999–2020 </li>
-
                                 <li>
                                     <a href="/">Privacy</a>
                                 </li>
-
                                 <li>
                                     <a href="/">Legal</a>
                                 </li>
