@@ -48,7 +48,6 @@ class Footer extends Component {
                                         href="/"
                                         title="See all countries/regions"
                                         className="country lazy-load-flag US">
-
                                         <img src="./us-flag.png" alt="us-flag" />
 
                                     </a>

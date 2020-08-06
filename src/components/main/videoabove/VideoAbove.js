@@ -8,7 +8,7 @@ const VideoAbove = () => {
 
                 <div className="row">
 
-                    <div className="info-hero-container col-xs-12 col-lg-8 center-block text-xs-center">
+                    <div className="info-hero-container col-xs-12 col-md-8 col-lg-10 center-block text-xs-center">
                         <h1 className="info-hero-head">
                             <b>With ways to shop, pay and chip-in, we're here for you.</b>
                         </h1>
