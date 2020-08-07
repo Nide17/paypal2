@@ -9,8 +9,6 @@ body {
 /* ------ */
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
 }
@@ -100,8 +98,6 @@ h1.info-hero-head {
     font-family: "PayPalSansBig-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
     font-weight: 300;
 }
-
-
 .btn-hero:hover,
 .btn-hero:link,
 .btn-hero:active,
@@ -141,7 +137,6 @@ h1.info-hero-head {
     font-family: "PayPalSansSmall-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
     font-weight: 400;
 }
-
 
 /* ---------- */
 /* VIDEO */
@@ -208,7 +203,6 @@ video {
 .notification-ribbon a:hover.btn-round {
     text-decoration: none;
 }
-
 
 /* --------- */
 /* CORONA */
@@ -1144,11 +1138,10 @@ a.lazy-load-flag {
     .container,
     .header-section .header-container {
         max-width: 1151px;
-
-        margin-left: auto;
+        /* margin-left: auto;
         margin-right: auto;
         padding-left: 48px;
-        padding-right: 48px;
+        padding-right: 48px; */
     }
     .info-hero {
         padding-top: 112px;
@@ -1163,7 +1156,7 @@ a.lazy-load-flag {
 @media (min-width: 1152px) {
     .container,
     .header-section .header-container {
-        max-width: 1192px;
+        max-width: 100%;
     }
     .header~* {
         position: relative;
@@ -1193,7 +1186,11 @@ a.lazy-load-flag {
         display: inline-block;
     }
 }
-
+@media (min-width: 1200px) {
+.container {
+    max-width: 90%;
+}
+}
 /* ---------------------------------------------------------- */
 /* small: 414 OR LESS */
 @media screen and (max-width: 414px) {
@@ -1338,8 +1335,8 @@ a.lazy-load-flag {
     .pay-section .container .row,
     .honey .container .row,
     .spend-section .container .row {
-        margin-left: -15px;
-        margin-right: -15px;
+        /* margin-left: -15px;
+        margin-right: -15px; */
         padding-left: 7px;
     }
 

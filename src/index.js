@@ -4,6 +4,8 @@ import App from './App';
 import WebFont from 'webfontloader';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+
 
 WebFont.load({
   google: {
