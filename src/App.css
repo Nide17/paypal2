@@ -96,8 +96,6 @@ h1.info-hero-head {
     font-family: "PayPalSansBig-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
     font-weight: 300;
 }
-
-
 .btn-hero:hover,
 .btn-hero:link,
 .btn-hero:active,
@@ -106,7 +104,6 @@ h1.info-hero-head {
     color: #0d3685;
     text-decoration: none;
 }
-
 .btn-hero {
     display: block;
     margin-left: auto;
@@ -751,6 +748,14 @@ a.responding-link:hover {
 
 /* ----------- */
 /* DISCLOSURE */
+.disclosure {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.disclosure .container {
+    text-align: left;
+}
 
 sub,
 sup {
@@ -819,7 +824,7 @@ sup {
     overflow: hidden;
     /* width: 60px;
     height: 28px; */
-    margin: 0 0 0 78%;
+    float: right;
     vertical-align: middle;
     /* text-indent: 999em;
     text-align: right; */
@@ -852,6 +857,7 @@ sup {
     line-height: 1.6;
     margin-bottom: 0;
     font-weight: 900;
+    /* text-align: right; */
 }
 
 footer .footer-tertiary .footer-copyright {
@@ -1116,24 +1122,20 @@ footer .footer-tertiary .footer-copyright {
 
 /* 768 or larger */
 @media(min-width: 768px) {
+    .notification-ribbon .container {
+        max-width: 100%;
+    }
     .container {
         max-width: 1023px;
     }
-
     .text-white::before {
         content: "Looking for PayPal for Business? Whether you're local or global, we're here to support you"
     }
-
     .join-paragragraph::before {
         content: "Join the global community of PayPal users who are sending, spending and receiving money securely every day"
     }
-
     .btn-round {
         padding: 0;
-    }
-
-    .notification-ribbon .container {
-        max-width: 100%;
     }
 
 }
@@ -1166,6 +1168,13 @@ footer .footer-tertiary .footer-copyright {
     .header-section .header-container {
         max-width: 1192px;
     }
+    .footer .footer-tertiary,
+    .footer .footer-tertiary a,
+    .footer .footer-main,
+    .footer .footer-main a {
+        text-align: right;
+    }
+
     .header~* {
         position: relative;
         top: 0;
@@ -1336,11 +1345,6 @@ footer .footer-tertiary .footer-copyright {
         line-height: 1.6;
         color: #434647;
         padding-bottom: 10px;
-    }
-
-    .disclosure {
-        padding: 40px 0;
-        background-color: #fff;
     }
     .disclosure .container {
         text-align: left;
