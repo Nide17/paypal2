@@ -39,17 +39,15 @@ class Footer extends Component {
                 <div className="container">
 
                     <div className="row row-flag">
-                        <div className="col-12 col-xl-4">
+                        <div className="col-12 col-lg-3">
 
                             <ul className="footer-main">
 
                                 <li className="country-selector">
                                     <a
                                         href="/"
-                                        title="See all countries/regions"
                                         className="country lazy-load-flag US">
-                                        <img src="./us-flag.png" alt="us-flag" />
-
+                                        <img src="/assets/images/sprite_countries_flag4.png" alt="us flag"/>
                                     </a>
 
                                 </li>
@@ -57,9 +55,9 @@ class Footer extends Component {
                             </ul>
                         </div>
 
-                        <div className="col-12 col-xl-8">
+                        <div className="col-12 col-lg-9">
 
-                            <ul className="footer-main text-left">
+                            <ul className="footer-main text-md-left">
                                 {footerMainAll}
                             </ul>
                         </div>
@@ -73,15 +71,15 @@ class Footer extends Component {
 
                     <div className="row">
 
-                        <div className="col-12 col-xl-8">
+                        <div className="col-12 col-lg-9">
 
-                            <ul className="footer-secondary footer-corplinks text-left">
+                            <ul className="footer-secondary footer-corplinks text-md-left">
                                 {allCorpLinks}
                             </ul>
 
                         </div>
 
-                        <div className="col-12 col-xl-4">
+                        <div className="col-12 col-lg-3">
                             <ul className="footer-tertiary copyright-section">
                                 <li className="footer-copyright">© 1999–2020 </li>
                                 <li>

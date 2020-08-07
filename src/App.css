@@ -13,6 +13,7 @@ body {
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
+    text-align: center;
 }
 
 .row {
@@ -26,11 +27,6 @@ body {
 
 .text-xs-center {
     text-align: center !important;
-}
-
-img {
-    border-style: none;
-    max-width: 100%;
 }
 
 .new-badge {
@@ -95,7 +91,7 @@ li {
 }
 
 h1.info-hero-head {
-    font-size: 1.875rem;
+    font-size: 1.76rem;
     line-height: 2.25rem;
     font-family: "PayPalSansBig-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
     font-weight: 300;
@@ -151,11 +147,13 @@ h1.info-hero-head {
     position: relative;
     height: 300px;
 }
+
 .bg-video-container .bg-video {
     object-fit: cover;
     position: absolute;
     bottom: 0;
 }
+
 video {
     width: 100%;
 }
@@ -176,6 +174,7 @@ video {
     display: inline-block;
     font-weight: 400;
 }
+
 .btn-round {
     margin: 18px 0;
     position: relative;
@@ -186,12 +185,14 @@ video {
     border: .5px solid #0070ba;
 
 }
+
 .btn.btn-round {
     margin: 10px;
     display: inline-block;
     padding-top: 11px;
     padding-bottom: 11px;
 }
+
 .notification-ribbon .btn-round {
     display: inline-block;
     background-color: #fff;
@@ -205,6 +206,7 @@ video {
     font-size: .75rem;
     line-height: 12px;
 }
+
 .notification-ribbon a:hover.btn-round {
     text-decoration: none;
 }
@@ -259,6 +261,7 @@ video {
     border: 1px solid #0d3685;
 
 }
+
 /* 
 .link {
     padding: 10px 5px;
@@ -286,12 +289,11 @@ video {
     vertical-align: middle;
 }
 
-.thumbnail-paragraph, 
+.thumbnail-paragraph,
 .yoga-section-paragraph,
 .spend-paragraph,
 .pay-paragraph,
-.honey-paragraph
- {
+.honey-paragraph {
     font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", sans-serif, Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.6;
@@ -377,6 +379,7 @@ button.play-button {
 .yoga-section .container .row {
     padding-left: 7px;
 }
+
 /* 
 .yoga-section .container {
     width: 100%;
@@ -410,6 +413,7 @@ a:hover.yoga-section-link {
 
 img {
     border-style: none;
+    max-width: 100%;
 }
 
 
@@ -748,15 +752,6 @@ a.responding-link:hover {
 /* ----------- */
 /* DISCLOSURE */
 
-.disclosure {
-    padding: 40px 0;
-    background-color: #fff;
-    font-weight: 600;
-    line-height: 1.6;
-    color: #2c2e2f;
-    font-size: 1rem;
-}
-
 sub,
 sup {
     font-size: 75%;
@@ -783,13 +778,13 @@ sup {
 
 .footer .footer-main {
     font-size: 16px;
-    font-size: .9375rem;
+    font-size: .937rem;
 }
 
 .footer .footer-main,
 .footer .footer-secondary,
 .footer .footer-tertiary {
-    line-height: 1.6;
+    line-height: 1.5;
     margin-bottom: 0;
     padding: 0;
 }
@@ -802,7 +797,6 @@ sup {
 
 .footer .footer-main .country-selector {
     margin: 0px 0px 7px auto;
-    float: right;
 }
 
 .footer .footer-main li,
@@ -811,14 +805,9 @@ sup {
     margin: 6px 18px 2px 0;
 }
 
-.footer .row-flag {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap-reverse;
-}
 
-a.lazy-load-flag {
-    background-image: url('/assets/footer/us-flag.png');
+.footer .country-selector {
+    background-image:  url("/assets/images/sprite_countries_flag4.png");
 }
 
 .footer .footer-main a {
@@ -826,15 +815,14 @@ a.lazy-load-flag {
 }
 
 .country-selector .country {
-    display: inline-block;
+    display: flex;
     overflow: hidden;
-    width: 36px;
-    height: 28px;
-    padding: 0;
-    margin: 0;
+    /* width: 60px;
+    height: 28px; */
+    margin: 0 0 0 78%;
     vertical-align: middle;
-    text-indent: 999em;
-    text-align: left;
+    /* text-indent: 999em;
+    text-align: right; */
     background-color: transparent;
     background-repeat: no-repeat;
 }
@@ -858,19 +846,17 @@ a.lazy-load-flag {
 .footer .footer-tertiary,
 .footer .footer-tertiary a {
     font-size: 13px;
-    font-size: .8125rem;
+    font-size: .7rem;
     color: #6c7378;
     padding-top: 10px;
     line-height: 1.6;
     margin-bottom: 0;
-    padding: 0;
-    text-align: center;
+    font-weight: 900;
 }
 
-.footer-tertiary {
-    text-align: right;
+footer .footer-tertiary .footer-copyright {
+    font-weight: 400;
 }
-
 
 /* ************** */
 /* HEADER */
@@ -1072,48 +1058,57 @@ a.lazy-load-flag {
 
 /* RESPONSIVENESS */
 /* 752 or larger */
-@media (min-width: 752px) { 
+@media (min-width: 752px) {
+
     .container,
-    .header-section .header-container  {
+    .header-section .header-container {
         max-width: 1023px;
     }
+
     h2 {
         font-size: 2.5rem;
         line-height: 3rem;
         font-family: "PayPalSansBig-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
         font-weight: 400;
     }
+
     .info-hero {
         min-height: 480px;
     }
+
     .custom-infohero {
         min-height: 400px;
         background-repeat: repeat;
     }
+
     .info-hero-container h2 {
         font-size: 2.5rem;
         line-height: 3rem;
         font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
         font-weight: 400;
     }
+
     .info-hero h1 {
         font-size: 3rem;
         line-height: 3.5rem;
         font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
         font-weight: 300;
     }
+
     .info-hero h2 {
         font-size: 2.5rem;
         line-height: 3rem;
         font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
         font-weight: 400;
     }
+
     .info-hero-container {
         font-size: 3.75rem;
         line-height: 4.5rem;
         font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
         font-weight: 400;
     }
+
     .responding .responding-link br {
         display: none;
     }
@@ -1124,36 +1119,42 @@ a.lazy-load-flag {
     .container {
         max-width: 1023px;
     }
+
     .text-white::before {
         content: "Looking for PayPal for Business? Whether you're local or global, we're here to support you"
     }
+
     .join-paragragraph::before {
         content: "Join the global community of PayPal users who are sending, spending and receiving money securely every day"
     }
+
     .btn-round {
         padding: 0;
     }
+
     .notification-ribbon .container {
         max-width: 100%;
     }
-    
+
 }
 
 /* 1024 or larger */
 @media (min-width: 1024px) {
+
     .container,
     .header-section .header-container {
         max-width: 1151px;
-
         margin-left: auto;
         margin-right: auto;
         padding-left: 48px;
         padding-right: 48px;
     }
+
     .info-hero {
         padding-top: 112px;
         padding-bottom: 60px;
     }
+
     .header-section+div>section.info-hero {
         padding-top: 112px;
     }
@@ -1192,57 +1193,117 @@ a.lazy-load-flag {
     .signup-login .signlogbtns:last-of-type {
         display: inline-block;
     }
+    .footer .row.row-flag {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+    }
 }
 
 /* ---------------------------------------------------------- */
-/* small: 414 OR LESS */
-@media screen and (max-width: 414px) {
-    .number {
-        width: 36px;
-        height: 52px;
-        font-size: 28px;
-        font-size: 2rem;
-        border-radius: 4px;
-        margin-right: 3px;
+/* between 1366 and 769 */
+@media screen and (max-width: 1366px) and (min-width: 769px) {
+    .bg-video-container {
+        height: 150px;
+        margin-top: -25px;
     }
-    .responding .responding-paragraph {
-        font-size: 1.24rem;
-        padding-top: 20px;
-        line-height: 1.6rem;
-        font-weight: 400;
-    }
-    .responding .responding-link {
-        font-size: 1.24rem;
-        line-height: 1.6;
+
+    .bg-video-container {
+        background-color: #0097e0;
+        margin-bottom: -7px;
+        position: relative;
+        height: 300px;
     }
 }
 
-/* between 751 and 320 */
-@media screen and (max-width: 751px) and (min-width: 320px) {
-    .pay-head .new-badge {
-        font-size: 17px;
-        font-size: 1.21428571rem;
-        position: initial;
-        padding: 18px 13px 18px 13px;
+/* between 1119 and 768 */
+@media screen and (max-width: 1119px) and (min-width: 768px) {
+    .notification-ribbon a {
+        float: none;
+    }
+}
+
+
+/* 1151 or less */
+@media (max-width: 1151px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+        transition: all .3s ease-in;
     }
 
-    .honey {
-        padding: 40px 13px;
-    }
-
-    .honey-image {
-        margin-bottom: 30px;
-    }
-
-    .honey .new-badge {
-        font-size: 17px;
-        font-size: 1.21428571rem;
-        position: initial;
-        padding: 18px 13px 18px 13px;
-    }
-
-    .footer ul {
+    .footer {
         text-align: center;
+    }
+
+    .footer ul li {
+        display: inline-block;
+    }
+
+    .hidden-lg-down {
+        display: none !important;
+    }
+
+    .footer .hidden-lg-down {
+        display: none !important;
+    }
+
+    .main-menu .list-1 a {
+        display: none;
+    }
+
+    .logo-text {
+        width: 26px;
+        height: 30px;
+        background-size: cover;
+        background-position: left;
+        background-clip: content-box;
+        background-origin: content-box;
+    }
+}
+
+/* 1024 or less */
+@media (max-width: 1024px) {
+    .video-thumbnail h2 {
+        font-size: 22px;
+        line-height: 1.6;
+        font-size: 1.77rem;
+        font-family: "PayPalSansSmall-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 400;
+        padding-top: 10%;
+        padding-bottom: 20px;
+    }
+
+    .logo-container {
+        width: auto;
+        display: inline-block;
+        position: relative;
+        top: 3px;
+        vertical-align: middle;
+        padding: 0 9px;
+    }
+
+    .main-menu>ul {
+        text-align: center;
+    }
+
+    .main-menu ul {
+        padding-right: 0;
+    }
+    .footer .country img {
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+/* 956 or less */
+@media screen and (max-width: 956px) {
+    .number {
+        width: 55px;
+        height: 55px;
+        font-size: 30px;
+        font-size: 2.14285714rem;
+        border-radius: 15px;
     }
 }
 
@@ -1259,17 +1320,34 @@ a.lazy-load-flag {
     .containerCentered p,
     .pay-paragraph,
     .spend-section .spend-paragraph,
-    .thumbnail-paragraph,
     p.honey-paragraph,
-    .disclosure,
     p.yoga-section-paragraph {
         font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-        font-size: 0.92rem;
+        font-size: 0.909rem;
         font-weight: 900;
         line-height: 1.6;
         color: #434647;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+    .thumbnail-paragraph {
+        font-size: 0.865rem;
+        font-weight: 900;
+        line-height: 1.6;
+        color: #434647;
+        padding-bottom: 10px;
+    }
+
+    .disclosure {
+        padding: 40px 0;
+        background-color: #fff;
+    }
+    .disclosure .container {
+        text-align: left;
+        font-weight: 600;
+        line-height: 1.6;
+        color: #2c2e2f;
+        font-size: .85rem;
     }
 
     h2.spend-head,
@@ -1279,18 +1357,24 @@ a.lazy-load-flag {
     h2.brand-head {
         padding-top: 10%;
         position: relative;
-        font-size: 1.875rem;
+        font-size: 1.874rem;
         line-height: 2.25rem;
         font-family: "PayPalSansBig-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
         font-weight: 500;
         color: #4a4a4a;
     }
+
+    h2.honey-head {
+        padding-top: 0%;
+    }
+
     h2.responding-head {
         font-size: 1.5rem;
         line-height: 28px;
         font-weight: 500;
         color: #2c2e2f;
     }
+
     .containerCentered h4 {
         font-size: 1.35rem;
         line-height: 1.8rem;
@@ -1344,8 +1428,7 @@ a.lazy-load-flag {
     }
 
     .yoga-section,
-    .pay-section
-    .spend-section,
+    .pay-section .spend-section,
     .pay-section {
         padding: 40px 13px;
     }
@@ -1364,105 +1447,61 @@ a.lazy-load-flag {
 
     .honey .honey-head {
         font-weight: 500;
-    }    
+    }
 
 }
 
-/* 956 or less */
-@media screen and (max-width: 956px) {
+/* between 751 and 320 */
+@media screen and (max-width: 751px) and (min-width: 320px) {
+    .pay-head .new-badge {
+        font-size: 17px;
+        font-size: 1.21428571rem;
+        position: initial;
+        padding: 18px 13px 18px 13px;
+    }
+
+    .honey {
+        padding: 40px 13px;
+    }
+
+    .honey-image {
+        margin-bottom: 30px;
+    }
+
+    .honey .new-badge {
+        font-size: 17px;
+        font-size: 1.21428571rem;
+        position: initial;
+        padding: 18px 13px 18px 13px;
+    }
+
+    .footer ul {
+        text-align: center;
+    }
+}
+
+/* small: 414 OR LESS */
+@media screen and (max-width: 414px) {
     .number {
-        width: 55px;
-        height: 55px;
-        font-size: 30px;
-        font-size: 2.14285714rem;
-        border-radius: 15px;
+        width: 36px;
+        height: 52px;
+        font-size: 2rem;
+        border-radius: 4px;
+        margin-right: 3px;
     }
-}
 
-/* 1024 or less */
-@media (max-width: 1024px) {
-    .video-thumbnail h2 {
-        font-size: 22px;
-        line-height: 1.6;
-        font-size: 1.875rem;
-        font-family: "PayPalSansSmall-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
+    .responding .responding-paragraph {
+        font-size: 1.2rem;
+        padding-top: 20px;
+        line-height: 1.6rem;
         font-weight: 400;
-        padding-bottom: 20px;
     }
 
-    .logo-container {
-        width: auto;
-        display: inline-block;
-        position: relative;
-        top: 3px;
-        vertical-align: middle;
-        padding: 0 9px;
+    .responding .responding-link {
+        font-size: 1.24rem;
+        line-height: 1.6;
     }
-
-    .main-menu>ul {
-        text-align: center;
-    }
-
-    .main-menu ul {
-        padding-right: 0;
+    .footer .footer-main {
+        font-size: 5px;
     }
 }
-
-/* 1151 or less */
-@media (max-width: 1151px) {
-    body {
-        max-width: 100%;
-        overflow-x: hidden;
-        transition: all .3s ease-in;
-    }
-
-    .footer {
-        text-align: center;
-    }
-
-    .footer ul li {
-        display: inline-block;
-    }
-
-    .hidden-lg-down {
-        display: none !important;
-    }
-
-    .footer .hidden-lg-down {
-        display: none !important;
-    }
-
-    .main-menu .list-1 a {
-        display: none;
-    }
-
-    .logo-text {
-        width: 26px;
-        height: 30px;
-        background-size: cover;
-        background-position: left;
-        background-clip: content-box;
-        background-origin: content-box;
-    }
-}
-
-/* between 1119 and 768 */
-@media screen and (max-width: 1119px) and (min-width: 768px) {
-    .notification-ribbon a {
-        float: none;
-    }
-}
-
-/* between 1366 and 769 */
-@media screen and (max-width: 1366px) and (min-width: 769px) {
-    .bg-video-container {
-        height: 150px;
-        margin-top: -25px;
-    }
-    .bg-video-container {
-        background-color: #0097e0;
-        margin-bottom: -7px;
-        position: relative;
-        height: 300px;
-    }
-    }
