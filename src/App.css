@@ -288,10 +288,10 @@ padding-right: 24px;
     border: 1px solid #0d3685;
 
 }
-
+/* 
 .link {
     padding: 10px 5px;
-}
+} */
 
 /* ------------- */
 /* ROW HELP */
@@ -301,7 +301,7 @@ padding-right: 24px;
     padding: 40px 0;
 }
 
-.video-thumbnail .row-helping {
+.video-thumbnail .row {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap-reverse;

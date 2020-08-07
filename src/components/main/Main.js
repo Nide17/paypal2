@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Corona from './corona/Corona';
+// import Corona from './corona/Corona';
 import Helping from './helping/Helping';
 import Yoga from './yoga/Yoga';
 import Spend from './spend/Spend';
@@ -21,7 +21,7 @@ const Main = () => {
             <VideoAbove />
             <Video />
             <Business />
-            <Corona />
+            {/* <Corona /> */}
             <Helping />
             <Yoga />
             <Spend />
