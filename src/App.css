@@ -21,10 +21,6 @@ body {
     margin-right: -12px;
 }
 
-/* .col-xs-12 {
-    width: 100%;
-} */
-
 .text-xs-center {
     text-align: center !important;
 }
@@ -96,6 +92,7 @@ h1.info-hero-head {
     font-family: "PayPalSansBig-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
     font-weight: 300;
 }
+
 .btn-hero:hover,
 .btn-hero:link,
 .btn-hero:active,
@@ -104,6 +101,7 @@ h1.info-hero-head {
     color: #0d3685;
     text-decoration: none;
 }
+
 .btn-hero {
     display: block;
     margin-left: auto;
@@ -165,7 +163,7 @@ video {
 }
 
 .notification-ribbon h4 {
-    font-size: 1.8rem;
+    font-size: 1.57142857rem;
     line-height: 1.875rem;
     vertical-align: middle;
     display: inline-block;
@@ -286,6 +284,14 @@ video {
     vertical-align: middle;
 }
 
+h2.spend-head,
+h2.yoga-section-head,
+h2.honey-head,
+h2.pay-head,
+h2.brand-head {
+    position: relative;
+}
+
 .thumbnail-paragraph,
 .yoga-section-paragraph,
 .spend-paragraph,
@@ -364,28 +370,19 @@ button.play-button {
     color: whitesmoke;
 }
 
-
-/* YOGA */
-.yoga-section {
+.yoga-section, .spend-section, .pay-section, .honey {
     background-repeat: no-repeat;
     padding: 40px 0;
     background-color: #fff;
     text-align: center;
+    color: #4a4a4a;
+}
+.spend-section, .honey {
+    background-color: #f5f7fa;
 }
 
 .yoga-section .container .row {
     padding-left: 7px;
-}
-
-/* 
-.yoga-section .container {
-    width: 100%;
-} */
-
-.yoga-section-container {
-    float: none;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .text-xs-center {
@@ -412,27 +409,6 @@ img {
     border-style: none;
     max-width: 100%;
 }
-
-
-/* ------------- */
-/* SPEND */
-.spend-section {
-    background-repeat: no-repeat;
-    background-color: #f5f7fa;
-    padding: 40px 0;
-}
-
-.spend-section .container {
-    text-align: center;
-}
-
-.spend-container {
-    float: none;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-
 
 .spend-image {
     max-width: 90%;
@@ -468,24 +444,6 @@ a {
     font-weight: 700;
 }
 
-
-/* PAY */
-.pay-section {
-    background-color: #fff;
-    background-repeat: no-repeat;
-    padding: 40px 0;
-    color: #4a4a4a;
-}
-
-/* .pay-section .container {
-    text-align: center;
-    width: 100%;
-} */
-
-.pay-head {
-    position: relative;
-}
-
 .pay-link {
     color: #00a8ea;
 }
@@ -502,12 +460,6 @@ a.pay-link:hover {
     text-decoration: underline;
     color: #0070ba;
     background-color: transparent;
-}
-
-.pay-container {
-    float: none;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .pay-image {
@@ -544,8 +496,6 @@ a.pay-link:hover {
     padding-bottom: 30px;
 }
 
-
-
 .brand-image {
     max-width: 100%;
 }
@@ -559,20 +509,7 @@ div.col-xs-6 {
     padding: 30px;
 }
 
-/* div.brand-logo {
-    width: 50%
-} */
-
-/* ------- */
-/* HONEY */
-.honey {
-    background-repeat: no-repeat;
-    padding: 40px 0;
-    background-color: #f5f7fa;
-    color: #4a4a4a;
-}
-
-.honey .container {
+.honey .container, .yoga-section .container, .spend-section .container, .pay-section .container {
     text-align: center;
     width: 100%;
     float: none;
@@ -585,11 +522,6 @@ div.col-xs-6 {
     max-height: 350px;
 }
 
-.honey .honey-head {
-    font-weight: 900;
-    position: relative;
-}
-
 .honey-paragraph {
     padding-top: 20px;
 }
@@ -598,16 +530,11 @@ div.col-xs-6 {
     color: #00a8ea;
 }
 
-
-
 a.honey-link:hover {
     text-decoration: underline;
     color: #0070ba;
     background-color: transparent;
 }
-
-
-
 
 /* ----------- */
 /* RESPONDING */
@@ -812,7 +739,7 @@ sup {
 
 
 .footer .country-selector {
-    background-image:  url("/assets/images/sprite_countries_flag4.png");
+    background-image: url("/assets/images/sprite_countries_flag4.png");
 }
 
 .footer .footer-main a {
@@ -1063,9 +990,27 @@ footer .footer-tertiary .footer-copyright {
 
 
 /* RESPONSIVENESS */
+/* 576 or larger */
+@media (min-width: 576px) {
+.container {
+    max-width: 751px;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+}
+@media (min-width: 751px) {
+.pay-head br, .honey-head br {
+    display: none;
+}
+}
 /* 752 or larger */
 @media (min-width: 752px) {
-
+    .yoga-section,
+    .spend-section,
+    .pay-section,
+    .honey {
+        padding: 40px 60px;
+    }
     .container,
     .header-section .header-container {
         max-width: 1023px;
@@ -1095,8 +1040,8 @@ footer .footer-tertiary .footer-copyright {
     }
 
     .info-hero h1 {
-        font-size: 3rem;
-        line-height: 3.5rem;
+        font-size: 2.7rem;
+        line-height: 3rem;
         font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
         font-weight: 300;
     }
@@ -1118,6 +1063,29 @@ footer .footer-tertiary .footer-copyright {
     .responding .responding-link br {
         display: none;
     }
+
+    .thumbnail-head {
+        text-align: left;
+    }
+
+    .thumbnail-paragraph,
+    .yoga-section-paragraph,
+    .spend-paragraph,
+    .pay-paragraph,
+    .honey-paragraph {
+        text-align: left;
+        font-size: .86rem;
+    }
+
+    .yoga-section,
+    .spend-section,
+    .pay-section,
+    .honey {
+        padding: 60px 0;
+        min-height: 480px;
+        display: flex;
+        align-items: center;
+    }
 }
 
 /* 768 or larger */
@@ -1125,15 +1093,19 @@ footer .footer-tertiary .footer-copyright {
     .notification-ribbon .container {
         max-width: 100%;
     }
+
     .container {
         max-width: 1023px;
     }
+
     .text-white::before {
         content: "Looking for PayPal for Business? Whether you're local or global, we're here to support you"
     }
+
     .join-paragragraph::before {
         content: "Join the global community of PayPal users who are sending, spending and receiving money securely every day"
     }
+
     .btn-round {
         padding: 0;
     }
@@ -1143,11 +1115,16 @@ footer .footer-tertiary .footer-copyright {
 /* 1024 or larger */
 @media (min-width: 1024px) {
 
+    .yoga-section,
+    .spend-section,
+    .pay-section,
+    .honey {
+        min-height: 350px;
+    }
+
     .container,
     .header-section .header-container {
         max-width: 1151px;
-        margin-left: auto;
-        margin-right: auto;
         padding-left: 48px;
         padding-right: 48px;
     }
@@ -1164,10 +1141,12 @@ footer .footer-tertiary .footer-copyright {
 
 /* 1152 or larger */
 @media (min-width: 1152px) {
+
     .container,
     .header-section .header-container {
         max-width: 1192px;
     }
+
     .footer .footer-tertiary,
     .footer .footer-tertiary a,
     .footer .footer-main,
@@ -1180,28 +1159,35 @@ footer .footer-tertiary .footer-copyright {
         top: 0;
         transition: all .3s ease-out;
     }
+
     .main-menu {
         position: static;
         display: inline-block;
     }
+
     .contain-btn {
         display: none;
     }
+
     .header-section {
         overflow: hidden;
         height: 72px;
         overflow: visible;
         border-bottom: .3px ridge #88b5f8;
     }
+
     .list-2 {
         display: none;
     }
+
     .logo-container {
         float: left;
     }
+
     .signup-login .signlogbtns:last-of-type {
         display: inline-block;
     }
+
     .footer .row.row-flag {
         display: flex;
         flex-direction: row-reverse;
@@ -1299,6 +1285,7 @@ footer .footer-tertiary .footer-copyright {
     .main-menu ul {
         padding-right: 0;
     }
+
     .footer .country img {
         width: fit-content;
         height: fit-content;
@@ -1339,6 +1326,7 @@ footer .footer-tertiary .footer-copyright {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
     .thumbnail-paragraph {
         font-size: 0.865rem;
         font-weight: 900;
@@ -1346,6 +1334,7 @@ footer .footer-tertiary .footer-copyright {
         color: #434647;
         padding-bottom: 10px;
     }
+
     .disclosure .container {
         text-align: left;
         font-weight: 600;
@@ -1367,11 +1356,6 @@ footer .footer-tertiary .footer-copyright {
         font-weight: 500;
         color: #4a4a4a;
     }
-
-    h2.honey-head {
-        padding-top: 0%;
-    }
-
     h2.responding-head {
         font-size: 1.5rem;
         line-height: 28px;
@@ -1448,11 +1432,6 @@ footer .footer-tertiary .footer-copyright {
         box-direction: reverse;
         flex-direction: column-reverse;
     }
-
-    .honey .honey-head {
-        font-weight: 500;
-    }
-
 }
 
 /* between 751 and 320 */
@@ -1505,6 +1484,7 @@ footer .footer-tertiary .footer-copyright {
         font-size: 1.24rem;
         line-height: 1.6;
     }
+
     .footer .footer-main {
         font-size: 5px;
     }
