@@ -39,7 +39,7 @@ class Footer extends Component {
                 <div className="container">
 
                     <div className="row row-flag">
-                        <div className="col-12 col-lg-3">
+                        <div className="col-12 col-xl-3">
 
                             <ul className="footer-main">
 
@@ -55,9 +55,9 @@ class Footer extends Component {
                             </ul>
                         </div>
 
-                        <div className="col-12 col-lg-9">
+                        <div className="col-12 col-xl-9">
 
-                            <ul className="footer-main text-md-left">
+                            <ul className="footer-main text-xl-left">
                                 {footerMainAll}
                             </ul>
                         </div>
@@ -71,15 +71,15 @@ class Footer extends Component {
 
                     <div className="row">
 
-                        <div className="col-12 col-lg-9">
+                        <div className="col-12 col-xl-9">
 
-                            <ul className="footer-secondary footer-corplinks text-md-left">
+                            <ul className="footer-secondary footer-corplinks text-xl-left">
                                 {allCorpLinks}
                             </ul>
 
                         </div>
 
-                        <div className="col-12 col-lg-3">
+                        <div className="col-12 col-xl-3">
                             <ul className="footer-tertiary copyright-section">
                                 <li className="footer-copyright">© 1999–2020 </li>
                                 <li>
