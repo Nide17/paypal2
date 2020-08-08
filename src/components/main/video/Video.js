@@ -12,7 +12,7 @@ class Video extends Component {
 
     componentDidMount() {
         this.setState({
-            headerVideo: '/assets/images/PP_EE_LP_Header_Output_US_desktop.mp4'
+            headerVideo: '/assets/images/PPdesktop.mp4'
         })
     }
 

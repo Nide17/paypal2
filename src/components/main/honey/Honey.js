@@ -7,7 +7,7 @@ const Honey = () => {
                     <div className="row">
 
                         <div className="col-md-6 text-xs-center honey-container col-xs-12">
-                            <img className="honey-image" src="/assets/images/COINY_Hill.png" alt="Honey-coin" />
+                            <img className="honey-image" src="/assets/images/Hill.png" alt="Honey-coin" />
                         </div>
 
                         <div className="col-xs-12 col-md-6 honey-container honey-text text-md-left">
