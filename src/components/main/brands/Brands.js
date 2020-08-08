@@ -6,8 +6,14 @@ class Brands extends Component {
     constructor() {
         super();
         this.state = {
-            images: brandsImages
+            images: []
         }
+    }
+
+    componentDidMount() {
+        this.setState({
+            images: brandsImages
+        })
     }
 
     render() {
