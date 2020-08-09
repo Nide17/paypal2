@@ -7,7 +7,6 @@ class Header extends Component {
         this.state = {
             isBusiness: false,
             isPersonal: false,
-            // isClosed: true
         }
         this.showBusiness = this.showBusiness.bind(this);
         this.showPersonal = this.showPersonal.bind(this);

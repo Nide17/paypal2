@@ -5,12 +5,6 @@ npm install -g serve
 serve -s build
 
 
-
-
-
-
-
-
 Steps:
 Sign up for Heroku
 Setup our React App for deployment

@@ -4,7 +4,17 @@ and in package.json file we added some properties homepage also in existing scri
 and created a remote repository and initialize it
 and run npm run deploy to generate a production build and deploy it to GitHub Pages.
 
+add to package.json:
 
+{
+"homepage": "http://Nide17.github.io/paypal2",
+"name": "paypal2",
+},
+
+"scripts": {
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+}
 
 1. npm install gh-pages --save-dev
 install it as devDependency
@@ -21,3 +31,4 @@ install it as devDependency
 }
 
 4. npm run deploy
+

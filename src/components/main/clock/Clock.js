@@ -4,7 +4,7 @@ const Clock = () => {
     return (
 
         <div className="clock">
-        
+
             <div className="second  ">
                 <div className="number">
                     <span>3</span>

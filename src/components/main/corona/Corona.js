@@ -3,7 +3,7 @@ import 'font-awesome/css/font-awesome.css';
 
 
 const Corona = () => {
-    
+
     return (
 
         <div id="covid-banner">

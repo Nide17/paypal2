@@ -10,15 +10,18 @@ body {
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    /* text-align: center; */
 }
 
-/* .container::after,
-.header-section .container {
-    content: "";
-    display: table;
-    clear: both;
-} */
+.honey .container,
+.yoga-section .container,
+.spend-section .container,
+.pay-section .container {
+    text-align: center;
+    width: 100%;
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 .header-section .container::after {
     content: "";
@@ -78,11 +81,65 @@ li {
     display: inline;
 }
 
-/* NAV IS DOWN AT THE END */
 .header-section+div>section.info-hero {
     padding-top: 72px;
 }
 
+h2.spend-head,
+h2.yoga-section-head,
+h2.honey-head,
+h2.pay-head,
+h2.brand-head {
+    position: relative;
+}
+
+.thumbnail-paragraph,
+.yoga-section-paragraph,
+.spend-paragraph,
+.pay-paragraph,
+.honey-paragraph {
+    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", sans-serif, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.yoga-section,
+.spend-section,
+.pay-section,
+.honey {
+    background-repeat: no-repeat;
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+    color: #4a4a4a;
+}
+
+.spend-section,
+.honey {
+    background-color: #f5f7fa;
+}
+
+
+img {
+    border-style: none;
+    max-width: 100%;
+}
+
+sup {
+    top: -.5em;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+/* VIDEOABOVE */
 .info-hero {
     min-height: 300px;
     display: flex;
@@ -97,7 +154,7 @@ li {
 }
 
 .custom-infohero .info-hero-container {
-    /* putting the button $ h1 in front */
+    /* putting the button & h1 in front */
     z-index: 1;
 }
 
@@ -286,26 +343,6 @@ video {
     vertical-align: middle;
 }
 
-h2.spend-head,
-h2.yoga-section-head,
-h2.honey-head,
-h2.pay-head,
-h2.brand-head {
-    position: relative;
-}
-
-.thumbnail-paragraph,
-.yoga-section-paragraph,
-.spend-paragraph,
-.pay-paragraph,
-.honey-paragraph {
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", sans-serif, Arial, sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    font-weight: 600;
-    padding-top: 20px;
-}
-
 div .video-image {
     /* background-image: url('/assets/images/video_542x308px.jpg'); */
     background-image: url("https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/video_542x308px.jpg");
@@ -374,22 +411,6 @@ button.play-button {
     color: whitesmoke;
 }
 
-.yoga-section,
-.spend-section,
-.pay-section,
-.honey {
-    background-repeat: no-repeat;
-    padding: 40px 0;
-    background-color: #fff;
-    text-align: center;
-    color: #4a4a4a;
-}
-
-.spend-section,
-.honey {
-    background-color: #f5f7fa;
-}
-
 .yoga-section .container .row {
     padding-left: 7px;
 }
@@ -399,56 +420,22 @@ button.play-button {
     color: #00a8ea;
 }
 
-a:hover.yoga-section-link {
+a:hover.yoga-section-link,
+a:hover.spend-link {
     color: #00a8ea;
 }
 
-.yoga-section-image {
+.yoga-section-image,
+.spend-image,
+.pay-image,
+.honey-image {
     max-width: 90%;
     max-height: 350px;
-}
-
-img {
-    border-style: none;
-    max-width: 100%;
-}
-
-.spend-image {
-    max-width: 90%;
-    max-height: 350px;
-}
-
-sup {
-    top: -.5em;
-}
-
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
 }
 
 .spend-link {
     color: #00a8ea;
     text-decoration: none;
-}
-
-a:hover.spend-link {
-    color: #00a8ea;
-}
-
-a {
-    background-color: transparent;
-    color: #0070ba;
-    text-decoration: none;
-    font-family: "PayPalSansBig-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-}
-
-.pay-link {
-    color: #00a8ea;
 }
 
 a {
@@ -459,15 +446,15 @@ a {
     font-weight: 700;
 }
 
+.pay-link,
+.honey-link {
+    color: #00a8ea;
+}
+
 a.pay-link:hover {
     text-decoration: underline;
     color: #0070ba;
     background-color: transparent;
-}
-
-.pay-image {
-    max-width: 90%;
-    max-height: 350px;
 }
 
 /* BRANDS */
@@ -509,28 +496,8 @@ div.col-xs-6 {
     width: 50%;
 }
 
-.honey .container,
-.yoga-section .container,
-.spend-section .container,
-.pay-section .container {
-    text-align: center;
-    width: 100%;
-    float: none;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.honey-image {
-    max-width: 90%;
-    max-height: 350px;
-}
-
 .honey-paragraph {
     padding-top: 20px;
-}
-
-.honey-link {
-    color: #00a8ea;
 }
 
 a.honey-link:hover {
@@ -568,7 +535,6 @@ a.responding-link:hover {
     text-decoration: underline;
     color: #00a8ea;
     font-family: "PayPalSansSmall-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-
 }
 
 /* JOIN */
@@ -653,7 +619,6 @@ a.responding-link:hover {
     justify-content: center;
 }
 
-
 .number {
     background: #ffffff;
     font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
@@ -679,15 +644,6 @@ a.responding-link:hover {
     text-align: left;
 }
 
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-/* --------------------- */
 /* FOOTER */
 .footer {
     padding: 40px 0;
@@ -791,12 +747,6 @@ footer .footer-tertiary .footer-copyright {
     box-sizing: border-box;
 }
 
-/* HEADER CONTAINER */
-.contain-btn {
-    width: 0;
-    float: left;
-}
-
 .header-section .header-container {
     margin-left: auto;
     margin-right: auto;
@@ -826,51 +776,9 @@ footer .footer-tertiary .footer-copyright {
     display: none;
 }
 
-.header-section::after,
-.header-section::before {
-    content: '';
-    display: block;
-    width: 100%;
-    position: absolute;
-}
-
-.contain-btn button.menu-button::before {
-    height: 9px;
-    top: 13px;
-}
-
-.contain-btn button.menu-button::after,
-.contain-btn button.menu-button::before {
-    display: block;
-    content: "";
-    width: 13px;
-    position: absolute;
-    border: 1px solid #fff;
-    left: 14px;
-    border-left: 0;
-    border-right: 0;
-    -webkit-transition: all .3s ease-out 0s;
-    transition: all .3s ease-out 0s;
-}
-
-.contain-btn button.menu-button::after {
-    height: 0;
-    top: 17px;
-    border-bottom: 0;
-}
-
-.contain-btn button.menu-button::after,
-.contain-btn button.menu-button::before {
-    display: block;
-    content: "";
-    width: 13px;
-    position: absolute;
-    border: 1px solid #fff;
-    left: 14px;
-    border-left: 0;
-    border-right: 0;
-    -webkit-transition: all .3s ease-out 0s;
-    transition: all .3s ease-out 0s;
+.contain-btn {
+    width: 0;
+    float: left;
 }
 
 /* BUTTON ITSELF */
@@ -898,7 +806,6 @@ footer .footer-tertiary .footer-copyright {
     background: #0070ba;
     font-size: .9375rem;
     font-weight: 700;
-    -webkit-font-smoothing: antialiased;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -929,7 +836,6 @@ footer .footer-tertiary .footer-copyright {
     text-indent: -999em;
 }
 
-
 .logo-url {
     background-image: url(https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg);
 }
@@ -952,7 +858,8 @@ footer .footer-tertiary .footer-copyright {
     padding-right: 0;
 }
 
-.contain-btn button.btn-menu::after, .contain-btn button.btn-menu::before {
+.contain-btn button.btn-menu::after,
+.contain-btn button.btn-menu::before {
     display: block;
     content: "";
     width: 13px;
@@ -961,32 +868,25 @@ footer .footer-tertiary .footer-copyright {
     left: 14px;
     border-left: 0;
     border-right: 0;
-    -webkit-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
 }
-.contain-btn button.btn-menu::before {
+
+.contain-btn button.btn-menu::before,
+.contain-btn button.menu-button::before {
     height: 9px;
     top: 13px;
 }
 
-.contain-btn button.btn-menu::after {
+.contain-btn button.btn-menu::after,
+.contain-btn button.menu-button::after {
     height: 0;
     top: 17px;
     border-bottom: 0;
 }
 
-.btn-menu.btn-menu--outline-white:focus, .btn-menu.btn-menu--outline-white:hover {
+.btn-menu.btn-menu--outline-white:focus,
+.btn-menu.btn-menu--outline-white:hover {
     color: #eaeced;
-}
-
-
-
-.main-menu a,
-.main-menu a:active,
-.main-menu a:focus,
-.main-menu a:hover,
-.main-menu a:visited {
-    color: #fff;
 }
 
 .header-section a.main-link,
@@ -1061,11 +961,8 @@ footer .footer-tertiary .footer-copyright {
     opacity: .75;
     position: relative;
     left: 5px;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     z-index: -1;
 }
@@ -1076,7 +973,7 @@ footer .footer-tertiary .footer-copyright {
     text-transform: uppercase;
     white-space: nowrap;
     color: #fff;
-    font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+    font-family: "PayPalSansBig-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
     padding-top: 20px;
 }
 
@@ -1210,7 +1107,6 @@ footer .footer-tertiary .footer-copyright {
         padding-left: 36px;
         padding-right: 36px;
     }
-
 }
 
 @media (min-width: 751px) {
@@ -1455,7 +1351,6 @@ footer .footer-tertiary .footer-copyright {
     .main-link:hover.header__subnav-control::after {
         top: -2px;
         left: 10px;
-        -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
     }
 
@@ -1479,8 +1374,6 @@ footer .footer-tertiary .footer-copyright {
         left: 0;
         background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAFFWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTIgMS4xNDk2MDIsIDIwMTIvMTAvMTAtMTg6MTA6MjQgICAgICAgICI+CiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgICB4bWxuczpkYW09Imh0dHA6Ly93d3cuZGF5LmNvbS9kYW0vMS4wIgogICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICB4bWxuczpQYXlQYWw9Ind3dy5wYXlwYWwuY29tL2Jhc2UvdjEiCiAgIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIgogICBkYzptb2RpZmllZD0iMjAxMy0xMi0xMFQxNTo0ODo1Ny41NjQtMDg6MDAiCiAgIGRhbTpzaXplPSIyMTIiCiAgIGRhbTpQaHlzaWNhbHdpZHRoaW5pbmNoZXM9Ii0xLjAiCiAgIGRhbTpleHRyYWN0ZWQ9IjIwMTMtMTItMTBUMTU6NDg6NTYuMjYzLTA4OjAwIgogICBkYW06c2hhMT0iMDc0OWZkM2I0ZWVjYWZhOWM1OGExZDY1MzU3N2M5MGFhMTE5MDMzZSIKICAgZGFtOk51bWJlcm9mdGV4dHVhbGNvbW1lbnRzPSIwIgogICBkYW06RmlsZWZvcm1hdD0iUE5HIgogICBkYW06UHJvZ3Jlc3NpdmU9Im5vIgogICBkYW06UGh5c2ljYWxoZWlnaHRpbmRwaT0iLTEiCiAgIGRhbTpNSU1FdHlwZT0iaW1hZ2UvcG5nIgogICBkYW06TnVtYmVyb2ZpbWFnZXM9IjEiCiAgIGRhbTpCaXRzcGVycGl4ZWw9IjMyIgogICBkYW06UGh5c2ljYWxoZWlnaHRpbmluY2hlcz0iLTEuMCIKICAgZGFtOlBoeXNpY2Fsd2lkdGhpbmRwaT0iLTEiCiAgIHRpZmY6SW1hZ2VMZW5ndGg9IjI1IgogICB0aWZmOkltYWdlV2lkdGg9IjI1IgogICBQYXlQYWw6c3RhdHVzPSJTb3VyY2VBcHByb3ZlZCIKICAgUGF5UGFsOnNvdXJjZU5vZGVQYXRoPSIvY29udGVudC9kYW0vUGF5UGFsRGlnaXRhbEFzc2V0cy9zcGFydGFJbWFnZXMvR2xvYmFsSW1hZ2VzL21rdGcvMjAxNGRlc2lnbi9jbG9zZV9yZXZlcnNlLnBuZyIKICAgUGF5UGFsOmlzU291cmNlPSJ0cnVlIj4KICAgPGRjOmxhbmd1YWdlPgogICAgPHJkZjpCYWcvPgogICA8L2RjOmxhbmd1YWdlPgogIDwvcmRmOkRlc2NyaXB0aW9uPgogPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KPD94cGFja2V0IGVuZD0iciI/PoWTukgAAACbSURBVEjH7dM7CoAwEATQ2AlaiB9EEAQLCzsLb6Ol9z9CnEIhhZr9JJ0L0214EHaM+Ucz1tpa+b5D0q+FHNmQUQj0yI40vsVKAjlAS33AgtgAFxIDVEgN+KBgwBsUHHiA1iiAA83IgSyxgPuLJk1hyWcqLSy7B8Eg3xWpIeqZiiFuD9iQtGhk6FoUF82Bhq+lBCmUx1IimflHOieo30np52rwiAAAAABJRU5ErkJggg==) center center no-repeat;
     }
-
-
 
     .footer .footer-tertiary,
     .footer .footer-tertiary a,
@@ -1807,7 +1700,9 @@ footer .footer-tertiary .footer-copyright {
 
 /* between 751 and 320 */
 @media screen and (max-width: 751px) and (min-width: 320px) {
-    .pay-head .new-badge {
+
+    .pay-head .new-badge,
+    .honey .new-badge {
         font-size: 17px;
         font-size: 1.21428571rem;
         position: initial;
@@ -1820,13 +1715,6 @@ footer .footer-tertiary .footer-copyright {
 
     .honey-image {
         margin-bottom: 30px;
-    }
-
-    .honey .new-badge {
-        font-size: 17px;
-        font-size: 1.21428571rem;
-        position: initial;
-        padding: 18px 13px 18px 13px;
     }
 
     .footer ul {
