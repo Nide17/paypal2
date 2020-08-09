@@ -16,7 +16,6 @@ class Footer extends Component {
     }
 
     render() {
-        console.log(this.state.corplinks);
         const allCorpLinks = this.state.corplinks.map((corpLink) => {
             return (
                 <li>

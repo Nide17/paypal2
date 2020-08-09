@@ -1,6 +1,5 @@
 import React from 'react'
 
-// import Corona from './corona/Corona';
 import Helping from './helping/Helping';
 import Yoga from './yoga/Yoga';
 import Spend from './spend/Spend';
@@ -12,16 +11,13 @@ import Join from './join/Join';
 import Clock from './clock/Clock';
 import Disclosure from './disclosure/Disclosure';
 import Video from './video/Video';
-import VideoAbove from './videoabove/VideoAbove';
 import Business from './payPalBusiness/Business';
 
 const Main = () => {
     return (
         <div className="main-content">
-            <VideoAbove />
             <Video />
             <Business />
-            {/* <Corona /> */}
             <Helping />
             <Yoga />
             <Spend />

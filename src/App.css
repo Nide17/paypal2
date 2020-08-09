@@ -10,11 +10,17 @@ body {
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
-    text-align: center;
+    /* text-align: center; */
 }
 
-.container::after,
+/* .container::after,
 .header-section .container {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+.header-section .container::after {
     content: "";
     display: table;
     clear: both;
@@ -73,7 +79,6 @@ li {
 }
 
 /* NAV IS DOWN AT THE END */
-
 .header-section+div>section.info-hero {
     padding-top: 72px;
 }
@@ -947,6 +952,35 @@ footer .footer-tertiary .footer-copyright {
     padding-right: 0;
 }
 
+.contain-btn button.btn-menu::after, .contain-btn button.btn-menu::before {
+    display: block;
+    content: "";
+    width: 13px;
+    position: absolute;
+    border: 1px solid #fff;
+    left: 14px;
+    border-left: 0;
+    border-right: 0;
+    -webkit-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+}
+.contain-btn button.btn-menu::before {
+    height: 9px;
+    top: 13px;
+}
+
+.contain-btn button.btn-menu::after {
+    height: 0;
+    top: 17px;
+    border-bottom: 0;
+}
+
+.btn-menu.btn-menu--outline-white:focus, .btn-menu.btn-menu--outline-white:hover {
+    color: #eaeced;
+}
+
+
+
 .main-menu a,
 .main-menu a:active,
 .main-menu a:focus,
@@ -1034,6 +1068,16 @@ footer .footer-tertiary .footer-copyright {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     z-index: -1;
+}
+
+.header-section--enhanced.header-section--active-link-1 .submenu-cols--grouped.submenu-cols .submenu-col__header,
+.submenu-cols--grouped.submenu-cols .submenu-col__header {
+    display: block;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #fff;
+    font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+    padding-top: 20px;
 }
 
 .submenu-wrapper {
@@ -1132,6 +1176,29 @@ footer .footer-tertiary .footer-copyright {
 .brand-logo:nth-child(2)~.brand-logo {
     padding-top: 30px;
 }
+
+.main-menu .closer-desktop {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+}
+
+.main-menu .closer-desktop button {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 29px;
+    height: 29px;
+    text-indent: -999em;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+}
+
 
 /* RESPONSIVENESS */
 /* 576 or larger */
@@ -1341,6 +1408,22 @@ footer .footer-tertiary .footer-copyright {
         align-content: stretch;
     }
 
+    .header-section--enhanced.header-section--active-link-1 .submenu-cols--grouped.submenu-cols,
+    .submenu-cols.submenu-cols--grouped.submenu-cols--3 {
+        padding-top: 32px;
+    }
+
+    .header-section--enhanced.header-section--active-link-1 .submenu-cols--grouped.submenu-cols .submenu-col li,
+    .submenu-cols--grouped.submenu-cols .submenu-col li {
+        height: 34px;
+    }
+
+    .header-section--enhanced.header-section--active-link-1 .submenu-cols--grouped.submenu-cols .submenu-col__header,
+    .submenu-cols--grouped.submenu-cols .submenu-col__header {
+        color: #eaeced;
+        padding-top: 0;
+    }
+
     .header-section .submenu-col {
         flex-grow: 1;
         width: 25%;
@@ -1355,8 +1438,7 @@ footer .footer-tertiary .footer-copyright {
     .header-section__subnav a {
         padding: 5% 1em 0 0;
         font-family: "PayPalSansSmall-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-        font-weight: 400;
-        font-weight: 300;
+        font-weight: 600;
     }
 
     .header-section__subnav em {
@@ -1382,6 +1464,23 @@ footer .footer-tertiary .footer-copyright {
         left: 0;
         top: 72px;
     }
+
+    .main-menu .closer-desktop {
+        display: inline-block;
+    }
+
+    .main-menu .closer-desktop button::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAFFWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTIgMS4xNDk2MDIsIDIwMTIvMTAvMTAtMTg6MTA6MjQgICAgICAgICI+CiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgICB4bWxuczpkYW09Imh0dHA6Ly93d3cuZGF5LmNvbS9kYW0vMS4wIgogICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICB4bWxuczpQYXlQYWw9Ind3dy5wYXlwYWwuY29tL2Jhc2UvdjEiCiAgIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIgogICBkYzptb2RpZmllZD0iMjAxMy0xMi0xMFQxNTo0ODo1Ny41NjQtMDg6MDAiCiAgIGRhbTpzaXplPSIyMTIiCiAgIGRhbTpQaHlzaWNhbHdpZHRoaW5pbmNoZXM9Ii0xLjAiCiAgIGRhbTpleHRyYWN0ZWQ9IjIwMTMtMTItMTBUMTU6NDg6NTYuMjYzLTA4OjAwIgogICBkYW06c2hhMT0iMDc0OWZkM2I0ZWVjYWZhOWM1OGExZDY1MzU3N2M5MGFhMTE5MDMzZSIKICAgZGFtOk51bWJlcm9mdGV4dHVhbGNvbW1lbnRzPSIwIgogICBkYW06RmlsZWZvcm1hdD0iUE5HIgogICBkYW06UHJvZ3Jlc3NpdmU9Im5vIgogICBkYW06UGh5c2ljYWxoZWlnaHRpbmRwaT0iLTEiCiAgIGRhbTpNSU1FdHlwZT0iaW1hZ2UvcG5nIgogICBkYW06TnVtYmVyb2ZpbWFnZXM9IjEiCiAgIGRhbTpCaXRzcGVycGl4ZWw9IjMyIgogICBkYW06UGh5c2ljYWxoZWlnaHRpbmluY2hlcz0iLTEuMCIKICAgZGFtOlBoeXNpY2Fsd2lkdGhpbmRwaT0iLTEiCiAgIHRpZmY6SW1hZ2VMZW5ndGg9IjI1IgogICB0aWZmOkltYWdlV2lkdGg9IjI1IgogICBQYXlQYWw6c3RhdHVzPSJTb3VyY2VBcHByb3ZlZCIKICAgUGF5UGFsOnNvdXJjZU5vZGVQYXRoPSIvY29udGVudC9kYW0vUGF5UGFsRGlnaXRhbEFzc2V0cy9zcGFydGFJbWFnZXMvR2xvYmFsSW1hZ2VzL21rdGcvMjAxNGRlc2lnbi9jbG9zZV9yZXZlcnNlLnBuZyIKICAgUGF5UGFsOmlzU291cmNlPSJ0cnVlIj4KICAgPGRjOmxhbmd1YWdlPgogICAgPHJkZjpCYWcvPgogICA8L2RjOmxhbmd1YWdlPgogIDwvcmRmOkRlc2NyaXB0aW9uPgogPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KPD94cGFja2V0IGVuZD0iciI/PoWTukgAAACbSURBVEjH7dM7CoAwEATQ2AlaiB9EEAQLCzsLb6Ol9z9CnEIhhZr9JJ0L0214EHaM+Ucz1tpa+b5D0q+FHNmQUQj0yI40vsVKAjlAS33AgtgAFxIDVEgN+KBgwBsUHHiA1iiAA83IgSyxgPuLJk1hyWcqLSy7B8Eg3xWpIeqZiiFuD9iQtGhk6FoUF82Bhq+lBCmUx1IimflHOieo30np52rwiAAAAABJRU5ErkJggg==) center center no-repeat;
+    }
+
+
 
     .footer .footer-tertiary,
     .footer .footer-tertiary a,
