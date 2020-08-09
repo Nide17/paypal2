@@ -7,7 +7,7 @@ class Header extends Component {
         this.state = {
             isBusiness: false,
             isPersonal: false,
-            isClosed: true
+            // isClosed: true
         }
         this.showBusiness = this.showBusiness.bind(this);
         this.showPersonal = this.showPersonal.bind(this);
@@ -32,7 +32,8 @@ class Header extends Component {
 
     closeHandler = () => {
         this.setState({
-            isClosed: false
+            isPersonal: false,
+            isBusiness: false
         })
     }
 
