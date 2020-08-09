@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <div class="dropdown">
+
+            <button onclick="showBusiness()" class="dropbtn">BUSINESS
+                <i class="fa fa-caret-down"></i>
+            </button>
+
+            <div id="bus-drop" class="dropdown-content">
+
+                <div class="row">
+                    <div class="column">
+                        <ul class="submenu-col">
+                            <li class="submenu-col__header">PayPal Commerce Platform</li>
+                            <li><a href="https://www.paypal.com/us/business" data-pa-click="HeaderSubnav0-Link-Overview"
+                                    pa-marked="1">Overview</a></li>
+                            <li><a href="https://www.paypal.com/us/business/accept-payments"
+                                    data-pa-click="HeaderSubnav1-Link-Accept Payments" pa-marked="1">Accept Payments</a>
+                            </li>
+                            <li><a href="https://www.paypal.com/us/business/make-payments"
+                                    data-pa-click="HeaderSubnav2-Link-Make Payments" pa-marked="1">Make Payments</a>
+                            </li>
+                            <li><a href="https://www.paypal.com/us/business/manage-risk"
+                                    data-pa-click="HeaderSubnav3-Link-Manage Risk" pa-marked="1">Manage Risk</a></li>
+                            <li><a href="https://www.paypal.com/us/business/accelerate-growth"
+                                    data-pa-click="HeaderSubnav4-Link-Accelerate Growth" pa-marked="1">Accelerate
+                                    Growth</a></li>
+                            <li><a href="https://www.paypal.com/us/business/streamline-operations"
+                                    data-pa-click="HeaderSubnav5-Link-Streamline Operations" pa-marked="1">Streamline
+                                    Operations</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <ul class="submenu-col">
+                            <li class="submenu-col__header">Solutions For</li>
+                            <li><a href="https://www.paypal.com/us/business"
+                                    data-pa-click="HeaderSubnav0-Link-Businesses" pa-marked="1">Businesses</a></li>
+                            <li><a href="https://www.paypal.com/us/business/enterprise"
+                                    data-pa-click="HeaderSubnav1-Link-Enterprises" pa-marked="1">Enterprises</a></li>
+                            <li><a href="https://www.paypal.com/us/business/platforms-and-marketplaces"
+                                    data-pa-click="HeaderSubnav2-Link-Platforms &amp; Marketplaces"
+                                    pa-marked="1">Platforms &amp; Marketplaces</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <ul class="submenu-col">
+                            <li class="submenu-col__header">Resources</li>
+                            <li><a href="https://www.paypal.com/us/business/getting-started"
+                                    data-pa-click="HeaderSubnav0-Link-Getting Started" pa-marked="1">Getting Started</a>
+                            </li>
+                            <li><a href="https://www.paypal.com/us/webapps/mpp/merchant-fees"
+                                    data-pa-click="HeaderSubnav1-Link-Pricing" pa-marked="1">Pricing</a></li>
+                            <li><a href="https://www.paypal.com/us/brc"
+                                    data-pa-click="HeaderSubnav2-Link-Business Resource Center" pa-marked="1">Business
+                                    Resource Center</a></li>
+                            <li><a href="https://www.paypal.com/us/webapps/mpp/nfp"
+                                    data-pa-click="HeaderSubnav3-Link-Nonprofits" pa-marked="1">Nonprofits</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="dropdown">
+
+            <button onclick="showPersonal()" class="dropbtn">PERSONAL
+                <i class="fa fa-caret-down"></i>
+            </button>
+
+            <div id="pers-drop" class="dropdown-content">
+
+                <div class="row">
+
+                    <div class="column">
+                        <h3>What is PayPal?</h3>
+                        <em>Learn how PayPal works in your everyday life</em>
+                        <h3>Check Out Securely Online</h3>
+                        <em>Use your credit cards or other funds</em>
+                    </div>
+
+                    <div class="column">
+                        <h3>PayPal Credit & Cards</h3>
+                        <em>Our credit, debit, prepaid cards &amp; PayPal Credit</em>
+                        <h3>PayPal App</h3>
+                        <em>Transfer money and track activity with our app</em>
+                    </div>
+
+                    <div class="column">
+                        <h3>PayPal Can Do That</h3>
+                        <em>Discover ways to manage and move your money</em>
+                        <h3>Shopping and more</h3>
+                        <em>Deals, gift cards and donations</em>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="links">
+            <a href="#home">DEVELOPER</a>
+        </div>
+        <div class="links">
+            <a href="#news">HELP</a>
+        </div>
+
+    </div>
+
+    <p>hi</p>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        showPersonal = () => {
+            document.getElementById("bus-drop").classList.remove("show");
+            document.getElementById("pers-drop").classList.toggle("show");
+        }
+        showBusiness = () => {
+            document.getElementById("pers-drop").classList.remove("show");
+            document.getElementById("bus-drop").classList.toggle("show");
+
+        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = (event) => {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

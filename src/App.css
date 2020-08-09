@@ -8,7 +8,7 @@ body {
 /* MIX */
 /* ------ */
 
-.container {
+.container, .header-section .container {
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
@@ -16,11 +16,12 @@ body {
     text-align: center;
 }
 
-.container::after {
+.container::after, .header-section .container {
     content: "";
     display: table;
     clear: both;
 }
+
 
 .row {
     margin-left: -12px;
@@ -322,7 +323,8 @@ h2.brand-head {
 
 div .video-image {
     /* background-image: url('/assets/images/video_542x308px.jpg'); */
-    background-image: url("https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/video_542x308px.jpg"); height: 205px;
+    background-image: url("https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/video_542x308px.jpg");
+    height: 205px;
     height: 204px;
 }
 
@@ -874,6 +876,42 @@ footer .footer-tertiary .footer-copyright {
     position: absolute;
 }
 
+.contain-btn button.menu-button::before {
+    height: 9px;
+    top: 13px;
+}
+
+.contain-btn button.menu-button::after, .contain-btn button.menu-button::before {
+    display: block;
+    content: "";
+    width: 13px;
+    position: absolute;
+    border: 1px solid #fff;
+    left: 14px;
+    border-left: 0;
+    border-right: 0;
+    -webkit-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+}
+
+.contain-btn button.menu-button::after {
+    height: 0;
+    top: 17px;
+    border-bottom: 0;
+}
+
+.contain-btn button.menu-button::after, .contain-btn button.menu-button::before {
+    display: block;
+    content: "";
+    width: 13px;
+    position: absolute;
+    border: 1px solid #fff;
+    left: 14px;
+    border-left: 0;
+    border-right: 0;
+    -webkit-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+}
 /* *, ::after, ::before {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
@@ -886,7 +924,7 @@ footer .footer-tertiary .footer-copyright {
     position: absolute;
     overflow: hidden;
     touch-action: none;
-    padding-left: 35px;
+    padding-left: 37px;
     background-color: transparent;
     color: #eaeced;
     border: 0;
@@ -899,6 +937,7 @@ footer .footer-tertiary .footer-copyright {
     display: block;
     position: relative;
     max-width: 320px;
+    padding: 13px 24px;
     padding: 12px 18px;
     margin-bottom: 0;
     background: #0070ba;
@@ -950,10 +989,24 @@ footer .footer-tertiary .footer-copyright {
     padding-left: 0;
 }
 
-.main-menu li a {
+.main-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: left;
+    display: none;
+}
+
+.main-menu ul {
+    padding-right: 0;
+}
+.main-menu a, .main-menu a:active, .main-menu a:focus, .main-menu a:hover, .main-menu a:visited {
+    color: #fff;
+}
+/* .main-menu li a {
     color: #fff;
     margin: 0 20px;
-}
+} */
 
 .header-section a.main-link,
 .header-section a.main-link:focus,
@@ -982,6 +1035,71 @@ footer .footer-tertiary .footer-copyright {
     position: relative;
 }
 
+.header-section__subnav {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-section__subnav .submenu-col {
+    margin: 0;
+}
+
+.header-section__subnav li {
+    display: list-item;
+    width: 100%;
+}
+
+.header-section__subnav a {
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    padding: 10px 0 10px 10px;
+}
+.header-section__subnav em {
+    display: none;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.closer-mobile button.header__subnav-control::after, .main-link.header__subnav-control::after, .main-link:focus.header__subnav-control::after, .main-link:hover.header__subnav-control::after {
+    content: '';
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    overflow: hidden;
+    border: 1px solid #fff;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    opacity: .75;
+    position: relative;
+    left: 5px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+.submenu-wrapper {
+    display: block;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0.2, 0.1), rgba(0, 0, 0, 0.2));
+    z-index: -1;
+}
+
+.header__subnav-control--is-active+.submenu-wrapper {
+    display: none;
+    z-index: 2;
+}
+
+
+
+
 .list-2 {
     margin-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, .3);
@@ -995,7 +1113,7 @@ footer .footer-tertiary .footer-copyright {
 .signup-login {
     width: 0;
     float: right;
-    position: static;
+    position: relative;
     text-align: right;
 }
 
@@ -1003,8 +1121,8 @@ footer .footer-tertiary .footer-copyright {
     display: flex;
     flex: 0 1 auto;
     position: absolute;
-    top: 18px;
-    right: 5%;
+    /* top: 18px; */
+    right: 0;
     width: max-content;
 }
 
@@ -1076,7 +1194,7 @@ footer .footer-tertiary .footer-copyright {
 /* 576 or larger */
 @media (min-width: 576px) {
 
-    .header-section .header-container {
+    .header-section .header-container, .header-section .container {
         max-width: 753px;
         padding-left: 36px;
         padding-right: 36px;
@@ -1096,7 +1214,7 @@ footer .footer-tertiary .footer-copyright {
 @media (min-width: 752px) {
 
     .container,
-    .header-section .header-container {
+    .header-section .header-container, .header-section .container {
         max-width: 1023px;
     }
 
@@ -1241,7 +1359,7 @@ footer .footer-tertiary .footer-copyright {
     }
 
     .container,
-    .header-section .header-container {
+    .header-section .header-container, .header-section .container {
         max-width: 1151px;
         padding-left: 48px;
         padding-right: 48px;
@@ -1261,8 +1379,72 @@ footer .footer-tertiary .footer-copyright {
 @media (min-width: 1152px) {
 
     .container,
-    .header-section .header-container {
+    .header-section .header-container, .header-section .container {
         max-width: 1192px;
+    }
+
+    .main-link,
+    .main-link:focus,
+    .main-link:hover {
+        padding: 25px;
+        margin: 0 1px;
+        /* letter-spacing: 1px; */
+    }
+
+    .header-section::after {
+        content: '';
+        display: block;
+    }
+
+    .header-section__subnav {
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header-section__subnav .submenu-cols {
+        display: flex;
+        padding-top: 10px;
+        justify-content: space-around;
+        align-content: stretch;
+    }
+
+    .header-section .submenu-col {
+        flex-grow: 1;
+        width: 25%;
+        max-width: 25%;
+        margin: 0 0 1rem;
+    }
+
+    .header-section__subnav li {
+        height: 72px;
+    }
+    
+    .header-section__subnav a {
+        padding: 5% 1em 0 0;
+        font-family: "PayPalSansSmall-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 400;
+        font-weight: 300;
+    }
+
+    .header-section__subnav em {
+        display: block;
+    }
+
+    .header-section::before {
+        height: 108px;
+    }
+    .closer-mobile button.header__subnav-control::after, .main-link.header__subnav-control::after, .main-link:focus.header__subnav-control::after, .main-link:hover.header__subnav-control::after {
+        top: -2px;
+        left: 10px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .submenu-wrapper {
+        position: absolute;
+        left: 0;
+        top: 72px;
     }
 
     .footer .footer-tertiary,
@@ -1283,6 +1465,10 @@ footer .footer-tertiary .footer-copyright {
         display: inline-block;
     }
 
+    .main-menu li {
+        display: inline-block;
+    }
+
     .contain-btn {
         display: none;
     }
@@ -1290,6 +1476,7 @@ footer .footer-tertiary .footer-copyright {
     .header-section {
         overflow: hidden;
         height: 72px;
+        transition: height .3s ease-out;
         overflow: visible;
         /* border-bottom: .3px ridge #88b5f8; */
     }
@@ -1299,19 +1486,19 @@ footer .footer-tertiary .footer-copyright {
     }
 
     .logo-container {
+        width: 0;
         float: left;
+        top: -6px;
     }
 
     .signup-login .signlogbtns:last-of-type {
         display: inline-block;
     }
 
-    @media only screen and (min-width: 1152px) {
-        .row.brand-container {
-            height: 150px;
-            margin-top: -50px;
-            margin-bottom: -50px;
-        }
+    .row.brand-container {
+        height: 150px;
+        margin-top: -50px;
+        margin-bottom: -50px;
     }
 
     .footer .row.row-flag {
