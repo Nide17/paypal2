@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/paypal2/static/css/main.6f803c4e.chunk.css",
-    "main.js": "/paypal2/static/js/main.3f9694ee.chunk.js",
-    "main.js.map": "/paypal2/static/js/main.3f9694ee.chunk.js.map",
+    "main.css": "/paypal2/static/css/main.05a3b8e4.chunk.css",
+    "main.js": "/paypal2/static/js/main.a3b16925.chunk.js",
+    "main.js.map": "/paypal2/static/js/main.a3b16925.chunk.js.map",
     "runtime-main.js": "/paypal2/static/js/runtime-main.6bd49d1c.js",
     "runtime-main.js.map": "/paypal2/static/js/runtime-main.6bd49d1c.js.map",
     "static/css/2.ed439b8d.chunk.css": "/paypal2/static/css/2.ed439b8d.chunk.css",
     "static/js/2.e17450bf.chunk.js": "/paypal2/static/js/2.e17450bf.chunk.js",
     "static/js/2.e17450bf.chunk.js.map": "/paypal2/static/js/2.e17450bf.chunk.js.map",
     "index.html": "/paypal2/index.html",
-    "precache-manifest.83751d04510c939a263ccf760b0590d4.js": "/paypal2/precache-manifest.83751d04510c939a263ccf760b0590d4.js",
+    "precache-manifest.a9dd0de8bed8684b67e27603b37f8d35.js": "/paypal2/precache-manifest.a9dd0de8bed8684b67e27603b37f8d35.js",
     "service-worker.js": "/paypal2/service-worker.js",
     "static/css/2.ed439b8d.chunk.css.map": "/paypal2/static/css/2.ed439b8d.chunk.css.map",
-    "static/css/main.6f803c4e.chunk.css.map": "/paypal2/static/css/main.6f803c4e.chunk.css.map",
+    "static/css/main.05a3b8e4.chunk.css.map": "/paypal2/static/css/main.05a3b8e4.chunk.css.map",
     "static/js/2.e17450bf.chunk.js.LICENSE.txt": "/paypal2/static/js/2.e17450bf.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6bd49d1c.js",
     "static/css/2.ed439b8d.chunk.css",
     "static/js/2.e17450bf.chunk.js",
-    "static/css/main.6f803c4e.chunk.css",
-    "static/js/main.3f9694ee.chunk.js"
+    "static/css/main.05a3b8e4.chunk.css",
+    "static/js/main.a3b16925.chunk.js"
   ]
 }
