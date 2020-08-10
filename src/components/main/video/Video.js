@@ -6,16 +6,16 @@ class Video extends Component {
         super()
 
         this.state = {
-            headerVideo: '',
-            phoneVideo: ''
+            headerVideo: "",
+            phoneVideo: ""
         }
     }
 
     componentDidMount() {
         this.setState({
             // headerVideo: '/assets/images/PPdesktop.mp4',
-            headerVideo: 'https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/v5/PP_EE_LP_Header_Output_US_desktop.mp4',
-            phoneVideo: 'https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/PP_EE_LP_Header_Output_US_V1.mp4'
+            headerVideo: "https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/v5/PP_EE_LP_Header_Output_US_desktop.mp4",
+            phoneVideo: "https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/PP_EE_LP_Header_Output_US_V1.mp4"
         })
     }
 
