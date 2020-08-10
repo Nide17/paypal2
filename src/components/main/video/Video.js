@@ -23,6 +23,7 @@ class Video extends Component {
         return (
             <div className="bg-video-container">
                 <video id="bg-video" className="bg-video" width="100%" autoPlay muted playsInline>
+                    {/* video by screen size: doesn't work */}
                     <source src={this.state.phoneVideo} media="(max-width: 767px)" type="video/mp4" />
                     <source src={this.state.headerVideo} type="video/mp4" />
                     <track kind="captions" />

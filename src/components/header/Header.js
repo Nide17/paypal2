@@ -81,14 +81,14 @@ class Header extends Component {
                                                             <li>
                                                                 <a href="/">
                                                                     What is PayPal?
-                                <em>Learn how PayPal works in your everyday life</em>
+                                                                        <em>Learn how PayPal works in your everyday life</em>
                                                                 </a>
                                                             </li>
                                                             <li>
                                                                 <a href="/">
 
                                                                     Check Out Securely Online
-                                <em>Use your credit cards or other funds</em>
+                                                                        <em>Use your credit cards or other funds</em>
 
                                                                 </a>
                                                             </li>
@@ -99,13 +99,13 @@ class Header extends Component {
                                                                 <a href="/">
                                                                     PayPal Credit &amp;
                                                                     Cards
-                                <em>Our credit, debit, prepaid cards &amp; PayPal Credit</em>
+                                                                        <em>Our credit, debit, prepaid cards &amp; PayPal Credit</em>
                                                                 </a>
                                                             </li>
                                                             <li>
                                                                 <a href="/">
                                                                     PayPal App
-                                <em>Transfer money and track activity with our app</em>
+                                                                        <em>Transfer money and track activity with our app</em>
                                                                 </a>
                                                             </li>
                                                         </ul>
@@ -114,13 +114,13 @@ class Header extends Component {
                                                             <li>
                                                                 <a href="/">
                                                                     PayPal Can Do That
-                                <em>Discover ways to manage and move your money</em>
+                                                                        <em>Discover ways to manage and move your money</em>
                                                                 </a>
                                                             </li>
                                                             <li>
                                                                 <a href="/">
                                                                     Shopping and more
-                                <em>Deals, gift cards and donations</em>
+                                                                        <em>Deals, gift cards and donations</em>
                                                                 </a>
                                                             </li>
                                                         </ul>

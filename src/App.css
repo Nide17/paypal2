@@ -344,8 +344,8 @@ video {
 }
 
 div .video-image {
+    background-image: url("https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/video_542x308px.jpg");
     background-image: url('/assets/images/video_542x308px.jpg');
-    /* background-image: url("https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/video_542x308px.jpg"); */
     height: 205px;
     height: 204px;
 }
@@ -828,6 +828,7 @@ footer .footer-tertiary .footer-copyright {
     display: inline-block;
     padding: 0;
     background: transparent url(https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg) center center no-repeat;
+    background: transparent url(/assets/images/logo.png) center center no-repeat;
     background-clip: border-box;
     background-origin: padding-box;
     background-position: 0 50%;
@@ -838,6 +839,8 @@ footer .footer-tertiary .footer-copyright {
 
 .logo-url {
     background-image: url(https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg);
+    background-image: url(/assets/images/logo.png);
+
 }
 
 /* LIST 1 */

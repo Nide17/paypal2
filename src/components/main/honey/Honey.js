@@ -7,8 +7,10 @@ const Honey = () => {
                 <div className="row">
 
                     <div className="col-md-6 text-xs-center honey-container col-xs-12">
+                    <picture>
+                        {/* <source className="honey-image" type="image/png" srcSet="https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/COINY_Hill.png" alt="Honey-coin" /> */}
                         <img className="honey-image" src="/assets/images/Hill.png" alt="Honey-coin" />
-                        {/* <img className="honey-image" src="https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/COINY_Hill.png" alt="Honey-coin" /> */}
+                        </picture>
                     </div>
 
                     <div className="col-xs-12 col-md-6 honey-container honey-text text-md-left">
