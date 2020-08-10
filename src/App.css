@@ -344,8 +344,8 @@ video {
 }
 
 div .video-image {
-    /* background-image: url('/assets/images/video_542x308px.jpg'); */
-    background-image: url("https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/video_542x308px.jpg");
+    background-image: url('/assets/images/video_542x308px.jpg');
+    /* background-image: url("https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/video_542x308px.jpg"); */
     height: 205px;
     height: 204px;
 }

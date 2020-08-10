@@ -79,13 +79,13 @@ class Header extends Component {
 
                                                         <ul className="submenu-col">
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/webapps/mpp/how-paypal-works/overview">
+                                                                <a href="/">
                                                                     What is PayPal?
                                 <em>Learn how PayPal works in your everyday life</em>
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/webapps/mpp/pay-online">
+                                                                <a href="/">
 
                                                                     Check Out Securely Online
                                 <em>Use your credit cards or other funds</em>
@@ -96,14 +96,14 @@ class Header extends Component {
 
                                                         <ul className="submenu-col">
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/webapps/mpp/credit-line-and-card-services">
+                                                                <a href="/">
                                                                     PayPal Credit &amp;
                                                                     Cards
                                 <em>Our credit, debit, prepaid cards &amp; PayPal Credit</em>
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/webapps/mpp/mobile-apps/paypal-app">
+                                                                <a href="/">
                                                                     PayPal App
                                 <em>Transfer money and track activity with our app</em>
                                                                 </a>
@@ -112,13 +112,13 @@ class Header extends Component {
 
                                                         <ul className="submenu-col">
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/webapps/mpp/what-can-paypal-do">
+                                                                <a href="/">
                                                                     PayPal Can Do That
                                 <em>Discover ways to manage and move your money</em>
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/webapps/mpp/about-paypal-products">
+                                                                <a href="/">
                                                                     Shopping and more
                                 <em>Deals, gift cards and donations</em>
                                                                 </a>
@@ -154,24 +154,24 @@ class Header extends Component {
                                                                 PayPal Commerce Platform
                                 </li>
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/business">
+                                                                <a href="/">
                                                                     Overview
                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/business/accept-payments">
+                                                                <a href="/">
                                                                     Accept Payments
                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/business/make-payments">Make Payments</a></li>
+                                                                <a href="/">Make Payments</a></li>
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/business/manage-risk">Manage Risk</a>
+                                                                <a href="/">Manage Risk</a>
                                                             </li>
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/business/accelerate-growth">Accelerate Growth</a></li>
+                                                                <a href="/">Accelerate Growth</a></li>
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/business/streamline-operations">
+                                                                <a href="/">
                                                                     Streamline Operations
                                 </a>
                                                             </li>
@@ -182,16 +182,16 @@ class Header extends Component {
                                                                 Solutions For
                                 </li>
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/business">
+                                                                <a href="/">
                                                                     Businesses
                                 </a></li>
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/business/enterprise">
+                                                                <a href="/">
                                                                     Enterprises
                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/business/platforms-and-marketplaces">
+                                                                <a href="/">
                                                                     Platforms &amp; Marketplaces
                                 </a>
                                                             </li>
@@ -202,22 +202,22 @@ class Header extends Component {
                                                                 Resources
                                 </li>
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/business/getting-started">
+                                                                <a href="/">
                                                                     Getting Started
                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/webapps/mpp/merchant-fees">
+                                                                <a href="/">
                                                                     Pricing
                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/brc">
+                                                                <a href="/">
                                                                     Business Resource Center
                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="https://www.paypal.com/us/webapps/mpp/nfp">
+                                                                <a href="/">
                                                                     Nonprofits
                                 </a>
                                                             </li>
