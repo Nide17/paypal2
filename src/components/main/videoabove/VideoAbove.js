@@ -1,7 +1,6 @@
 import React from 'react'
 
 const VideoAbove = (props) => {
-    console.log(props.isBusinessState);
     return (
         <section className="info-hero custom-infohero">
 

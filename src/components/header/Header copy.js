@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import VideoAbove from '../main/videoabove/VideoAbove'
 
 class Header extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
             isBusiness: false,
             isPersonal: false,
@@ -17,7 +17,7 @@ class Header extends Component {
         e.preventDefault();
         this.setState({
             isBusiness: false,
-            isPersonal: !this.state.isPersonal,
+            isPersonal: !this.state.isPersonal
         })
     }
 
@@ -37,6 +37,7 @@ class Header extends Component {
     }
 
     render() {
+
         return (
 
             <div>
@@ -46,7 +47,7 @@ class Header extends Component {
                         <div className="header-container container">
 
                             <div className="contain-btn">
-                                <button className="btn-menu small-button" type="button" onClick={this.props.onClick}>
+                                <button className="btn-menu" type="button">
                                     Menu
                         </button>
                             </div>
@@ -57,8 +58,7 @@ class Header extends Component {
                         </a>
                             </div>
 
-                            <nav id="mySidenav" className="main-menu" style={{width: 
-                            this.props.openMenu ? '240px' : '0px'}}>
+                            <nav className="main-menu">
                                 <ul className="list-1">
                                     <li>
                                         <a className="main-link personal-link header__subnav-control main-link header__subnav-control--is-active header__subnav-control--is-highlighted
@@ -236,12 +236,6 @@ class Header extends Component {
                                     </li>
                                     <li>
                                         <a href="/" className="main-link help-link">Help</a>
-                                    </li>
-                                </ul>
-
-                                <ul className="list-2">
-                                    <li className="list-2-link">
-                                        <a href="/" className="link-2" role="button">Sign Up for Free</a>
                                     </li>
                                 </ul>
                             </nav>

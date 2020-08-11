@@ -15,7 +15,7 @@ import Business from './payPalBusiness/Business';
 
 const Main = () => {
     return (
-        <div className="main-content">
+        <div>
             <Video />
             <Business />
             <Helping />
