@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import VideoAbove from '../main/videoabove/VideoAbove'
 
+import { CSSTransition } from 'react-transition-group';
+
 class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
             isBusiness: false,
-            isPersonal: false,
+            isPersonal: false
         }
         this.showBusiness = this.showBusiness.bind(this);
         this.showPersonal = this.showPersonal.bind(this);
@@ -40,7 +42,6 @@ class Header extends Component {
         return (
 
             <div>
-
                 <header className="header-section">
                     <div>
                         <div className="header-container container">
@@ -57,10 +58,22 @@ class Header extends Component {
                         </a>
                             </div>
 
-                            <nav id="mySidenav" className="main-menu" style={{width: 
-                            this.props.openMenu ? '240px' : '0px'}}>
+                            <CSSTransition
+                                                in={this.state.isPersonal ? this.state.isPersonal : this.state.isBusiness}
+                                                timeout={300}
+                                                classNames="alert"
+                                                // unmountOnExit
+                                                onEnter={null}
+                                                onExited={null}
+                                            >
+
+                            <nav id="mySidenav" className="main-menu" style={{
+                                width:
+                                    this.props.openMenu ? '240px' : ''
+                            }}>
                                 <ul className="list-1">
                                     <li>
+
                                         <a className="main-link personal-link header__subnav-control main-link header__subnav-control--is-active header__subnav-control--is-highlighted
                                 dropbtn" href="/" onClick={this.showPersonal}>
                                             Personal
@@ -71,66 +84,67 @@ class Header extends Component {
                                                 this.state.isPersonal ? 'block' : 'none'
                                         }}>
 
-                                            <div className="container">
+                                                <div className="container">
 
-                                                <div className="header-section__subnav">
+                                                    <div className="header-section__subnav">
 
-                                                    <div className="submenu-cols">
+                                                        <div className="submenu-cols">
 
-                                                        <ul className="submenu-col">
-                                                            <li>
-                                                                <a href="/">
-                                                                    What is PayPal?
+                                                            <ul className="submenu-col">
+                                                                <li>
+                                                                    <a href="/">
+                                                                        What is PayPal?
                                                                         <em>Learn how PayPal works in your everyday life</em>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/">
 
-                                                                    Check Out Securely Online
+                                                                        Check Out Securely Online
                                                                         <em>Use your credit cards or other funds</em>
 
-                                                                </a>
-                                                            </li>
-                                                        </ul>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
 
-                                                        <ul className="submenu-col">
-                                                            <li>
-                                                                <a href="/">
-                                                                    PayPal Credit &amp;
-                                                                    Cards
+                                                            <ul className="submenu-col">
+                                                                <li>
+                                                                    <a href="/">
+                                                                        PayPal Credit &amp;
+                                                                        Cards
                                                                         <em>Our credit, debit, prepaid cards &amp; PayPal Credit</em>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/">
-                                                                    PayPal App
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/">
+                                                                        PayPal App
                                                                         <em>Transfer money and track activity with our app</em>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
 
-                                                        <ul className="submenu-col">
-                                                            <li>
-                                                                <a href="/">
-                                                                    PayPal Can Do That
+                                                            <ul className="submenu-col">
+                                                                <li>
+                                                                    <a href="/">
+                                                                        PayPal Can Do That
                                                                         <em>Discover ways to manage and move your money</em>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/">
-                                                                    Shopping and more
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/">
+                                                                        Shopping and more
                                                                         <em>Deals, gift cards and donations</em>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+
+                                                        </div>
+
+                                                        <span className="closer-desktop"><button href="#" className="closer" title="Close" onClick={this.closeHandler}>Close</button></span>
 
                                                     </div>
-
-                                                    <span className="closer-desktop"><button href="#" className="closer" title="Close" onClick={this.closeHandler}>Close</button></span>
-
                                                 </div>
-                                            </div>
+
                                         </div>
 
                                     </li>
@@ -142,92 +156,92 @@ class Header extends Component {
                                             display:
                                                 this.state.isBusiness ? 'block' : 'none'
                                         }}>
+                                                <div className="container">
 
-                                            <div className="container">
+                                                    <div className="header-section__subnav">
 
-                                                <div className="header-section__subnav">
+                                                        <div className="submenu-cols submenu-cols--grouped submenu-cols--3">
 
-                                                    <div className="submenu-cols submenu-cols--grouped submenu-cols--3">
-
-                                                        <ul className="submenu-col">
-                                                            <li className="submenu-col__header">
-                                                                PayPal Commerce Platform
+                                                            <ul className="submenu-col">
+                                                                <li className="submenu-col__header">
+                                                                    PayPal Commerce Platform
                                 </li>
-                                                            <li>
-                                                                <a href="/">
-                                                                    Overview
+                                                                <li>
+                                                                    <a href="/">
+                                                                        Overview
                                 </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/">
-                                                                    Accept Payments
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/">
+                                                                        Accept Payments
                                 </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/">Make Payments</a></li>
-                                                            <li>
-                                                                <a href="/">Manage Risk</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/">Accelerate Growth</a></li>
-                                                            <li>
-                                                                <a href="/">
-                                                                    Streamline Operations
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/">Make Payments</a></li>
+                                                                <li>
+                                                                    <a href="/">Manage Risk</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/">Accelerate Growth</a></li>
+                                                                <li>
+                                                                    <a href="/">
+                                                                        Streamline Operations
                                 </a>
-                                                            </li>
+                                                                </li>
 
-                                                        </ul>
-                                                        <ul className="submenu-col">
-                                                            <li className="submenu-col__header">
-                                                                Solutions For
+                                                            </ul>
+                                                            <ul className="submenu-col">
+                                                                <li className="submenu-col__header">
+                                                                    Solutions For
                                 </li>
-                                                            <li>
-                                                                <a href="/">
-                                                                    Businesses
+                                                                <li>
+                                                                    <a href="/">
+                                                                        Businesses
                                 </a></li>
-                                                            <li>
-                                                                <a href="/">
-                                                                    Enterprises
+                                                                <li>
+                                                                    <a href="/">
+                                                                        Enterprises
                                 </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/">
-                                                                    Platforms &amp; Marketplaces
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/">
+                                                                        Platforms &amp; Marketplaces
                                 </a>
-                                                            </li>
-                                                        </ul>
+                                                                </li>
+                                                            </ul>
 
-                                                        <ul className="submenu-col">
-                                                            <li className="submenu-col__header">
-                                                                Resources
+                                                            <ul className="submenu-col">
+                                                                <li className="submenu-col__header">
+                                                                    Resources
                                 </li>
-                                                            <li>
-                                                                <a href="/">
-                                                                    Getting Started
+                                                                <li>
+                                                                    <a href="/">
+                                                                        Getting Started
                                 </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/">
-                                                                    Pricing
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/">
+                                                                        Pricing
                                 </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/">
-                                                                    Business Resource Center
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/">
+                                                                        Business Resource Center
                                 </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="/">
-                                                                    Nonprofits
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/">
+                                                                        Nonprofits
                                 </a>
-                                                            </li>
-                                                        </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <span className="closer-desktop"><button href="#" className="closer" title="Close" onClick={this.closeHandler}>Close</button></span>
+
                                                     </div>
-
-                                                    <span className="closer-desktop"><button href="#" className="closer" title="Close" onClick={this.closeHandler}>Close</button></span>
-
                                                 </div>
-                                            </div>
+
                                         </div>
 
                                     </li>
@@ -241,10 +255,11 @@ class Header extends Component {
 
                                 <ul className="list-2">
                                     <li className="list-2-link">
-                                        <a href="/" className="link-2" role="button">Sign Up for Free</a>
+                                        <a href="/" className="signup-btn link-2" role="button">Sign Up for Free</a>
                                     </li>
                                 </ul>
                             </nav>
+                            </CSSTransition>
 
                             <div className="signup-login">
                                 <div>
@@ -258,6 +273,8 @@ class Header extends Component {
                     </div>
 
                 </header>
+
+
                 <VideoAbove isBusinessState={this.state.isBusiness} isPersonalState={this.state.isPersonal} />
             </div>
         );

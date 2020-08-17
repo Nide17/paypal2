@@ -1,4 +1,5 @@
 import React from 'react'
+import payImg from '../../../images/PP_EE_QR_Code_US-(White).gif'
 
 const Pay = () => {
     return (
@@ -25,7 +26,7 @@ const Pay = () => {
                     </div>
 
                     <div className="col-md-6 text-xs-center pay-container col-xs-12">
-                        <img className="pay-image" src="/assets/images/PP_EE_QR_Code_US-(White).gif" alt="Groceries" />
+                        <img className="pay-image" src={payImg} alt="Groceries" />
                     </div>
 
                 </div>

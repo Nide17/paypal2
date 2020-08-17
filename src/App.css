@@ -175,6 +175,7 @@ h1.info-hero-head {
 }
 
 .btn-menu,
+.signup-btn,
 .btn-hero,
 .join-btn {
     display: block;
@@ -186,18 +187,23 @@ h1.info-hero-head {
     background: #0070ba;
     font-size: .9375rem;
     font-weight: 700;
+    line-height: 22px;
+    font-size: 15px;
     color: #fff;
     text-align: center;
     text-decoration: none;
     border-radius: 25px;
     border: none;
     box-sizing: border-box;
+    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
+
+}
+
+.signup-btn {
+    padding: 13px 24px;
 }
 
 .join-btn {
-    font-size: 14px;
-    font-family: "PayPalSansSmall-Regular", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    line-height: 22px;
     color: #0d3685;
     background: #fff;
 }
@@ -207,9 +213,6 @@ h1.info-hero-head {
     margin-right: auto;
     margin-top: 30px;
     float: none;
-    font-size: 15px;
-    font-family: "PayPalSansSmall-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    line-height: 22px;
 }
 
 
@@ -360,8 +363,8 @@ video {
 }
 
 div .video-image {
-    background-image: url("/assets/images/video_542x308px.jpg");
     background-image: url("https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/video_542x308px.jpg");
+    background-image: url("./images/video_542x308px.jpg");
     height: 205px;
     height: 204px;
 }
@@ -685,7 +688,7 @@ a.responding-link:hover {
 }
 
 .footer .country-selector {
-    background-image: url("/assets/images/sprite_countries_flag4.png");
+    background-image: url("./images/sprite_countries_flag4.png");
 }
 
 .footer .footer-main a {
@@ -806,8 +809,8 @@ footer .footer-tertiary .footer-copyright {
     height: 43px;
     display: inline-block;
     padding: 0;
-    background: transparent url("/assets/images/logo.png") center center no-repeat;
     background: transparent url(https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg) center center no-repeat;
+    background: transparent url("./images/logo.png") center center no-repeat;
     background-clip: border-box;
     background-origin: padding-box;
     background-position: 0 50%;
@@ -817,7 +820,7 @@ footer .footer-tertiary .footer-copyright {
 }
 
 .logo-url {
-    background-image: url("/assets/images/logo.png");
+    background: transparent url("./images/logo.png") center center no-repeat;
     background-image: url(https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg);
 }
 
@@ -1406,11 +1409,41 @@ footer .footer-tertiary .footer-copyright {
     }
 
     .header-section {
-        overflow: hidden;
+        /* overflow: hidden; */
         height: 72px;
-        transition: height .3s ease-out;
+        transition: height .2s ease-out; 
         overflow: visible;
     }
+
+    .alert-enter {
+        overflow:hidden;
+        transition: height .2s ease-out; 
+        transition:transform 0.2s ease-out;
+        height:auto;
+        transform:scaleY(1);
+        transform-origin:top;
+      }
+      .alert-enter-active {
+        overflow:hidden;
+        transition: height .2s ease-out; 
+        transition:transform 0.2s ease-out;
+        height:auto;
+        transform:scaleY(1);
+        transform-origin:top;
+      }
+      .alert-exit {
+        transition: height .2s ease-out; 
+        transition:transform 0.2s ease-out;
+        height:auto;
+      }
+      .alert-exit-active {
+        overflow:hidden;
+        transition: height .2s ease-out; 
+        transition:transform 0.2s ease-out;
+        height:auto;
+        transform:scaleY(1);
+        transform-origin:top;
+      }
 
     .list-2 {
         display: none;
@@ -1484,7 +1517,8 @@ footer .footer-tertiary .footer-copyright {
         padding-top: 15px;
         padding-left: 15px;
         position: absolute;
-        min-height: 1000px;
+        /* min-height: 1000px; */
+        min-height: 5210px;
         border-right: 1px solid rgba(255, 255, 255, .3);
     }
 
@@ -1503,10 +1537,10 @@ footer .footer-tertiary .footer-copyright {
     .footer .hidden-lg-down {
         display: none !important;
     }
-
+/* 
     .main-menu .list-1 a {
         display: none;
-    }
+    } */
 
     .logo-text {
         width: 26px;
@@ -1515,6 +1549,10 @@ footer .footer-tertiary .footer-copyright {
         background-position: left;
         background-clip: content-box;
         background-origin: content-box;
+    }
+    ul li {
+        text-align: left;
+        display: list-item;
     }
 }
 

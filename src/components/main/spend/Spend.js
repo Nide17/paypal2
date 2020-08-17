@@ -1,4 +1,5 @@
 import React from 'react'
+import spendImg from '../../../images/groceries_image_update.gif'
 
 const Spend = () => {
     return (
@@ -9,7 +10,7 @@ const Spend = () => {
                 <div className="row">
 
                     <div className="col-md-6 text-xs-center spend-container col-xs-12">
-                        <img className="spend-image" src="/assets/images/groceries_image_update.gif" alt="QR code" />
+                        <img className="spend-image" src={spendImg} alt="QR code" />
                     </div>
 
                     <div className="col-xs-12 col-md-6 spend-container text-md-left">

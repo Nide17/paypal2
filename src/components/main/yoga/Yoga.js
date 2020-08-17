@@ -1,4 +1,5 @@
 import React from 'react'
+import yogaImg from '../../../images/Purple_Yoga.png'
 
 const Yoga = () => {
     return (
@@ -19,7 +20,7 @@ const Yoga = () => {
                         </p>
                     </div>
 
-                    <div className="col-xs-12 col-md-6 text-xs-center"><img className="yoga-section-image" src="/assets/images/Purple_Yoga.png" alt="Send money in seconds" />
+                    <div className="col-xs-12 col-md-6 text-xs-center"><img className="yoga-section-image" src={yogaImg} alt="Send money in seconds" />
                     </div>
 
                 </div>
