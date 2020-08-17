@@ -1,5 +1,5 @@
 import React from 'react'
-import honeyImg from '../../../images/Hill.png'
+// import honeyImg from '../../../images/Hill.png'
 
 const Honey = () => {
     return (
@@ -9,7 +9,8 @@ const Honey = () => {
 
                     <div className="col-md-6 text-xs-center honey-container col-xs-12">
                         <picture>
-                            <source className="honey-image" type="image/png" srcSet={honeyImg} alt="Honey-coin" />
+                            {/* <source className="honey-image" type="image/png" srcSet={honeyImg} alt="Honey-coin" /> */}
+                            <source className="honey-image" type="image/png" srcSet="https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/COINY_Hill.png" alt="Honey-coin" />
                             <img className="honey-image" src="https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/COINY_Hill.png" alt="Honey-coin" />
                         </picture>
                     </div>
