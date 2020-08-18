@@ -39,13 +39,16 @@ class Header extends Component {
     }
 
     render() {
-        let className = 'main-menu';
-        this.props.openMenu ? className += ' menu-opened' : className='main-menu'
+        let headerClassName = 'header-section';
+        let className = 'main-menu'; 
+
+        this.props.openMenu ? headerClassName += ' header-section--menu-open' : headerClassName = 'header-section';
+        this.props.openMenu ? className += ' menu-opened' : className = 'main-menu';
 
         return (
 
             <div>
-                <header className="header-section">
+                <header className={headerClassName}>
                     <div>
                         <div className="header-container container">
 
@@ -78,7 +81,11 @@ class Header extends Component {
                                             <div className="container">
 
                                                 <div className="header-section__subnav">
-                                                <span class="closer-mobile"><button href="#" class="closer" data-pa-click="HeaderSubnav-Link-Personal">Personal</button></span>
+                                                    <span className="closer-mobile">
+                                                        <button href="#" className="closer" onClick={this.showPersonal}>
+                                                            Personal
+                                                </button>
+                                                    </span>
 
                                                     <div className="submenu-cols">
 
@@ -152,7 +159,9 @@ class Header extends Component {
 
                                                 <div className="header-section__subnav">
 
-                                                <span class="closer-mobile"><button href="#" class="closer">Business</button></span>
+                                                    <span className="closer-mobile">
+                                                    <button href="#" className="closer" onClick={this.showBusiness}>
+                                                    Business</button></span>
 
                                                     <div className="submenu-cols submenu-cols--grouped submenu-cols--3">
 

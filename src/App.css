@@ -854,21 +854,39 @@ footer .footer-tertiary .footer-copyright {
     left: 14px;
     border-left: 0;
     border-right: 0;
+    -webkit-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
 }
 
 .contain-btn button.btn-menu::before,
-.contain-btn button.menu-button::before {
+.contain-btn button.btn-menu::before {
     height: 9px;
     top: 13px;
 }
 
 .contain-btn button.btn-menu::after,
-.contain-btn button.menu-button::after {
+.contain-btn button.btn-menu::after {
     height: 0;
     top: 17px;
     border-bottom: 0;
 }
+.header-section--menu-open .contain-btn button.btn-menu::after, 
+.header-section--menu-open .contain-btn button.btn-menu::before {
+    height: 0;
+    border-bottom: 0;
+    top: 17px;
+}
+
+.header-section--menu-open .contain-btn button.btn-menu::before {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.header-section--menu-open .contain-btn button.btn-menu::after {
+    -webkit-transform: rotate(-225deg);
+    transform: rotate(-225deg);
+}
+
 
 .btn-menu.btn-menu--outline-white:focus,
 .btn-menu.btn-menu--outline-white:hover {
@@ -1112,7 +1130,7 @@ footer .footer-tertiary .footer-copyright {
     border: none;
     background-color: transparent;
     font-family: "PayPalSansBig-Medium", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     padding: 0;
     font-size: 1rem;
 }
@@ -1451,6 +1469,9 @@ button, input {
         background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAFFWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTIgMS4xNDk2MDIsIDIwMTIvMTAvMTAtMTg6MTA6MjQgICAgICAgICI+CiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgICB4bWxuczpkYW09Imh0dHA6Ly93d3cuZGF5LmNvbS9kYW0vMS4wIgogICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICB4bWxuczpQYXlQYWw9Ind3dy5wYXlwYWwuY29tL2Jhc2UvdjEiCiAgIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIgogICBkYzptb2RpZmllZD0iMjAxMy0xMi0xMFQxNTo0ODo1Ny41NjQtMDg6MDAiCiAgIGRhbTpzaXplPSIyMTIiCiAgIGRhbTpQaHlzaWNhbHdpZHRoaW5pbmNoZXM9Ii0xLjAiCiAgIGRhbTpleHRyYWN0ZWQ9IjIwMTMtMTItMTBUMTU6NDg6NTYuMjYzLTA4OjAwIgogICBkYW06c2hhMT0iMDc0OWZkM2I0ZWVjYWZhOWM1OGExZDY1MzU3N2M5MGFhMTE5MDMzZSIKICAgZGFtOk51bWJlcm9mdGV4dHVhbGNvbW1lbnRzPSIwIgogICBkYW06RmlsZWZvcm1hdD0iUE5HIgogICBkYW06UHJvZ3Jlc3NpdmU9Im5vIgogICBkYW06UGh5c2ljYWxoZWlnaHRpbmRwaT0iLTEiCiAgIGRhbTpNSU1FdHlwZT0iaW1hZ2UvcG5nIgogICBkYW06TnVtYmVyb2ZpbWFnZXM9IjEiCiAgIGRhbTpCaXRzcGVycGl4ZWw9IjMyIgogICBkYW06UGh5c2ljYWxoZWlnaHRpbmluY2hlcz0iLTEuMCIKICAgZGFtOlBoeXNpY2Fsd2lkdGhpbmRwaT0iLTEiCiAgIHRpZmY6SW1hZ2VMZW5ndGg9IjI1IgogICB0aWZmOkltYWdlV2lkdGg9IjI1IgogICBQYXlQYWw6c3RhdHVzPSJTb3VyY2VBcHByb3ZlZCIKICAgUGF5UGFsOnNvdXJjZU5vZGVQYXRoPSIvY29udGVudC9kYW0vUGF5UGFsRGlnaXRhbEFzc2V0cy9zcGFydGFJbWFnZXMvR2xvYmFsSW1hZ2VzL21rdGcvMjAxNGRlc2lnbi9jbG9zZV9yZXZlcnNlLnBuZyIKICAgUGF5UGFsOmlzU291cmNlPSJ0cnVlIj4KICAgPGRjOmxhbmd1YWdlPgogICAgPHJkZjpCYWcvPgogICA8L2RjOmxhbmd1YWdlPgogIDwvcmRmOkRlc2NyaXB0aW9uPgogPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KPD94cGFja2V0IGVuZD0iciI/PoWTukgAAACbSURBVEjH7dM7CoAwEATQ2AlaiB9EEAQLCzsLb6Ol9z9CnEIhhZr9JJ0L0214EHaM+Ucz1tpa+b5D0q+FHNmQUQj0yI40vsVKAjlAS33AgtgAFxIDVEgN+KBgwBsUHHiA1iiAA83IgSyxgPuLJk1hyWcqLSy7B8Eg3xWpIeqZiiFuD9iQtGhk6FoUF82Bhq+lBCmUx1IimflHOieo30np52rwiAAAAABJRU5ErkJggg==) center center no-repeat;
     }
 
+    .main-menu .closer-mobile button {
+        display: none;
+    }
     h1.info-hero-head.hero-business-extended {
         margin-top: 330px;
     }
@@ -1556,22 +1577,23 @@ button, input {
         overflow-x: hidden;
         transition: all .3s ease-in;
     }
+/* 
+    nav.main-menu.menu-opened {
+        width: 240px;
+    } */
 
     .header-section .main-menu {
         background-color: #009cde;
         background-image: radial-gradient(circle farthest-side at center bottom, #009cde, #003087 125%);
+        -webkit-transform: translateX(-240px);
         transform: translateX(-240px);
-        /* width: 240px; */
+        width: 240px;
         /* width: 0; */
         height: 100%;
         padding-top: 15px;
         padding-left: 15px;
         position: absolute;
         border-right: 1px solid rgba(255, 255, 255, .3);
-    }
-
-    nav.main-menu.menu-opened {
-        width: 240px;
     }
 
     .footer {
