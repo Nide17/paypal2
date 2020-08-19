@@ -870,7 +870,8 @@ footer .footer-tertiary .footer-copyright {
     top: 17px;
     border-bottom: 0;
 }
-.header-section--menu-open .contain-btn button.btn-menu::after, 
+
+.header-section--menu-open .contain-btn button.btn-menu::after,
 .header-section--menu-open .contain-btn button.btn-menu::before {
     height: 0;
     border-bottom: 0;
@@ -1126,6 +1127,7 @@ footer .footer-tertiary .footer-copyright {
 .main-menu .closer-mobile {
     display: inline-block;
 }
+
 .main-menu .closer-mobile button {
     border: none;
     background-color: transparent;
@@ -1134,7 +1136,11 @@ footer .footer-tertiary .footer-copyright {
     padding: 0;
     font-size: 1rem;
 }
-.header-section .closer-mobile button, .header-section .main-link, .header-section .main-link:focus, .header-section .main-link:hover {
+
+.header-section .closer-mobile button,
+.header-section .main-link,
+.header-section .main-link:focus,
+.header-section .main-link:hover {
     color: #fff;
     text-transform: uppercase;
     line-height: 2.7;
@@ -1142,7 +1148,8 @@ footer .footer-tertiary .footer-copyright {
     position: relative;
 }
 
-button, input {
+button,
+input {
     overflow: visible;
 }
 
@@ -1353,10 +1360,11 @@ button, input {
         top: 0;
         transition: all .3s ease-out;
     }
+
     .header-section {
         /* overflow: hidden; */
         height: 72px;
-        transition: height .3s ease-out; 
+        transition: height .3s ease-out;
         overflow: visible;
     }
 
@@ -1472,9 +1480,11 @@ button, input {
     .main-menu .closer-mobile button {
         display: none;
     }
+
     h1.info-hero-head.hero-business-extended {
         margin-top: 330px;
     }
+
     h1.info-hero-head.hero-personal-extended {
         margin-top: 190px;
     }
@@ -1487,34 +1497,37 @@ button, input {
     }
 
     .alert-enter {
-        overflow:hidden;
-        transition: height .3s ease-out; 
-        transition:transform 0.3s ease-out;
-        height:auto;
-        transform:scaleY(1);
-        transform-origin:top;
-      }
-      .alert-enter-active {
-        overflow:hidden;
-        transition: height .3s ease-out; 
-        transition:transform 0.3s ease-out;
-        height:auto;
-        transform:scaleY(1);
-        transform-origin:top;
-      }
-      .alert-exit {
-        transition: height .3s ease-out; 
-        transition:transform 0.3s ease-out;
-        height:auto;
-      }
-      .alert-exit-active {
-        overflow:hidden;
-        transition: height .3s ease-out; 
-        transition:transform 0.3s ease-out;
-        height:auto;
-        transform:scaleY(1);
-        transform-origin:top;
-      }
+        overflow: hidden;
+        transition: height .3s ease-out;
+        transition: transform 0.3s ease-out;
+        height: auto;
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+
+    .alert-enter-active {
+        overflow: hidden;
+        transition: height .3s ease-out;
+        transition: transform 0.3s ease-out;
+        height: auto;
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+
+    .alert-exit {
+        transition: height .3s ease-out;
+        transition: transform 0.3s ease-out;
+        height: auto;
+    }
+
+    .alert-exit-active {
+        overflow: hidden;
+        transition: height .3s ease-out;
+        transition: transform 0.3s ease-out;
+        height: auto;
+        transform: scaleY(1);
+        transform-origin: top;
+    }
 
     .list-2 {
         display: none;
@@ -1577,7 +1590,8 @@ button, input {
         overflow-x: hidden;
         transition: all .3s ease-in;
     }
-/* 
+
+    /* 
     nav.main-menu.menu-opened {
         width: 240px;
     } */
@@ -1611,7 +1625,8 @@ button, input {
     .footer .hidden-lg-down {
         display: none !important;
     }
-/* 
+
+    /* 
     .main-menu .list-1 a {
         display: none;
     } */
@@ -1624,6 +1639,7 @@ button, input {
         background-clip: content-box;
         background-origin: content-box;
     }
+
     ul li {
         text-align: left;
         display: list-item;
@@ -1632,11 +1648,12 @@ button, input {
     .header__subnav-control--is-active+.submenu-wrapper .header-section__subnav {
         -webkit-animation: slide-from-left .4s ease-out 1;
         animation: slide-from-left .4s ease-out 1;
-        border-right: 1px solid rgba(255,255,255,.3);
+        border-right: 1px solid rgba(255, 255, 255, .3);
     }
+
     .header-section__subnav {
         background-color: #009cde;
-        background-image: radial-gradient(circle farthest-side at center bottom,#009cde,#003087 125%);
+        background-image: radial-gradient(circle farthest-side at center bottom, #009cde, #003087 125%);
         width: 240px;
         height: 100%;
         padding: 15px;
@@ -1655,7 +1672,8 @@ button, input {
         padding-top: 10%;
         padding-bottom: 20px;
     }
-    .header-section .main-menu{
+
+    .header-section .main-menu {
         min-height: 300vh;
     }
 
@@ -1701,7 +1719,8 @@ button, input {
     .bg-video-container {
         height: 80px;
     }
-    .header-section .main-menu{
+
+    .header-section .main-menu {
         min-height: 434vh;
     }
 }
@@ -1878,7 +1897,7 @@ button, input {
         margin-right: 3px;
     }
 
-    .header-section .main-menu{
+    .header-section .main-menu {
         min-height: 740vh;
     }
 
@@ -1908,7 +1927,8 @@ button, input {
         border-radius: 4px;
         margin-right: 2px;
     }
-    .header-section .main-menu{
+
+    .header-section .main-menu {
         min-height: 830vh;
     }
 }
@@ -1920,13 +1940,15 @@ button, input {
         transform: translateX(-240px);
         opacity: 0;
     }
+
     1% {
         opacity: 1;
         -webkit-transform: translateX(-240px);
         transform: translateX(-240px);
     }
+
     100% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
-  }
+}
