@@ -21,7 +21,7 @@ class Clock extends Component {
     }
 
     componentDidMount() {
-        this.intervalID = setInterval(this.ChangeTime, 1)
+        this.intervalID = setInterval(this.ChangeTime, 1000)
     }
 
     componentWillUnmount() {
