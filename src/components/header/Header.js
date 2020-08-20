@@ -3,10 +3,24 @@ import React from 'react';
 function Header(props) {
 
     let headerClassName = 'header-section';
+
     let className = 'main-menu';
+    let menuPersonalLinkClassName = 'main-link personal-link header__subnav-control';
+    let menuBusinessLinkClassName = 'main-link business-link header__subnav-control';
+
 
     props.openMenu ? headerClassName += ' header-section--menu-open' : headerClassName = 'header-section';
     props.openMenu ? className += ' menu-opened' : className = 'main-menu';
+
+    props.isPersonal ?
+        headerClassName += ' header-section--submenu-open header-section--enhanced header-section--active-link-0' :
+        props.isBusiness ?
+            headerClassName += ' header-section--submenu-open header-section--enhanced header-section--active-link-1' :
+            headerClassName = 'header-section';
+
+    props.isPersonal ? menuPersonalLinkClassName += ' header__subnav-control--is-active header__subnav-control--is-highlighted' : menuPersonalLinkClassName = 'main-link personal-link header__subnav-control';
+
+    props.isBusiness ? menuBusinessLinkClassName += ' header__subnav-control--is-active header__subnav-control--is-highlighted' : menuBusinessLinkClassName = 'main-link business-link header__subnav-control';
 
     return (
         <header className={headerClassName}>
@@ -29,8 +43,7 @@ function Header(props) {
                         <ul className="list-1">
                             <li>
 
-                                <a className="main-link personal-link header__subnav-control main-link header__subnav-control--is-active header__subnav-control--is-highlighted
-                                dropbtn" href="/" onClick={props.showPersonal}>
+                                <a className={menuPersonalLinkClassName} href="/" onClick={props.showPersonal}>
                                     Personal
                                 </a>
 
@@ -109,7 +122,7 @@ function Header(props) {
                             </li>
 
                             <li>
-                                <a className="main-link personal-link header__subnav-control main-link header__subnav-control--is-active header__subnav-control--is-highlighted dropbtn" href="/" onClick={props.showBusiness}>Business</a>
+                                <a className={menuBusinessLinkClassName} href="/" onClick={props.showBusiness}>Business</a>
 
                                 <div className="submenu-wrapper" id="submenu-Business" style={{
                                     display:

@@ -14,7 +14,6 @@ class Video extends Component {
 
     componentDidMount() {
         const screenWidth = window.screen.width;
-        console.log(videoPhone)
         
         this.setState({
             videoSrc: (screenWidth > 415) ? videoPC : videoPhone

@@ -55,6 +55,12 @@ class App extends Component {
   }
 
   render() {
+    // const bodyElement = document.body
+    // if (this.state.menuOpen) {
+    //   bodyElement.classList.add("menu-open")
+    //   console.log(this.state.menuOpen)
+    // }
+
     return (
       <div id="content" className="main-content" style={{
         marginLeft:
