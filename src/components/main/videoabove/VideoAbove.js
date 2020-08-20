@@ -3,7 +3,7 @@ import React from 'react'
 const VideoAbove = (props) => {
 
     let className = 'info-hero-head';
-    props.isBusinessState ? className += ' hero-business-extended' : props.isPersonalState ? className += ' hero-personal-extended' : className='info-hero-head'
+    props.isBusiness ? className += ' hero-business-extended' : props.isPersonal ? className += ' hero-personal-extended' : className = 'info-hero-head'
 
     return (
         <section className="info-hero custom-infohero">

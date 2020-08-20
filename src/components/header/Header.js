@@ -1,59 +1,27 @@
 import React, { Component } from 'react';
-import VideoAbove from '../main/videoabove/VideoAbove'
-
-// import { CSSTransition } from 'react-transition-group';
+// import VideoAbove from '../main/videoabove/VideoAbove'
 
 class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isBusiness: false,
-            isPersonal: false
         }
-        this.showBusiness = this.showBusiness.bind(this);
-        this.showPersonal = this.showPersonal.bind(this);
-        this.closeHandler = this.closeHandler.bind(this);
-    }
-
-    showPersonal = (e) => {
-        e.preventDefault();
-        this.setState({
-            isBusiness: false,
-            isPersonal: !this.state.isPersonal,
-        })
-    }
-
-    showBusiness = (e) => {
-        e.preventDefault();
-        this.setState({
-            isPersonal: false,
-            isBusiness: !this.state.isBusiness
-        })
-    }
-
-    closeHandler = () => {
-        this.setState({
-            isPersonal: false,
-            isBusiness: false
-        })
     }
 
     render() {
         let headerClassName = 'header-section';
-        let className = 'main-menu'; 
+        let className = 'main-menu';
 
         this.props.openMenu ? headerClassName += ' header-section--menu-open' : headerClassName = 'header-section';
         this.props.openMenu ? className += ' menu-opened' : className = 'main-menu';
 
         return (
-
-            <div>
                 <header className={headerClassName}>
                     <div>
                         <div className="header-container container">
 
                             <div className="contain-btn">
-                                <button className="btn-menu small-button" type="button" onClick={this.props.onClick}>
+                                <button className="btn-menu small-button" type="button" onClick={this.props.menuOpened}>
                                     Menu
                         </button>
                             </div>
@@ -64,31 +32,30 @@ class Header extends Component {
                         </a>
                             </div>
 
-                            <nav id="mySidenav" className={className}>
+                            <nav id="mySidenav" className={className} style={{ height: this.props.contentHeight }}>
                                 <ul className="list-1">
                                     <li>
 
                                         <a className="main-link personal-link header__subnav-control main-link header__subnav-control--is-active header__subnav-control--is-highlighted
-                                dropbtn" href="/" onClick={this.showPersonal}>
+                                dropbtn" href="/" onClick={this.props.showPersonal}>
                                             Personal
                                 </a>
 
                                         <div className="submenu-wrapper" id="submenu-Personal" style={{
                                             display:
-                                                this.state.isPersonal ? 'block' : 'none'
+                                                this.props.isPersonal ? 'block' : 'none'
                                         }}>
 
                                             <div className="container">
 
                                                 <div className="header-section__subnav">
                                                     <span className="closer-mobile">
-                                                        <button href="#" className="closer" onClick={this.showPersonal}>
+                                                        <button href="#" className="closer" onClick={this.props.showPersonal}>
                                                             Personal
                                                 </button>
                                                     </span>
 
                                                     <div className="submenu-cols">
-
                                                         <ul className="submenu-col">
                                                             <li>
                                                                 <a href="/">
@@ -139,7 +106,7 @@ class Header extends Component {
 
                                                     </div>
 
-                                                    <span className="closer-desktop"><button href="#" className="closer" title="Close" onClick={this.closeHandler}>Close</button></span>
+                                                    <span className="closer-desktop"><button href="#" className="closer" title="Close" onClick={this.props.closeHandler}>Close</button></span>
 
                                                 </div>
                                             </div>
@@ -149,19 +116,19 @@ class Header extends Component {
                                     </li>
 
                                     <li>
-                                        <a className="main-link personal-link header__subnav-control main-link header__subnav-control--is-active header__subnav-control--is-highlighted dropbtn" href="/" onClick={this.showBusiness}>Business</a>
+                                        <a className="main-link personal-link header__subnav-control main-link header__subnav-control--is-active header__subnav-control--is-highlighted dropbtn" href="/" onClick={this.props.showBusiness}>Business</a>
 
                                         <div className="submenu-wrapper" id="submenu-Business" style={{
                                             display:
-                                                this.state.isBusiness ? 'block' : 'none'
+                                                this.props.isBusiness ? 'block' : 'none'
                                         }}>
                                             <div className="container">
 
                                                 <div className="header-section__subnav">
 
                                                     <span className="closer-mobile">
-                                                    <button href="#" className="closer" onClick={this.showBusiness}>
-                                                    Business</button></span>
+                                                        <button href="#" className="closer" onClick={this.props.showBusiness}>
+                                                            Business</button></span>
 
                                                     <div className="submenu-cols submenu-cols--grouped submenu-cols--3">
 
@@ -240,7 +207,7 @@ class Header extends Component {
                                                         </ul>
                                                     </div>
 
-                                                    <span className="closer-desktop"><button href="#" className="closer" title="Close" onClick={this.closeHandler}>Close</button></span>
+                                                    <span className="closer-desktop"><button href="#" className="closer" title="Close" onClick={this.props.closeHandler}>Close</button></span>
 
                                                 </div>
                                             </div>
@@ -275,9 +242,6 @@ class Header extends Component {
                     </div>
 
                 </header>
-
-                <VideoAbove isBusinessState={this.state.isBusiness} isPersonalState={this.state.isPersonal} />
-            </div>
         );
     }
 }

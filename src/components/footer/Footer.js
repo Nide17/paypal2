@@ -18,7 +18,7 @@ class Footer extends Component {
     render() {
         const allCorpLinks = this.state.corplinks.map((corpLink) => {
             return (
-                <li>
+                <li key={corpLink}>
                     <a href="/">{corpLink}</a>
                 </li>
             )
@@ -26,7 +26,7 @@ class Footer extends Component {
 
         const footerMainAll = this.state.footerMainLinks.map((footerMain) => {
             return (
-                <li>
+                <li key={footerMain}>
                     <a href="/">{footerMain}</a>
                 </li>
             )
