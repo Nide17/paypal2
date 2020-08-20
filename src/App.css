@@ -5,6 +5,7 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
 }
 
 .container,
@@ -26,7 +27,7 @@ body {
     vertical-align: middle;
 }
 
-.header-section .container::after {
+.container::after {
     content: "";
     display: table;
     clear: both;
@@ -96,6 +97,16 @@ h2.brand-head {
     position: relative;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
 .thumbnail-paragraph,
 .yoga-section-paragraph,
 .spend-paragraph,
@@ -156,6 +167,11 @@ sup {
     color: #fff;
 }
 
+.custom-infohero {
+    background-color: #0494e4;
+    padding-bottom: 0;
+}
+
 .custom-infohero .info-hero-container {
     /* putting the button & h1 in front */
     z-index: 1;
@@ -185,7 +201,7 @@ h1.info-hero-head {
     position: relative;
     max-width: 320px;
     padding: 13px 24px;
-    padding: 12px 18px;
+    /* padding: 12px 18px; */
     margin-bottom: 0;
     background: #0070ba;
     font-size: .9375rem;
@@ -241,9 +257,9 @@ h1.info-hero-head {
     bottom: 0;
 }
 
-video {
+/* video {
     width: 100%;
-}
+} */
 
 /* BUSINESS */
 .notification-ribbon {
@@ -758,19 +774,19 @@ footer .footer-tertiary .footer-copyright {
     padding-right: 24px;
 }
 
-.header-section::before {
-    height: 84px;
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0) 100%);
-    top: 0;
-    z-index: -1;
-}
-
 .header-section::after,
 .header-section::before {
     content: '';
     display: block;
     width: 100%;
     position: absolute;
+}
+
+.header-section::before {
+    height: 84px;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0) 100%);
+    top: 0;
+    z-index: -1;
 }
 
 .header-section::after {
@@ -1592,6 +1608,7 @@ input {
         max-width: 100%;
         overflow-x: hidden;
         transition: all .3s ease-in;
+        background-color: #009cde;
     }
 
     .header-section .main-menu {
@@ -1853,7 +1870,9 @@ input {
         box-direction: reverse;
         flex-direction: column-reverse;
     }
-    footer, .bg-video-container {
+
+    footer,
+    .bg-video-container {
         background-color: #fff;
     }
 }
