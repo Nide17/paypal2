@@ -377,6 +377,10 @@ h1.info-hero-head {
     vertical-align: middle;
 }
 
+.thumbnail-head {
+    padding-bottom: 20px;
+}
+
 div .video-image {
     background-image: url("./images/video_542x308px.jpg");
     background-image: url("https://www.paypalobjects.com/marketing/web/us/en/home/Everyday-Essentials/video_542x308px.jpg");
@@ -616,7 +620,7 @@ a.responding-link:hover {
 
 /* CLOCK */
 .clock {
-    height: 19.5vh;
+    height: 20vh;
     color: black;
     background-color: #00A8EA;
     display: flex;
@@ -647,6 +651,12 @@ a.responding-link:hover {
     overflow: hidden;
     position: relative;
 }
+
+.number .move {
+    display: block;
+    animation: move .99s linear infinite;
+}
+
 
 /* DISCLOSURE */
 .disclosure {
@@ -1697,6 +1707,14 @@ input {
 
 /* 956 or less */
 @media screen and (max-width: 956px) {
+    .join.custom-join .join-head {
+        font-size: 1.89rem;
+        line-height: 3rem;
+        color: #fff;
+        font-family: "PayPalSansSmall-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 300;
+    }
+
     .number {
         width: 55px;
         height: 55px;
@@ -1705,12 +1723,9 @@ input {
         border-radius: 15px;
     }
 
-    .join.custom-join .join-head {
-        font-size: 1.89rem;
-        line-height: 3rem;
-        color: #fff;
-        font-family: "PayPalSansSmall-Light", "Open Sans", sans-serif, "Helvetica Neue", Arial, sans-serif;
-        font-weight: 300;
+    .number .move {
+        display: block;
+        animation: medium .99s linear infinite
     }
 
 }
@@ -1737,6 +1752,11 @@ input {
         font-size: 22px;
         font-size: 1.57142857rem;
         border-radius: 10px;
+    }
+
+    .number .move {
+        display: block;
+        animation: small .99s linear infinite
     }
 
     .containerCentered p,
@@ -1906,6 +1926,11 @@ input {
         margin-right: 3px;
     }
 
+    .number .move {
+        display: block;
+        animation: move414 1s linear infinite
+    }
+
     .responding .responding-paragraph {
         font-size: 1.2rem;
         padding-top: 20px;
@@ -1932,9 +1957,14 @@ input {
         border-radius: 4px;
         margin-right: 2px;
     }
+
+    .number .move {
+        display: block;
+        animation: move350 1s linear infinite
+    }
 }
 
-
+/* Animations */
 @keyframes slide-from-left {
     0% {
         -webkit-transform: translateX(-240px);
@@ -1953,3 +1983,97 @@ input {
         transform: translateX(0);
     }
 }
+
+@keyframes move {
+    0% {
+        transform: translateY(0)
+    }
+
+    25% {
+        transform: translateY(-80px)
+    }
+
+    50% {
+        transform: translateY(-70px)
+    }
+
+    100% {
+        transform: translateY(-60px)
+    }
+}
+
+@keyframes medium {
+    0% {
+        transform: translateY(0)
+    }
+
+    25% {
+        transform: translateY(-80px)
+    }
+
+    50% {
+        transform: translateY(-60px)
+    }
+
+    100% {
+        transform: translateY(-60px)
+    }
+}
+
+@keyframes small {
+    0% {
+        transform: translateY(0)
+    }
+
+    25% {
+        transform: translateY(-60px)
+    }
+
+    50% {
+        transform: translateY(-40px)
+    }
+
+    100% {
+        transform: translateY(-40px)
+    }
+}
+
+@keyframes move414 {
+    0% {
+        transform: translateY(0)
+    }
+
+    25% {
+        transform: translateY(-60px)
+    }
+
+    50% {
+        transform: translateY(-50px)
+    }
+
+    100% {
+        transform: translateY(-55px)
+    }
+}
+
+@keyframes move350 {
+    0% {
+        transform: translateY(0)
+    }
+
+    25% {
+        transform: translateY(-40px)
+    }
+
+    50% {
+        transform: translateY(-25px)
+    }
+
+    100% {
+        transform: translateY(-25px)
+    }
+}
+
+
+
+

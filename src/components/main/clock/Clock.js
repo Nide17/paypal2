@@ -32,7 +32,8 @@ class Clock extends Component {
 
         if (this.state.lastDigit < 9) {
             this.setState({
-                lastDigit: this.state.lastDigit + 1
+                lastDigit: this.state.lastDigit + 1,
+                lastDigitToDisplay: this.state.lastDigit
             })
         }
 
@@ -84,6 +85,7 @@ class Clock extends Component {
 
                                         if (this.state.eighthToLast === 10) {
                                             this.setState({
+                                                lastDigitToDisplay: 0,
                                                 lastDigit: 0,
                                                 prevToLast: 0,
                                                 secondToLast: 0,
@@ -163,6 +165,7 @@ class Clock extends Component {
 
                 <div className="second lastdigit ">
                     <div className="number">
+                        <span className="move">{this.state.lastDigitToDisplay}</span>
                         <span className="move">{this.state.lastDigit}</span>
                     </div>
                 </div>
