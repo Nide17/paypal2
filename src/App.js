@@ -55,17 +55,11 @@ class App extends Component {
   }
 
   render() {
-    // const bodyElement = document.body
-    // if (this.state.menuOpen) {
-    //   bodyElement.classList.add("menu-open")
-    //   console.log(this.state.menuOpen)
-    // }
+    const bodyElement = document.body
+    this.state.menuOpen ? bodyElement.classList.add("menu-open") : bodyElement.classList.remove("menu-open")
 
     return (
-      <div id="content" className="main-content" style={{
-        marginLeft:
-          this.state.menuOpen ? '240px' : '0px', width: "100%"
-      }}>
+      <div id="content" className="main-content">
         <Header
           openMenu={this.state.menuOpen}
           contentHeight={this.state.contentHeight}

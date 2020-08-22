@@ -14,7 +14,7 @@ class Video extends Component {
 
     componentDidMount() {
         const screenWidth = window.screen.width;
-        
+
         this.setState({
             videoSrc: (screenWidth > 415) ? videoPC : videoPhone
         })
@@ -24,7 +24,7 @@ class Video extends Component {
         return (
             <div className="bg-video-container">
                 <video id="bg-video" className="bg-video" width="100%" autoPlay muted playsInline>
-                    <source src={this.state.videoSrc} type="video/mp4"/>
+                    <source src={this.state.videoSrc} type="video/mp4" />
                     <track kind="captions" />
                 </video>
             </div>

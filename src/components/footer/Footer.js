@@ -38,47 +38,36 @@ class Footer extends Component {
                 <div className="container">
 
                     <div className="row row-flag">
-                        <div className="col-12 col-xl-3">
+                        <div className="col-md-12">
 
-                            <ul className="footer-main">
-
-                                <li className="country-selector">
+                            <ul class="footer-main">
+                                <li class="country-selector">
                                     <a
                                         href="/"
                                         className="country lazy-load-flag US">
                                         <img src="/assets/images/sprite_countries_flag4.png" alt="us flag" />
                                     </a>
+                                </li></ul>
 
-                                </li>
-
-                            </ul>
-                        </div>
-
-                        <div className="col-12 col-xl-9">
-
-                            <ul className="footer-main text-xl-left">
+                            <ul className="footer-main">
                                 {footerMainAll}
                             </ul>
+
                         </div>
                     </div>
 
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-md-12">
                             <hr className="hidden-lg-down" />
                         </div>
                     </div>
 
                     <div className="row">
+                        <div className="col-md-12">
 
-                        <div className="col-12 col-xl-9">
-
-                            <ul className="footer-secondary footer-corplinks text-xl-left">
+                            <ul className="footer-secondary footer-corplinks">
                                 {allCorpLinks}
                             </ul>
-
-                        </div>
-
-                        <div className="col-12 col-xl-3">
                             <ul className="footer-tertiary copyright-section">
                                 <li className="footer-copyright">© 1999–2020 </li>
                                 <li>
@@ -94,7 +83,7 @@ class Footer extends Component {
                     </div>
 
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-md-12">
                             <p className="footer-notes"></p>
                         </div>
                     </div>

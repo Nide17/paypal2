@@ -3,22 +3,27 @@ import React from 'react';
 function Header(props) {
 
     let headerClassName = 'header-section';
+    let classNameNav = 'main-menu';
 
-    let className = 'main-menu';
     let menuPersonalLinkClassName = 'main-link personal-link header__subnav-control';
     let menuBusinessLinkClassName = 'main-link business-link header__subnav-control';
 
+    props.openMenu ? classNameNav += ' menu-opened' : classNameNav = 'main-menu';
 
-    props.openMenu ? headerClassName += ' header-section--menu-open' : headerClassName = 'header-section';
-    props.openMenu ? className += ' menu-opened' : className = 'main-menu';
+    props.openMenu && props.isPersonal ?
+        headerClassName += ' header-section--submenu-open header-section--menu-open header-section--enhanced header-section--active-link-0' :
+        props.openMenu && props.isBusiness ?
+            headerClassName += ' header-section--submenu-open header-section--menu-open header-section--enhanced header-section--active-link-1' :
+            props.isPersonal ?
+                headerClassName += ' header-section--submenu-open header-section--enhanced header-section--active-link-0' :
+                props.isBusiness ?
+                    headerClassName += ' header-section--submenu-open header-section--enhanced header-section--active-link-1' :
+                    props.openMenu ?
+                        headerClassName += ' header-section--menu-open header-section--enhanced' :
+                        headerClassName += ' header-section--enhanced header-section--active-link--1';
 
-    props.isPersonal ?
-        headerClassName += ' header-section--submenu-open header-section--enhanced header-section--active-link-0' :
-        props.isBusiness ?
-            headerClassName += ' header-section--submenu-open header-section--enhanced header-section--active-link-1' :
-            headerClassName = 'header-section';
 
-    props.isPersonal ? menuPersonalLinkClassName += ' header__subnav-control--is-active header__subnav-control--is-highlighted' : menuPersonalLinkClassName = 'main-link personal-link header__subnav-control';
+    props.isPersonal ? menuPersonalLinkClassName += ' header__subnav-control--is-active header__subnav-control--is-highlighted' : menuPersonalLinkClassName = 'main-link personal-link header__subnav-control header__subnav-control--is-closing';
 
     props.isBusiness ? menuBusinessLinkClassName += ' header__subnav-control--is-active header__subnav-control--is-highlighted' : menuBusinessLinkClassName = 'main-link business-link header__subnav-control';
 
@@ -39,7 +44,7 @@ function Header(props) {
                         </a>
                     </div>
 
-                    <nav id="mySidenav" className={className} style={{ height: props.contentHeight }}>
+                    <nav id="mySidenav" className={classNameNav} style={{ height: props.contentHeight }}>
                         <ul className="list-1">
                             <li>
 
