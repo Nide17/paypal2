@@ -6,3 +6,4 @@ This is a project made to mimic paypal website using:
 -Bootstrap
 -HTML/CSS
 
+It is deployed at: http://paypal2.herokuapp.com/
